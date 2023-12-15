@@ -3,7 +3,7 @@ package requests
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/cmd/rpctest/rpctest"
+	"github.com/tenderly/zkevm-erigon/cmd/rpctest/rpctest"
 )
 
 func TxpoolContent(reqId int) (int, int, int, error) {

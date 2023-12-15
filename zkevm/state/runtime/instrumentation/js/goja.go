@@ -9,13 +9,13 @@ import (
 
 	"github.com/dop251/goja"
 	"github.com/ledgerwatch/erigon-lib/common"
-	ericommon "github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/zkevm/log"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/fakevm"
-	jsassets "github.com/ledgerwatch/erigon/zkevm/state/runtime/instrumentation/js/internal/tracers"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/instrumentation/tracers"
+	ericommon "github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/zkevm/log"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/fakevm"
+	jsassets "github.com/tenderly/zkevm-erigon/zkevm/state/runtime/instrumentation/js/internal/tracers"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/instrumentation/tracers"
 )
 
 var assetTracers = make(map[string]string)

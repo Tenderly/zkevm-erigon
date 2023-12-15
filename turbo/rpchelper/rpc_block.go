@@ -6,9 +6,9 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
 
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/sync_stages"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 var UnknownBlockError = &rpc.CustomError{

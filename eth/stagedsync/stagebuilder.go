@@ -5,8 +5,8 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/remote"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/sync_stages"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 type ChainEventNotifier interface {

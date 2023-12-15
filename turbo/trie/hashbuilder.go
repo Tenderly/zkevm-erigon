@@ -11,11 +11,11 @@ import (
 	length2 "github.com/ledgerwatch/erigon-lib/common/length"
 	"golang.org/x/crypto/sha3"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/turbo/rlphacks"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/turbo/rlphacks"
 )
 
 const hashStackStride = length2.Hash + 1 // + 1 byte for RLP encoding

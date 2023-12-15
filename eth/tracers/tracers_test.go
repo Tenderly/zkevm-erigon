@@ -25,21 +25,21 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/core/vm/evmtypes"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/tests"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/core"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/core/vm/evmtypes"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/params"
+	"github.com/tenderly/zkevm-erigon/tests"
 
 	"github.com/holiman/uint256"
 
 	// Force-load native and js packages, to trigger registration
-	"github.com/ledgerwatch/erigon/eth/tracers"
-	_ "github.com/ledgerwatch/erigon/eth/tracers/js"
-	_ "github.com/ledgerwatch/erigon/eth/tracers/native"
+	"github.com/tenderly/zkevm-erigon/eth/tracers"
+	_ "github.com/tenderly/zkevm-erigon/eth/tracers/js"
+	_ "github.com/tenderly/zkevm-erigon/eth/tracers/native"
 )
 
 func TestPrestateTracerCreate2(t *testing.T) {

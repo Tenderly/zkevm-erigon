@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon/core"
+	"github.com/tenderly/zkevm-erigon/core"
 )
 
 func TestGetChainConfig(t *testing.T) {

@@ -3,8 +3,8 @@ package jsonrpc
 import (
 	"strconv"
 
-	"github.com/ledgerwatch/erigon/zkevm/encoding"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/encoding"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/types"
 )
 
 // NetEndpoints contains implementations for the "net" RPC endpoints

@@ -9,8 +9,8 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/common/math"
+	"github.com/tenderly/zkevm-erigon/core/types"
 )
 
 var _ = (*btHeaderMarshaling)(nil)

@@ -24,9 +24,9 @@ import (
 	"github.com/holiman/uint256"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/common/math"
+	"github.com/tenderly/zkevm-erigon/core/vm"
 )
 
 type JSONLogger struct {

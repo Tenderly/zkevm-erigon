@@ -3,8 +3,8 @@ package db
 import (
 	"context"
 	"github.com/ledgerwatch/erigon-lib/kv/mdbx"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 	"math/big"
 	"testing"
 )

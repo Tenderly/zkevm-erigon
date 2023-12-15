@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ledgerwatch/erigon/zkevm/hex"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/hex"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/types"
 )
 
 // BatchNumber returns the latest batch number

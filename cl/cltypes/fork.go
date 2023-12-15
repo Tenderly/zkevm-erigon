@@ -1,9 +1,9 @@
 package cltypes
 
 import (
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes/ssz"
-	"github.com/ledgerwatch/erigon/cl/merkle_tree"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"
+	"github.com/tenderly/zkevm-erigon/cl/merkle_tree"
 )
 
 // Fork data, contains if we were on bellatrix/alteir/phase0 and transition epoch.

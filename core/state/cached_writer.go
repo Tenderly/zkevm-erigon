@@ -4,8 +4,8 @@ import (
 	"github.com/holiman/uint256"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/turbo/shards"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/turbo/shards"
 )
 
 // CachedWriter is a wrapper for an instance of type StateWriter

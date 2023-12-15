@@ -4,12 +4,12 @@ import (
 	_ "embed"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/utils"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/forkchoice/fork_graph"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/forkchoice/fork_graph"
 )
 
 //go:embed test_data/block_0xe2a37a22d208ebe969c50e9d44bb3f1f63c5404787b9c214a5f2f28fb9835feb.ssz_snappy

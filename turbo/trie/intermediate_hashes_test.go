@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/hexutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )
 
 func TestCompressNibbles(t *testing.T) {

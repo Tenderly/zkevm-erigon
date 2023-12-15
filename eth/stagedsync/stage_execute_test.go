@@ -12,13 +12,13 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/rawdbv3"
 	"github.com/ledgerwatch/erigon-lib/kv/temporal/historyv2"
 	libstate "github.com/ledgerwatch/erigon-lib/state"
-	"github.com/ledgerwatch/erigon/cmd/state/exec22"
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	"github.com/ledgerwatch/erigon/ethdb/prune"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/sync_stages"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/cmd/state/exec22"
+	"github.com/tenderly/zkevm-erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
+	"github.com/tenderly/zkevm-erigon/ethdb/prune"
+	"github.com/tenderly/zkevm-erigon/params"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 func TestExec(t *testing.T) {

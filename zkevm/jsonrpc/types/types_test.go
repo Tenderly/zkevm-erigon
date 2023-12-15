@@ -6,10 +6,10 @@ import (
 	"testing"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zkevm/hex"
-	"github.com/ledgerwatch/erigon/zkevm/state"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/zkevm/hex"
+	"github.com/tenderly/zkevm-erigon/zkevm/state"
 )
 
 func TestArgHashUnmarshalFromShortString(t *testing.T) {

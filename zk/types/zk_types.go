@@ -6,7 +6,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common"
 
 	"github.com/holiman/uint256"
-	ethTypes "github.com/ledgerwatch/erigon/core/types"
+	ethTypes "github.com/tenderly/zkevm-erigon/core/types"
 )
 
 const EFFECTIVE_GAS_PRICE_PERCENTAGE_DISABLED = 0

@@ -4,12 +4,12 @@ import (
 	"os"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/cli"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/commands"
-	"github.com/ledgerwatch/erigon/consensus/ethash"
-	"github.com/ledgerwatch/erigon/turbo/logging"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/spf13/cobra"
+	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/cli"
+	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/commands"
+	"github.com/tenderly/zkevm-erigon/consensus/ethash"
+	"github.com/tenderly/zkevm-erigon/turbo/logging"
 )
 
 func main() {

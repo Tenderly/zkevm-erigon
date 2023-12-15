@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ledgerwatch/erigon/chain"
+	"github.com/tenderly/zkevm-erigon/chain"
 
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 // CalcExcessDataGas implements calc_excess_data_gas from EIP-4844

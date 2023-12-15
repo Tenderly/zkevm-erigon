@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ledgerwatch/erigon/eth/protocols/eth"
 	"github.com/nxadm/tail"
+	"github.com/tenderly/zkevm-erigon/eth/protocols/eth"
 )
 
 type Log struct {

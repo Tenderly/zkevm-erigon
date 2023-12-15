@@ -27,10 +27,10 @@ import (
 	"testing"
 
 	"github.com/gorilla/websocket"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/rpc/rpccfg"
-	"github.com/ledgerwatch/erigon/turbo/testlog"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
+	"github.com/tenderly/zkevm-erigon/turbo/testlog"
 
 	"github.com/stretchr/testify/assert"
 )

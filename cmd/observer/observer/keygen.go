@@ -5,9 +5,9 @@ import (
 	"crypto/ecdsa"
 	"time"
 
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/p2p/enode"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/p2p/enode"
 )
 
 func keygen(

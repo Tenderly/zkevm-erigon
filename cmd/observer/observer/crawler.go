@@ -11,13 +11,13 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"golang.org/x/sync/semaphore"
 
-	"github.com/ledgerwatch/erigon/cmd/observer/database"
-	"github.com/ledgerwatch/erigon/cmd/observer/observer/node_utils"
-	"github.com/ledgerwatch/erigon/cmd/observer/observer/sentry_candidates"
-	"github.com/ledgerwatch/erigon/cmd/observer/utils"
-	"github.com/ledgerwatch/erigon/core/forkid"
-	"github.com/ledgerwatch/erigon/p2p/enode"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/cmd/observer/database"
+	"github.com/tenderly/zkevm-erigon/cmd/observer/observer/node_utils"
+	"github.com/tenderly/zkevm-erigon/cmd/observer/observer/sentry_candidates"
+	"github.com/tenderly/zkevm-erigon/cmd/observer/utils"
+	"github.com/tenderly/zkevm-erigon/core/forkid"
+	"github.com/tenderly/zkevm-erigon/p2p/enode"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 type Crawler struct {

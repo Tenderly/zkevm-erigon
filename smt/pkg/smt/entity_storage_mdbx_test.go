@@ -13,7 +13,7 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/mdbx"
-	db2 "github.com/ledgerwatch/erigon/smt/pkg/db"
+	db2 "github.com/tenderly/zkevm-erigon/smt/pkg/db"
 )
 
 func TestGenesisMdbx(t *testing.T) {

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
-	"github.com/ledgerwatch/erigon/zk"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
+	"github.com/tenderly/zkevm-erigon/zk"
 )
 
 //////////////////////////////////////////////////////////////////////////////

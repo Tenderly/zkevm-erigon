@@ -27,13 +27,13 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/core/vm/evmtypes"
-	"github.com/ledgerwatch/erigon/core/vm/stack"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/eth/tracers"
-	jsassets "github.com/ledgerwatch/erigon/eth/tracers/js/internal/tracers"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/core/vm/evmtypes"
+	"github.com/tenderly/zkevm-erigon/core/vm/stack"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/eth/tracers"
+	jsassets "github.com/tenderly/zkevm-erigon/eth/tracers/js/internal/tracers"
 )
 
 const (

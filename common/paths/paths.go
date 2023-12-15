@@ -7,8 +7,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ledgerwatch/erigon/params/networkname"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/params/networkname"
 )
 
 const dirname = "Erigon"

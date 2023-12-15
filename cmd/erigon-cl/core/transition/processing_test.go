@@ -5,11 +5,11 @@ import (
 	"testing"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/merkle_tree"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/merkle_tree"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
 )
 
 var txHashEmpty, _ = merkle_tree.TransactionsListRoot([][]byte{})

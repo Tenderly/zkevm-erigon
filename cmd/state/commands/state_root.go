@@ -13,18 +13,18 @@ import (
 	datadir2 "github.com/ledgerwatch/erigon-lib/common/datadir"
 	"github.com/ledgerwatch/erigon-lib/kv"
 	kv2 "github.com/ledgerwatch/erigon-lib/kv/mdbx"
-	chain2 "github.com/ledgerwatch/erigon/chain"
-	"github.com/ledgerwatch/erigon/core"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/spf13/cobra"
+	chain2 "github.com/tenderly/zkevm-erigon/chain"
+	"github.com/tenderly/zkevm-erigon/core"
 
-	"github.com/ledgerwatch/erigon/consensus/ethash"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/eth/stagedsync"
-	"github.com/ledgerwatch/erigon/turbo/trie"
+	"github.com/tenderly/zkevm-erigon/consensus/ethash"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync"
+	"github.com/tenderly/zkevm-erigon/turbo/trie"
 )
 
 func init() {

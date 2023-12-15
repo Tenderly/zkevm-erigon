@@ -6,13 +6,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ledgerwatch/erigon/ethclient"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/client"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/mocks"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/types"
-	"github.com/ledgerwatch/erigon/zkevm/state"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/ethclient"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/client"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/mocks"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/state"
 )
 
 const (

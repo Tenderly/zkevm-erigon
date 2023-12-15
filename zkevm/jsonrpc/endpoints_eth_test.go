@@ -22,11 +22,11 @@ import (
 	"github.com/ethereum/go-ethereum/trie"
 	"github.com/gorilla/websocket"
 	"github.com/jackc/pgx/v4"
-	"github.com/ledgerwatch/erigon/common"
-	ethTypes "github.com/ledgerwatch/erigon/common"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/common"
+	ethTypes "github.com/tenderly/zkevm-erigon/common"
 )
 
 var (

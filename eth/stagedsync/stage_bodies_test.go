@@ -12,8 +12,8 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/types"
 )
 
 func TestBodiesUnwind(t *testing.T) {

@@ -21,11 +21,11 @@ import (
 	"math/big"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/chain"
+	"github.com/tenderly/zkevm-erigon/chain"
 
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/consensus/ethash"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/common/math"
+	"github.com/tenderly/zkevm-erigon/consensus/ethash"
+	"github.com/tenderly/zkevm-erigon/core/types"
 )
 
 //go:generate gencodec -type DifficultyTest -field-override difficultyTestMarshaling -out gen_difficultytest.go

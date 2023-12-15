@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zk/datastream/types"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/types"
 	"gotest.tools/v3/assert"
 )
 

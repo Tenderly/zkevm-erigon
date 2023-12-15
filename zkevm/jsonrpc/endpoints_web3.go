@@ -4,7 +4,7 @@ import (
 	"math/big"
 
 	"github.com/0xPolygonHermez/zkevm-node"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/types"
 	"golang.org/x/crypto/sha3"
 )
 

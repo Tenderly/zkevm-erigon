@@ -5,9 +5,9 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/kv"
 
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	"github.com/ledgerwatch/erigon/sync_stages"
-	zkStages "github.com/ledgerwatch/erigon/zk/stages"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
+	zkStages "github.com/tenderly/zkevm-erigon/zk/stages"
 )
 
 func DefaultStages(ctx context.Context, snapshots SnapshotsCfg, headers HeadersCfg, cumulativeIndex CumulativeIndexCfg, blockHashCfg BlockHashesCfg, bodies BodiesCfg, senders SendersCfg, exec ExecuteBlockCfg, hashState HashStateCfg, trieCfg TrieCfg, history HistoryCfg, logIndex LogIndexCfg, callTraces CallTracesCfg, txLookup TxLookupCfg, finish FinishCfg, test bool) []*sync_stages.Stage {

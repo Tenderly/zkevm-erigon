@@ -9,9 +9,9 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/turbo/debug"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/tenderly/zkevm-erigon/cmd/utils"
+	"github.com/tenderly/zkevm-erigon/turbo/debug"
+	"github.com/tenderly/zkevm-erigon/turbo/logging"
 )
 
 type CommandFlags struct {

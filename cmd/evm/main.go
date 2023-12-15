@@ -25,10 +25,10 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon/cmd/evm/internal/t8ntool"
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/params"
-	cli2 "github.com/ledgerwatch/erigon/turbo/cli"
+	"github.com/tenderly/zkevm-erigon/cmd/evm/internal/t8ntool"
+	"github.com/tenderly/zkevm-erigon/cmd/utils"
+	"github.com/tenderly/zkevm-erigon/params"
+	cli2 "github.com/tenderly/zkevm-erigon/turbo/cli"
 )
 
 var (

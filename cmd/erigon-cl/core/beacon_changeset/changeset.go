@@ -2,8 +2,8 @@ package beacon_changeset
 
 import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 )
 
 // This type of changeset is the diff beetwen next state and input state and is used to reverse/forward beacon state.

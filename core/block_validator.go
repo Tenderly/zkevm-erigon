@@ -17,7 +17,7 @@
 package core
 
 import (
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 // CalcGasLimit computes the gas limit of the next block after parent. It aims

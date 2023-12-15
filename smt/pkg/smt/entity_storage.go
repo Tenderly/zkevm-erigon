@@ -6,7 +6,7 @@ import (
 	"sync"
 
 	"github.com/dgravesa/go-parallel/parallel"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 )
 
 func (s *SMT) SetAccountState(ethAddr string, balance, nonce *big.Int) (*big.Int, error) {

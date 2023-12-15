@@ -3,7 +3,7 @@ package consensustests
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/transition"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/transition"
 )
 
 func finalityTestFunction(context testContext) error {

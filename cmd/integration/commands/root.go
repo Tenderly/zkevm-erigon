@@ -8,19 +8,19 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/kvcfg"
 	kv2 "github.com/ledgerwatch/erigon-lib/kv/mdbx"
-	"github.com/ledgerwatch/erigon/core/state/historyv2read"
-	"github.com/ledgerwatch/erigon/core/state/temporal"
-	"github.com/ledgerwatch/erigon/core/systemcontracts"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/spf13/cobra"
+	"github.com/tenderly/zkevm-erigon/core/state/historyv2read"
+	"github.com/tenderly/zkevm-erigon/core/state/temporal"
+	"github.com/tenderly/zkevm-erigon/core/systemcontracts"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 	"github.com/torquem-ch/mdbx-go/mdbx"
 	"golang.org/x/sync/semaphore"
 
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/migrations"
-	"github.com/ledgerwatch/erigon/turbo/debug"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/tenderly/zkevm-erigon/cmd/utils"
+	"github.com/tenderly/zkevm-erigon/migrations"
+	"github.com/tenderly/zkevm-erigon/turbo/debug"
+	"github.com/tenderly/zkevm-erigon/turbo/logging"
 )
 
 var rootCmd = &cobra.Command{

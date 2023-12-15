@@ -10,8 +10,8 @@ import (
 	"strings"
 
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/params"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 var DefaultMode = Mode{

@@ -6,8 +6,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"golang.org/x/exp/slices"
 )
 

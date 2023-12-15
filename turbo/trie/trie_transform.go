@@ -1,8 +1,8 @@
 package trie
 
 import (
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 )
 
 type keyTransformFunc func([]byte) []byte

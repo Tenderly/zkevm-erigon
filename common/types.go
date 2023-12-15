@@ -29,7 +29,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 	"github.com/ledgerwatch/erigon-lib/common/length"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )
 
 // Lengths of hashes and addresses in bytes.

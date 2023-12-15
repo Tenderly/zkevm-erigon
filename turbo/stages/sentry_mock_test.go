@@ -11,14 +11,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/common/u256"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/eth/protocols/eth"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/turbo/engineapi"
-	"github.com/ledgerwatch/erigon/turbo/stages"
+	"github.com/tenderly/zkevm-erigon/common/u256"
+	"github.com/tenderly/zkevm-erigon/core"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/eth/protocols/eth"
+	"github.com/tenderly/zkevm-erigon/params"
+	"github.com/tenderly/zkevm-erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/turbo/engineapi"
+	"github.com/tenderly/zkevm-erigon/turbo/stages"
 )
 
 func TestEmptyStageSync(t *testing.T) {

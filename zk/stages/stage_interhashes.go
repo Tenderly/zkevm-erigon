@@ -7,12 +7,12 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common/length"
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/state"
-	state2 "github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/types"
-	db2 "github.com/ledgerwatch/erigon/smt/pkg/db"
-	"github.com/ledgerwatch/erigon/smt/pkg/smt"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
 	"github.com/ledgerwatch/log/v3"
+	state2 "github.com/tenderly/zkevm-erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	db2 "github.com/tenderly/zkevm-erigon/smt/pkg/db"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/smt"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 
 	"strings"
 
@@ -25,16 +25,16 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/ledgerwatch/erigon/common/dbutils"
-	"github.com/ledgerwatch/erigon/core/systemcontracts"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	"github.com/ledgerwatch/erigon/sync_stages"
-	"github.com/ledgerwatch/erigon/turbo/services"
-	"github.com/ledgerwatch/erigon/turbo/stages/headerdownload"
-	"github.com/ledgerwatch/erigon/turbo/trie"
-	"github.com/ledgerwatch/erigon/zk"
 	"github.com/status-im/keycard-go/hexutils"
+	"github.com/tenderly/zkevm-erigon/common/dbutils"
+	"github.com/tenderly/zkevm-erigon/core/systemcontracts"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
+	"github.com/tenderly/zkevm-erigon/turbo/services"
+	"github.com/tenderly/zkevm-erigon/turbo/stages/headerdownload"
+	"github.com/tenderly/zkevm-erigon/turbo/trie"
+	"github.com/tenderly/zkevm-erigon/zk"
 )
 
 type ZkInterHashesCfg struct {

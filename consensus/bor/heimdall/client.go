@@ -11,10 +11,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ledgerwatch/erigon/consensus/bor/clerk"
-	"github.com/ledgerwatch/erigon/consensus/bor/heimdall/checkpoint"
-	"github.com/ledgerwatch/erigon/consensus/bor/heimdall/span"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/clerk"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/heimdall/checkpoint"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/heimdall/span"
 )
 
 var (

@@ -7,9 +7,9 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
 
-	"github.com/ledgerwatch/erigon/cmd/verkle/verkletrie"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/sync_stages"
+	"github.com/tenderly/zkevm-erigon/cmd/verkle/verkletrie"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 func SpawnVerkleTrie(s *sync_stages.StageState, u sync_stages.Unwinder, tx kv.RwTx, cfg TrieCfg, ctx context.Context) (libcommon.Hash, error) {

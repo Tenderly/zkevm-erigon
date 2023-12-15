@@ -1,8 +1,8 @@
 package transition
 
 import (
-	"github.com/ledgerwatch/erigon/cl/utils"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
 )
 
 // ProcessEffectiveBalanceUpdates updates the effective balance of validators. Specs at: https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md#effective-balances-updates

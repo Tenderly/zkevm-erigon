@@ -20,10 +20,10 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/bitmapdb"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/ethdb/prune"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/sync_stages"
+	"github.com/tenderly/zkevm-erigon/common/math"
+	"github.com/tenderly/zkevm-erigon/ethdb/prune"
+	"github.com/tenderly/zkevm-erigon/params"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 type CallTracesCfg struct {

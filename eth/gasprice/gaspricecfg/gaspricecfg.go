@@ -3,7 +3,7 @@ package gaspricecfg
 import (
 	"math/big"
 
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 var DefaultIgnorePrice = big.NewInt(2 * params.Wei)

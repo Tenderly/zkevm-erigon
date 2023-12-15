@@ -3,9 +3,9 @@ package fakevm
 import (
 	"sync/atomic"
 
-	"github.com/ledgerwatch/erigon/chain"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/core/vm/evmtypes"
+	"github.com/tenderly/zkevm-erigon/chain"
+	"github.com/tenderly/zkevm-erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/core/vm/evmtypes"
 )
 
 // MemoryItemSize is the memory item size.

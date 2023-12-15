@@ -19,9 +19,9 @@ package core
 import (
 	"sort"
 
-	"github.com/ledgerwatch/erigon/chain"
+	"github.com/tenderly/zkevm-erigon/chain"
 
-	"github.com/ledgerwatch/erigon/params/networkname"
+	"github.com/tenderly/zkevm-erigon/params/networkname"
 )
 
 // SkipAnalysis function tells us whether we can skip performing jumpdest analysis

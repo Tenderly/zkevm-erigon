@@ -6,10 +6,10 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/utils"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
 )
 
 func RetrieveBeaconState(ctx context.Context, beaconConfig *clparams.BeaconChainConfig, genesisConfig *clparams.GenesisConfig, uri string) (*state.BeaconState, error) {

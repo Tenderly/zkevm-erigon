@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/ledgerwatch/erigon/eth/tracers/logger"
+	"github.com/tenderly/zkevm-erigon/eth/tracers/logger"
 	"gopkg.in/yaml.v2"
 )
 

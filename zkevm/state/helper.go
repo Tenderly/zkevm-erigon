@@ -5,10 +5,10 @@ import (
 	"math/big"
 	"strconv"
 
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/zkevm/hex"
-	"github.com/ledgerwatch/erigon/zkevm/log"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/zkevm/hex"
+	"github.com/tenderly/zkevm-erigon/zkevm/log"
 )
 
 // EncodeTransactions RLP encodes the given transactions
@@ -287,7 +287,7 @@ func DecodeTxs(txsData []byte, forkID uint64) ([]types.Transaction, []byte, []ui
 			log.Debug("error creating tx from rlp fields: ", err, ". fullDataTx: ", hex.EncodeToString(fullDataTx), "\n tx: ", hex.EncodeToString(txInfo), "\n Txs received: ", hex.EncodeToString(txsData))
 			return []types.Transaction{}, txsData, []uint8{}, err
 		}
-		
+
 		txs = append(txs, legacyTx)
 	}
 	return txs, txsData, efficiencyPercentages, nil

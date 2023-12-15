@@ -22,15 +22,6 @@ import (
 	"time"
 
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/fork"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinel/handlers"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinel/handshake"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinel/peers"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/p2p/discover"
-	"github.com/ledgerwatch/erigon/p2p/enode"
-	"github.com/ledgerwatch/erigon/p2p/enr"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/libp2p/go-libp2p"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
@@ -41,6 +32,15 @@ import (
 	rcmgrObs "github.com/libp2p/go-libp2p/p2p/host/resource-manager/obs"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/fork"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel/handlers"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel/handshake"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel/peers"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/p2p/discover"
+	"github.com/tenderly/zkevm-erigon/p2p/enode"
+	"github.com/tenderly/zkevm-erigon/p2p/enr"
 )
 
 type Sentinel struct {

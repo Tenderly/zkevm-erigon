@@ -1,7 +1,7 @@
 package health
 
 import (
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/rpc"
 )
 
 func parseAPI(api []rpc.API) (netAPI NetAPI, ethAPI EthAPI) {

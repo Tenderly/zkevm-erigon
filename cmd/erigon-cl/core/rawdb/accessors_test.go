@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/rawdb"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/rawdb"
 )
 
 func TestBytes2(t *testing.T) {

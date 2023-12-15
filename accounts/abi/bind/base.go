@@ -27,11 +27,11 @@ import (
 	"github.com/holiman/uint256"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	ethereum "github.com/ledgerwatch/erigon"
-	"github.com/ledgerwatch/erigon/accounts/abi"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/event"
+	ethereum "github.com/tenderly/zkevm-erigon"
+	"github.com/tenderly/zkevm-erigon/accounts/abi"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/event"
 )
 
 // SignerFn is a signer function callback when a contract requires a method to

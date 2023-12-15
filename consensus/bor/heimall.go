@@ -3,9 +3,9 @@ package bor
 import (
 	"context"
 
-	"github.com/ledgerwatch/erigon/consensus/bor/clerk"
-	"github.com/ledgerwatch/erigon/consensus/bor/heimdall/checkpoint"
-	"github.com/ledgerwatch/erigon/consensus/bor/heimdall/span"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/clerk"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/heimdall/checkpoint"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/heimdall/span"
 )
 
 //go:generate mockgen -destination=../../tests/bor/mocks/IHeimdallClient.go -package=mocks . IHeimdallClient

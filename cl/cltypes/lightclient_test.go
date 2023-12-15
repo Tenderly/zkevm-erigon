@@ -6,11 +6,11 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/utils"
-	"github.com/ledgerwatch/erigon/common"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
+	"github.com/tenderly/zkevm-erigon/common"
 )
 
 //go:embed tests/light_client_bootstrap.ssz_snappy

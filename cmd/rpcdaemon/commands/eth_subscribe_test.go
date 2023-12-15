@@ -10,14 +10,14 @@ import (
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/sentry"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/rpcservices"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/eth/protocols/eth"
-	"github.com/ledgerwatch/erigon/ethdb/privateapi"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
-	"github.com/ledgerwatch/erigon/turbo/snapshotsync"
-	"github.com/ledgerwatch/erigon/turbo/stages"
+	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcservices"
+	"github.com/tenderly/zkevm-erigon/core"
+	"github.com/tenderly/zkevm-erigon/eth/protocols/eth"
+	"github.com/tenderly/zkevm-erigon/ethdb/privateapi"
+	"github.com/tenderly/zkevm-erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/turbo/rpchelper"
+	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
+	"github.com/tenderly/zkevm-erigon/turbo/stages"
 )
 
 func TestEthSubscribe(t *testing.T) {

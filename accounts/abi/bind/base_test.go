@@ -25,13 +25,13 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	ethereum "github.com/ledgerwatch/erigon"
-	"github.com/ledgerwatch/erigon/accounts/abi"
-	"github.com/ledgerwatch/erigon/accounts/abi/bind"
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/rlp"
+	ethereum "github.com/tenderly/zkevm-erigon"
+	"github.com/tenderly/zkevm-erigon/accounts/abi"
+	"github.com/tenderly/zkevm-erigon/accounts/abi/bind"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/rlp"
 )
 
 type mockCaller struct {

@@ -7,7 +7,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv"
 	libstate "github.com/ledgerwatch/erigon-lib/state"
 
-	"github.com/ledgerwatch/erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 )
 
 // HistoryReaderV4 Implements StateReader and StateWriter

@@ -23,11 +23,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/p2p/enr"
-	"github.com/ledgerwatch/erigon/rlp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/p2p/enr"
+	"github.com/tenderly/zkevm-erigon/rlp"
 )
 
 var (

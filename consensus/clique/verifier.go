@@ -9,10 +9,10 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common/length"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/consensus"
-	"github.com/ledgerwatch/erigon/consensus/misc"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/consensus"
+	"github.com/tenderly/zkevm-erigon/consensus/misc"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 // verifyHeader checks whether a header conforms to the consensus rules.The

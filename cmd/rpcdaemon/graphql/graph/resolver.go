@@ -2,9 +2,9 @@ package graph
 
 import (
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/commands"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
-	"github.com/ledgerwatch/erigon/turbo/services"
+	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/commands"
+	"github.com/tenderly/zkevm-erigon/turbo/rpchelper"
+	"github.com/tenderly/zkevm-erigon/turbo/services"
 )
 
 // This file will not be regenerated automatically.

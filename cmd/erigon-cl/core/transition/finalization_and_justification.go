@@ -1,9 +1,9 @@
 package transition
 
 import (
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
 )
 
 // weighJustificationAndFinalization checks justification and finality of epochs and adds records to the state as needed.

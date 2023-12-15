@@ -23,15 +23,15 @@ import (
 	"github.com/urfave/cli/v2"
 	"google.golang.org/grpc"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/fork"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core"
-	"github.com/ledgerwatch/erigon/cmd/lightclient/lightclient"
-	lcCli "github.com/ledgerwatch/erigon/cmd/sentinel/cli"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/cli/flags"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinel"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinel/service"
-	lightclientapp "github.com/ledgerwatch/erigon/turbo/app"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/fork"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core"
+	"github.com/tenderly/zkevm-erigon/cmd/lightclient/lightclient"
+	lcCli "github.com/tenderly/zkevm-erigon/cmd/sentinel/cli"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/cli/flags"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel/service"
+	lightclientapp "github.com/tenderly/zkevm-erigon/turbo/app"
 )
 
 func main() {

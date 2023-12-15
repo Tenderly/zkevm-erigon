@@ -25,9 +25,9 @@ import (
 
 	erigonchain "github.com/ledgerwatch/erigon-lib/chain"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/chain"
-	"github.com/ledgerwatch/erigon/common/paths"
-	"github.com/ledgerwatch/erigon/params/networkname"
+	"github.com/tenderly/zkevm-erigon/chain"
+	"github.com/tenderly/zkevm-erigon/common/paths"
+	"github.com/tenderly/zkevm-erigon/params/networkname"
 )
 
 //go:embed chainspecs

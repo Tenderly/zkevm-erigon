@@ -5,10 +5,10 @@ import (
 
 	"fmt"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/ethdb"
-	"github.com/ledgerwatch/erigon/ethdb/olddb"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/ethdb"
+	"github.com/tenderly/zkevm-erigon/ethdb/olddb"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 	"strings"
 )
 

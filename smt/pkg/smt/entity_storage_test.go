@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"context"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 )
 
 type Address struct {

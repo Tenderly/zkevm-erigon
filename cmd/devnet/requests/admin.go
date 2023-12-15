@@ -3,8 +3,8 @@ package requests
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/cmd/devnet/models"
-	"github.com/ledgerwatch/erigon/p2p"
+	"github.com/tenderly/zkevm-erigon/cmd/devnet/models"
+	"github.com/tenderly/zkevm-erigon/p2p"
 )
 
 func AdminNodeInfo(reqId int) (p2p.NodeInfo, error) {

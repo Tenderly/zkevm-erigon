@@ -8,11 +8,11 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
 	"github.com/ledgerwatch/erigon-lib/kv/rawdbv3"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/systemcontracts"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/sync_stages"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/core/systemcontracts"
+	"github.com/tenderly/zkevm-erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 // unable to decode supplied params, or an invalid number of parameters

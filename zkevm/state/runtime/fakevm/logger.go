@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/core/vm"
 )
 
 // EVMLogger is used to collect execution traces from an EVM transaction

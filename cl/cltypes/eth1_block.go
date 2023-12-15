@@ -6,12 +6,12 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes/ssz"
-	"github.com/ledgerwatch/erigon/cl/merkle_tree"
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/consensus/serenity"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"
+	"github.com/tenderly/zkevm-erigon/cl/merkle_tree"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/consensus/serenity"
+	"github.com/tenderly/zkevm-erigon/core/types"
 )
 
 // ETH1Block represents a block structure CL-side.

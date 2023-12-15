@@ -6,9 +6,9 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/length"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/turbo/trie"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/turbo/trie"
 )
 
 // Result structs for GetProof

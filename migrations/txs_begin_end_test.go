@@ -14,9 +14,9 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/sync_stages"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 func TestTxsBeginEnd(t *testing.T) {

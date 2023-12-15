@@ -5,13 +5,13 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	"github.com/ledgerwatch/erigon/node"
-	"github.com/ledgerwatch/erigon/node/nodecfg"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/params/networkname"
-	erigoncli "github.com/ledgerwatch/erigon/turbo/cli"
+	"github.com/tenderly/zkevm-erigon/cmd/utils"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
+	"github.com/tenderly/zkevm-erigon/node"
+	"github.com/tenderly/zkevm-erigon/node/nodecfg"
+	"github.com/tenderly/zkevm-erigon/params"
+	"github.com/tenderly/zkevm-erigon/params/networkname"
+	erigoncli "github.com/tenderly/zkevm-erigon/turbo/cli"
 )
 
 // ErigonNode represents a single node, that runs sync and p2p network.

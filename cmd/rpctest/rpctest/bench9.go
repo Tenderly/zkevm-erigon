@@ -7,7 +7,7 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/core/state"
 )
 
 // bench9 tests eth_getProof

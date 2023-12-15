@@ -3,7 +3,7 @@ package state_test
 import (
 	"testing"
 
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
 )
 
 // Curr: 4358340

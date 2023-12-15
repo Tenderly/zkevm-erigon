@@ -5,8 +5,8 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common/datadir"
 	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	"github.com/ledgerwatch/erigon/rpc/rpccfg"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
+	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
 )
 
 type HttpCfg struct {

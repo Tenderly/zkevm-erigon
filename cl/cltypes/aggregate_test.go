@@ -3,8 +3,8 @@ package cltypes_test
 import (
 	"testing"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 )
 
 func TestAggregateMarshal(t *testing.T) {

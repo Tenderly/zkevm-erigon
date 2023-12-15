@@ -5,11 +5,11 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/chain"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/chain"
 
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/types"
 )
 
 // Implements consensus.ChainReader

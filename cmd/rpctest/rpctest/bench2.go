@@ -7,7 +7,7 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/crypto"
 )
 
 func Bench2(erigon_url string) {

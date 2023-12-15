@@ -14,10 +14,10 @@ import (
 	"github.com/0xPolygonHermez/zkevm-node/state"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ledgerwatch/erigon/common"
-	ethTypes "github.com/ledgerwatch/erigon/common"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/common"
+	ethTypes "github.com/tenderly/zkevm-erigon/common"
 )
 
 func TestConsolidatedBlockNumber(t *testing.T) {

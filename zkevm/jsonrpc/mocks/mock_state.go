@@ -14,9 +14,9 @@ import (
 
 	pgx "github.com/jackc/pgx/v4"
 
-	runtime "github.com/ledgerwatch/erigon/zkevm/state/runtime"
+	runtime "github.com/tenderly/zkevm-erigon/zkevm/state/runtime"
 
-	state "github.com/ledgerwatch/erigon/zkevm/state"
+	state "github.com/tenderly/zkevm-erigon/zkevm/state"
 
 	time "time"
 )

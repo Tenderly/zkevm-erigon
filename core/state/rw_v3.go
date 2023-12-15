@@ -18,11 +18,11 @@ import (
 	"github.com/ledgerwatch/erigon-lib/etl"
 	"github.com/ledgerwatch/erigon-lib/kv"
 	libstate "github.com/ledgerwatch/erigon-lib/state"
-	"github.com/ledgerwatch/erigon/cmd/state/exec22"
-	"github.com/ledgerwatch/erigon/common/dbutils"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/turbo/shards"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/cmd/state/exec22"
+	"github.com/tenderly/zkevm-erigon/common/dbutils"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/turbo/shards"
 	btree2 "github.com/tidwall/btree"
 )
 

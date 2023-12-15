@@ -6,7 +6,7 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 )
 
 func TestBlockWitness(t *testing.T) {

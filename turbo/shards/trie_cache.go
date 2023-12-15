@@ -9,9 +9,9 @@ import (
 	"github.com/google/btree"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/dbutils"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/common/dbutils"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 )
 
 // An optional addition to the state cache, helping to calculate state root

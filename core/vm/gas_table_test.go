@@ -26,10 +26,10 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/vm/evmtypes"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/core/vm/evmtypes"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 func TestMemoryGasCost(t *testing.T) {

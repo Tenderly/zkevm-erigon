@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/zkevm/state/metrics"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/instrumentation"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/metrics"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/instrumentation"
 )
 
 // ProcessRequest represents the request of a batch process.

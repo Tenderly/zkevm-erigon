@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/ledgerwatch/erigon/zkevm/log"
-	"github.com/ledgerwatch/erigon/zkevm/merkletree/pb"
+	"github.com/tenderly/zkevm-erigon/zkevm/log"
+	"github.com/tenderly/zkevm-erigon/zkevm/merkletree/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

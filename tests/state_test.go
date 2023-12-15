@@ -28,9 +28,9 @@ import (
 	"testing"
 
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/eth/tracers/logger"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/eth/tracers/logger"
 )
 
 func TestState(t *testing.T) {

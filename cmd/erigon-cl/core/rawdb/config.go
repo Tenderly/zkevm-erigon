@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/common/math"
+	"github.com/tenderly/zkevm-erigon/common/math"
 )
 
 type BeaconDataConfig struct {

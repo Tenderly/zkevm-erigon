@@ -6,9 +6,9 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/rawdb"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/cli/flags"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/cli/flags"
 )
 
 type ConsensusClientCliCfg struct {

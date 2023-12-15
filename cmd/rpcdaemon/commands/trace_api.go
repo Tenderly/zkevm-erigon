@@ -8,9 +8,9 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
 
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/cli/httpcfg"
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/cli/httpcfg"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/rpc"
 )
 
 // TraceAPI RPC interface into tracing API

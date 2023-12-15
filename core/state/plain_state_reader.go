@@ -8,8 +8,8 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
 
-	"github.com/ledgerwatch/erigon/common/dbutils"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/common/dbutils"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 )
 
 var _ StateReader = (*PlainStateReader)(nil)

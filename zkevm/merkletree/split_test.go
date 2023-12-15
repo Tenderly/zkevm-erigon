@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/0xPolygonHermez/zkevm-node/test/testutils"
-	"github.com/ledgerwatch/erigon/zkevm/hex"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/zkevm/hex"
 )
 
 func TestSplit(t *testing.T) {

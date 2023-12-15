@@ -14,11 +14,11 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"golang.org/x/exp/maps"
 
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/sync_stages"
-	"github.com/ledgerwatch/erigon/turbo/adapter"
-	"github.com/ledgerwatch/erigon/turbo/services"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
+	"github.com/tenderly/zkevm-erigon/turbo/adapter"
+	"github.com/tenderly/zkevm-erigon/turbo/services"
 )
 
 const BlockBufferSize = 128

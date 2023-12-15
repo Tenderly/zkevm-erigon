@@ -2,7 +2,7 @@ package etherman
 
 import (
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zkevm/etherman/etherscan"
+	"github.com/tenderly/zkevm-erigon/zkevm/etherman/etherscan"
 )
 
 // Config represents the configuration of the etherman

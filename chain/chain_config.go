@@ -22,7 +22,7 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/chain"
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zk/zkchainconfig"
+	"github.com/tenderly/zkevm-erigon/zk/zkchainconfig"
 )
 
 // Config is the core config which determines the blockchain settings.

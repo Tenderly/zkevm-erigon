@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 )
 
 // OnAttestation processes incoming attestations. TODO(Giulio2002): finish it with forward changesets.

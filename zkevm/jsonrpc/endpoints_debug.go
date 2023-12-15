@@ -9,10 +9,10 @@ import (
 	"github.com/jackc/pgx/v4"
 	"github.com/ledgerwatch/erigon-lib/common"
 	ethTypes "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/types"
-	"github.com/ledgerwatch/erigon/zkevm/log"
-	"github.com/ledgerwatch/erigon/zkevm/state"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/instrumentation"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/log"
+	"github.com/tenderly/zkevm-erigon/zkevm/state"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/instrumentation"
 )
 
 // DebugEndpoints is the debug jsonrpc endpoint

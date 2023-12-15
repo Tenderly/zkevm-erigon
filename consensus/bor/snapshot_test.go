@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/consensus/bor/valset"
 	crand "github.com/maticnetwork/crand"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/valset"
 )
 
 const (

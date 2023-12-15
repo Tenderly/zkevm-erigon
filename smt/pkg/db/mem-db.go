@@ -4,7 +4,7 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 )
 
 type MemDb struct {

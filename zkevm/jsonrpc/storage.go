@@ -8,7 +8,7 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
-	"github.com/ledgerwatch/erigon/zkevm/hex"
+	"github.com/tenderly/zkevm-erigon/zkevm/hex"
 )
 
 // ErrNotFound represent a not found error.

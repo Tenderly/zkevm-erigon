@@ -27,11 +27,11 @@ import (
 	"strings"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/chain"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/chain"
 	"golang.org/x/exp/slices"
 
-	"github.com/ledgerwatch/erigon/common"
+	"github.com/tenderly/zkevm-erigon/common"
 )
 
 var (

@@ -8,9 +8,9 @@ import (
 	"github.com/jackc/pgx/v4"
 	"github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/zkevm/state"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/state"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime"
 )
 
 //// PoolInterface contains the methods required to interact with the tx pool.

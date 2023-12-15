@@ -9,16 +9,16 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/rpc/rpccfg"
-	"github.com/ledgerwatch/erigon/turbo/adapter/ethapi"
-	"github.com/ledgerwatch/erigon/turbo/snapshotsync"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/core"
+	"github.com/tenderly/zkevm-erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
+	"github.com/tenderly/zkevm-erigon/turbo/adapter/ethapi"
+	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
 
 	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
 
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/rpcdaemontest"
+	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"
 )
 
 func TestGetBalanceChangesInBlock(t *testing.T) {

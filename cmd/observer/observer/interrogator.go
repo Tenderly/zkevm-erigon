@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ledgerwatch/erigon/cmd/observer/utils"
-	"github.com/ledgerwatch/erigon/core/forkid"
-	"github.com/ledgerwatch/erigon/eth/protocols/eth"
-	"github.com/ledgerwatch/erigon/p2p/enode"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/cmd/observer/utils"
+	"github.com/tenderly/zkevm-erigon/core/forkid"
+	"github.com/tenderly/zkevm-erigon/eth/protocols/eth"
+	"github.com/tenderly/zkevm-erigon/p2p/enode"
 	"golang.org/x/sync/semaphore"
 )
 

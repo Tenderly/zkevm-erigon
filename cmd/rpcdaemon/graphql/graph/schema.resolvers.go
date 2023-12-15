@@ -11,10 +11,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/graphql/graph/model"
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/graphql/graph/model"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/rpc"
 )
 
 // SendRawTransaction is the resolver for the sendRawTransaction field.

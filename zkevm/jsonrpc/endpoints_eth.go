@@ -15,10 +15,10 @@ import (
 	"github.com/jackc/pgx/v4"
 	"github.com/ledgerwatch/erigon-lib/common"
 	ethTypes "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zkevm/hex"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/client"
-	"github.com/ledgerwatch/erigon/zkevm/log"
-	"github.com/ledgerwatch/erigon/zkevm/state"
+	"github.com/tenderly/zkevm-erigon/zkevm/hex"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/client"
+	"github.com/tenderly/zkevm-erigon/zkevm/log"
+	"github.com/tenderly/zkevm-erigon/zkevm/state"
 )
 
 // EthEndpoints contains implementations for the "eth" RPC endpoints

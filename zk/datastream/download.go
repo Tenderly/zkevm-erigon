@@ -1,9 +1,9 @@
 package datastream
 
 import (
-	"github.com/ledgerwatch/erigon/zk/datastream/client"
-	"github.com/ledgerwatch/erigon/zk/datastream/types"
 	"github.com/pkg/errors"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/client"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/types"
 )
 
 // Download a set amount of blocks from datastream server to channel

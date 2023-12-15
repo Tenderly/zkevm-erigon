@@ -8,7 +8,7 @@ import (
 	"math/big"
 	"net/http"
 
-	"github.com/ledgerwatch/erigon/zkevm/encoding"
+	"github.com/tenderly/zkevm-erigon/zkevm/encoding"
 )
 
 type ethGasStationResponse struct {

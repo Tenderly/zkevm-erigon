@@ -16,8 +16,8 @@ package fork
 import (
 	"testing"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
 )
 
 func TestMainnetFork(t *testing.T) {

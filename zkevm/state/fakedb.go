@@ -5,7 +5,7 @@ import (
 	"math/big"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zkevm/log"
+	"github.com/tenderly/zkevm-erigon/zkevm/log"
 )
 
 // FakeDB is the implementation of the fakeevm.FakeDB interface

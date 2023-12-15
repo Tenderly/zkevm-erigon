@@ -11,19 +11,19 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/crypto/cryptopool"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/turbo/adapter/ethapi"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
-	"github.com/ledgerwatch/erigon/turbo/transactions"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/common/math"
+	"github.com/tenderly/zkevm-erigon/core"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/crypto/cryptopool"
+	"github.com/tenderly/zkevm-erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/turbo/adapter/ethapi"
+	"github.com/tenderly/zkevm-erigon/turbo/rpchelper"
+	"github.com/tenderly/zkevm-erigon/turbo/transactions"
 )
 
 func (api *APIImpl) CallBundle(ctx context.Context, txHashes []common.Hash, stateBlockNumberOrHash rpc.BlockNumberOrHash, timeoutMilliSecondsPtr *int64) (map[string]interface{}, error) {
@@ -255,7 +255,7 @@ func (api *APIImpl) GetBlockByHash(ctx context.Context, numberOrHash rpc.BlockNu
 		// eth_getBlockByHash with a block number as a parameter
 		// so no matter how weird that is, we would love to support that.
 		if numberOrHash.BlockNumber == nil {
-			return nil, nil // not error, see https://github.com/ledgerwatch/erigon/issues/1645
+			return nil, nil // not error, see https://github.com/tenderly/zkevm-erigon/issues/1645
 		}
 		return api.GetBlockByNumber(ctx, *numberOrHash.BlockNumber, fullTx)
 	}
@@ -274,7 +274,7 @@ func (api *APIImpl) GetBlockByHash(ctx context.Context, numberOrHash rpc.BlockNu
 		return nil, err
 	}
 	if block == nil {
-		return nil, nil // not error, see https://github.com/ledgerwatch/erigon/issues/1645
+		return nil, nil // not error, see https://github.com/tenderly/zkevm-erigon/issues/1645
 	}
 	number := block.NumberU64()
 

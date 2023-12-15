@@ -25,7 +25,7 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )
 
 var unmarshalLogTests = map[string]struct {

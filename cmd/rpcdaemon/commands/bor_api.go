@@ -4,8 +4,8 @@ import (
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
 
-	"github.com/ledgerwatch/erigon/consensus/bor/valset"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/valset"
+	"github.com/tenderly/zkevm-erigon/rpc"
 )
 
 // BorAPI Bor specific routines

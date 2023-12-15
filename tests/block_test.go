@@ -22,8 +22,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
 )
 
 func TestBlockchain(t *testing.T) {

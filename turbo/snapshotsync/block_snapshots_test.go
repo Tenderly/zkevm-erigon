@@ -13,10 +13,10 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	"github.com/ledgerwatch/erigon/params/networkname"
-	"github.com/ledgerwatch/erigon/turbo/snapshotsync/snapcfg"
+	"github.com/tenderly/zkevm-erigon/common/math"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
+	"github.com/tenderly/zkevm-erigon/params/networkname"
+	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync/snapcfg"
 )
 
 func createTestSegmentFile(t *testing.T, from, to uint64, name snaptype.Type, dir string) {

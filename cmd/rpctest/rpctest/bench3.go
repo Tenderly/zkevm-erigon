@@ -8,7 +8,7 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/core/state"
 )
 
 func Bench3(erigon_url, geth_url string) {

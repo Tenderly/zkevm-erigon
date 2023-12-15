@@ -7,12 +7,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	ethereum "github.com/ledgerwatch/erigon"
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
+	ethereum "github.com/tenderly/zkevm-erigon"
 
-	ethTypes "github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/zk/types"
+	ethTypes "github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/zk/types"
 )
 
 var (

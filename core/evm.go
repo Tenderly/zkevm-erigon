@@ -24,10 +24,10 @@ import (
 	erigonchain "github.com/ledgerwatch/erigon-lib/chain"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/consensus"
-	"github.com/ledgerwatch/erigon/consensus/serenity"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/core/vm/evmtypes"
+	"github.com/tenderly/zkevm-erigon/consensus"
+	"github.com/tenderly/zkevm-erigon/consensus/serenity"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/vm/evmtypes"
 )
 
 // NewEVMBlockContext creates a new context for use in the EVM.

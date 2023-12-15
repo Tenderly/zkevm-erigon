@@ -4,9 +4,9 @@ import (
 	"encoding/hex"
 	"fmt"
 	"github.com/holiman/uint256"
-	"github.com/ledgerwatch/erigon/core/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/core/types"
 	"testing"
 )
 

@@ -23,9 +23,9 @@ import (
 	"github.com/c2h5oh/datasize"
 	"github.com/golang/snappy"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes/ssz"
-	"github.com/ledgerwatch/erigon/cl/fork"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"
+	"github.com/tenderly/zkevm-erigon/cl/fork"
 )
 
 func EncodeAndWrite(w io.Writer, val ssz.Marshaler, prefix ...byte) error {

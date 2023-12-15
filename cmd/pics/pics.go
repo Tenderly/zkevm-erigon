@@ -9,9 +9,9 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/turbo/trie"
-	"github.com/ledgerwatch/erigon/visual"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/turbo/trie"
+	"github.com/tenderly/zkevm-erigon/visual"
 )
 
 var pic = flag.String("pic", "", "specifies picture to regenerate")

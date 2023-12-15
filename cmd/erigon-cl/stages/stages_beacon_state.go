@@ -5,14 +5,14 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/utils"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/rawdb"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/transition"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/execution_client"
-	"github.com/ledgerwatch/erigon/sync_stages"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/transition"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/execution_client"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 type StageBeaconStateCfg struct {

@@ -31,11 +31,11 @@ import (
 	mdbx2 "github.com/torquem-ch/mdbx-go/mdbx"
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/eth/tracers/logger"
-	"github.com/ledgerwatch/erigon/tests"
-	"github.com/ledgerwatch/erigon/turbo/trie"
+	"github.com/tenderly/zkevm-erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/eth/tracers/logger"
+	"github.com/tenderly/zkevm-erigon/tests"
+	"github.com/tenderly/zkevm-erigon/turbo/trie"
 )
 
 var stateTestCommand = cli.Command{

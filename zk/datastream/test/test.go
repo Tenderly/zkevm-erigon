@@ -5,11 +5,11 @@ import (
 	"strconv"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zk/datastream"
-	"github.com/ledgerwatch/erigon/zk/datastream/client"
-	"github.com/ledgerwatch/erigon/zk/datastream/test/utils"
-	"github.com/ledgerwatch/erigon/zk/datastream/types"
-	"github.com/ledgerwatch/erigon/zkevm/log"
+	"github.com/tenderly/zkevm-erigon/zk/datastream"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/client"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/test/utils"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/log"
 )
 
 // This code downloads headers and blocks from a datastream server.

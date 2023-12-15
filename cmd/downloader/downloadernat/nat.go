@@ -2,8 +2,8 @@ package downloadernat
 
 import (
 	"github.com/ledgerwatch/erigon-lib/downloader/downloadercfg"
-	"github.com/ledgerwatch/erigon/p2p/nat"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/p2p/nat"
 )
 
 func DoNat(natif nat.Interface, cfg *downloadercfg.Cfg) {

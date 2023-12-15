@@ -13,14 +13,14 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 	types2 "github.com/ledgerwatch/erigon-lib/types"
-	"github.com/ledgerwatch/erigon/chain"
+	"github.com/tenderly/zkevm-erigon/chain"
 
 	gokzg4844 "github.com/crate-crypto/go-kzg-4844"
 	"github.com/protolambda/ztyp/codec"
 
-	"github.com/ledgerwatch/erigon/crypto/kzg"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/crypto/kzg"
+	"github.com/tenderly/zkevm-erigon/params"
+	"github.com/tenderly/zkevm-erigon/rlp"
 )
 
 // Compressed BLS12-381 G1 element

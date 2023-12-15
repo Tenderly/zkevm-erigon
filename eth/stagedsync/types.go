@@ -1,8 +1,8 @@
 package stagedsync
 
 import (
-	"github.com/ledgerwatch/erigon/sync_stages"
-	"github.com/ledgerwatch/erigon/turbo/stages/bodydownload"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
+	"github.com/tenderly/zkevm-erigon/turbo/stages/bodydownload"
 )
 
 type DownloaderGlue interface {

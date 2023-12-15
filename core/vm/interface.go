@@ -21,9 +21,9 @@ import (
 
 	"github.com/holiman/uint256"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/chain"
+	"github.com/tenderly/zkevm-erigon/chain"
 
-	"github.com/ledgerwatch/erigon/core/vm/evmtypes"
+	"github.com/tenderly/zkevm-erigon/core/vm/evmtypes"
 )
 
 // CallContext provides a basic interface for the EVM calling conventions. The EVM

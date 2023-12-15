@@ -10,8 +10,8 @@ import (
 	"unicode"
 
 	"github.com/gorilla/websocket"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/types"
-	"github.com/ledgerwatch/erigon/zkevm/log"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/log"
 )
 
 const (

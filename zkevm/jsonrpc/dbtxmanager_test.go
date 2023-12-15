@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/jackc/pgx/v4"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/mocks"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/types"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/mocks"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/types"
 )
 
 func TestNewDbTxScope(t *testing.T) {

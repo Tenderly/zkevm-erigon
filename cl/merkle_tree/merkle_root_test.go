@@ -6,8 +6,8 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/cl/merkle_tree"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state/state_encoding"
+	"github.com/tenderly/zkevm-erigon/cl/merkle_tree"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state/state_encoding"
 )
 
 func TestEmptyArraysRoot(t *testing.T) {

@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/chain"
+	"github.com/tenderly/zkevm-erigon/chain"
 )
 
 func TestCheckCompatible(t *testing.T) {

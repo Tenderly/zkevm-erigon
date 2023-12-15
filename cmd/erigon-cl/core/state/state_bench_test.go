@@ -3,10 +3,10 @@ package state_test
 import (
 	"testing"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/utils"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state"
 	eth2_shuffle "github.com/protolambda/eth2-shuffle"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
 )
 
 func BenchmarkLambdaShuffledIndex(b *testing.B) {

@@ -6,15 +6,15 @@ import (
 	"time"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	ericommon "github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/zkevm/encoding"
-	"github.com/ledgerwatch/erigon/zkevm/hex"
-	"github.com/ledgerwatch/erigon/zkevm/log"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/executor"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/executor/pb"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/fakevm"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/instrumentation"
+	ericommon "github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/encoding"
+	"github.com/tenderly/zkevm-erigon/zkevm/hex"
+	"github.com/tenderly/zkevm-erigon/zkevm/log"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/executor"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/executor/pb"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/fakevm"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/instrumentation"
 )
 
 // ConvertToCounters extracts ZKCounters from a ProcessBatchResponse

@@ -5,14 +5,14 @@ import (
 	"context"
 	"sync"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/fork"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinel/communication"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinel/communication/ssz_snappy"
-	"github.com/ledgerwatch/erigon/common"
 	"github.com/libp2p/go-libp2p/core/host"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/fork"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel/communication"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel/communication/ssz_snappy"
+	"github.com/tenderly/zkevm-erigon/common"
 	"go.uber.org/zap/buffer"
 )
 

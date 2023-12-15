@@ -7,9 +7,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/ledgerwatch/erigon/cmd/rpctest/rpctest"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/spf13/cobra"
+	"github.com/tenderly/zkevm-erigon/cmd/rpctest/rpctest"
 )
 
 func main() {

@@ -27,16 +27,16 @@ import (
 	"sync"
 
 	"github.com/c2h5oh/datasize"
-	"github.com/ledgerwatch/erigon/node/nodecfg"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/node/nodecfg"
+	"github.com/tenderly/zkevm-erigon/params"
 	"golang.org/x/sync/semaphore"
 
 	"github.com/gofrs/flock"
 	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/erigon-lib/kv/mdbx"
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon/migrations"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/migrations"
 )
 
 // Node is a container on which services can be registered.

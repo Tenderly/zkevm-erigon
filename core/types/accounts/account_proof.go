@@ -4,7 +4,7 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )
 
 // Result structs for GetProof

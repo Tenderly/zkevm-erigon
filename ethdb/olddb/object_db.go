@@ -22,9 +22,9 @@ import (
 	"fmt"
 
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/ethdb"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/ethdb"
 )
 
 // ObjectDatabase - is an object-style interface of DB accessing

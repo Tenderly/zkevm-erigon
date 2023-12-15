@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/cl/utils"
 	"github.com/prysmaticlabs/gohashtree"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
 )
 
 // merkleizeTrieLeaves returns intermediate roots of given leaves.

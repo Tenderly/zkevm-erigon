@@ -5,9 +5,9 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/length"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes/ssz"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
 )
 
 const (

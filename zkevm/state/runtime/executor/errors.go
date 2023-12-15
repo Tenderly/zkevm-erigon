@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/executor/pb"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/executor/pb"
 )
 
 const (

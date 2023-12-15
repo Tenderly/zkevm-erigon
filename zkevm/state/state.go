@@ -6,9 +6,9 @@ import (
 
 	"github.com/jackc/pgx/v4"
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/zkevm/merkletree"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/executor/pb"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/merkletree"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/executor/pb"
 )
 
 var (

@@ -8,12 +8,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/zkevm/db"
-	"github.com/ledgerwatch/erigon/zkevm/log"
-	"github.com/ledgerwatch/erigon/zkevm/state"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/instrumentation"
-	"github.com/ledgerwatch/erigon/zkevm/state/tree"
-	"github.com/ledgerwatch/erigon/zkevm/test/dbutils"
+	"github.com/tenderly/zkevm-erigon/zkevm/db"
+	"github.com/tenderly/zkevm-erigon/zkevm/log"
+	"github.com/tenderly/zkevm-erigon/zkevm/state"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/instrumentation"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/tree"
+	"github.com/tenderly/zkevm-erigon/zkevm/test/dbutils"
 	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/require"
 )

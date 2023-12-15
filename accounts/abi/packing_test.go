@@ -21,7 +21,7 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/common"
+	"github.com/tenderly/zkevm-erigon/common"
 )
 
 type packUnpackTest struct {

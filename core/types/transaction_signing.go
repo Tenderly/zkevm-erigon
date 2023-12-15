@@ -24,11 +24,11 @@ import (
 
 	"github.com/holiman/uint256"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/chain"
 	"github.com/ledgerwatch/secp256k1"
+	"github.com/tenderly/zkevm-erigon/chain"
 
-	"github.com/ledgerwatch/erigon/common/u256"
-	"github.com/ledgerwatch/erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/common/u256"
+	"github.com/tenderly/zkevm-erigon/crypto"
 )
 
 var ErrInvalidChainId = errors.New("invalid chain id for signer")

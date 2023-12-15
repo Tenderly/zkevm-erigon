@@ -12,9 +12,9 @@ import (
 	"time"
 
 	"github.com/TwiN/gocache/v2"
-	"github.com/ledgerwatch/erigon/smt/pkg/db"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/db"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 )
 
 type DB interface {

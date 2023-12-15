@@ -344,7 +344,7 @@ func TestClientSubscribeClose(t *testing.T) {
 	}
 }
 
-// This test reproduces https://github.com/ledgerwatch/erigon/issues/17837 where the
+// This test reproduces https://github.com/tenderly/zkevm-erigon/issues/17837 where the
 // client hangs during shutdown when Unsubscribe races with Client.Close.
 func TestClientCloseUnsubscribeRace(t *testing.T) {
 	server := newTestServer()

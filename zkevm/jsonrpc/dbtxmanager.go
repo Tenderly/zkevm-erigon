@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/jackc/pgx/v4"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/types"
 )
 
 type dbTxManager struct{}

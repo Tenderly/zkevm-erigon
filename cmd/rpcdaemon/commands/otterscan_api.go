@@ -16,19 +16,19 @@ import (
 	"github.com/ledgerwatch/erigon-lib/kv/iter"
 	"github.com/ledgerwatch/erigon-lib/kv/order"
 	"github.com/ledgerwatch/erigon-lib/kv/rawdbv3"
-	"github.com/ledgerwatch/erigon/chain"
-	"github.com/ledgerwatch/erigon/core/state/temporal"
+	"github.com/tenderly/zkevm-erigon/chain"
+	"github.com/tenderly/zkevm-erigon/core/state/temporal"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/consensus/ethash"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/turbo/adapter/ethapi"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
-	"github.com/ledgerwatch/erigon/turbo/transactions"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/consensus/ethash"
+	"github.com/tenderly/zkevm-erigon/core"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/turbo/adapter/ethapi"
+	"github.com/tenderly/zkevm-erigon/turbo/rpchelper"
+	"github.com/tenderly/zkevm-erigon/turbo/transactions"
 )
 
 // API_LEVEL Must be incremented every time new additions are made
@@ -465,7 +465,7 @@ func (api *OtterscanAPIImpl) delegateGetBlockByNumber(tx kv.Tx, b *types.Block, 
 	additionalFields := make(map[string]interface{})
 	response, err := ethapi.RPCMarshalBlock(b, inclTx, inclTx, additionalFields)
 	if !inclTx {
-		delete(response, "transactions") // workaround for https://github.com/ledgerwatch/erigon/issues/4989#issuecomment-1218415666
+		delete(response, "transactions") // workaround for https://github.com/tenderly/zkevm-erigon/issues/4989#issuecomment-1218415666
 	}
 	response["totalDifficulty"] = (*hexutil.Big)(td)
 	response["transactionCount"] = b.Transactions().Len()

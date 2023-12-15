@@ -5,8 +5,8 @@ import (
 
 	"github.com/holiman/uint256"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 )
 
 func TestProofRetainerConstruction(t *testing.T) {

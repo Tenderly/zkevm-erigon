@@ -5,8 +5,8 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/cmd/devnet/models"
-	"github.com/ledgerwatch/erigon/cmd/devnet/requests"
+	"github.com/tenderly/zkevm-erigon/cmd/devnet/models"
+	"github.com/tenderly/zkevm-erigon/cmd/devnet/requests"
 )
 
 const (

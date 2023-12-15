@@ -12,10 +12,10 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 
-	"github.com/ledgerwatch/erigon/cmd/devnet/models"
-	"github.com/ledgerwatch/erigon/cmd/rpctest/rpctest"
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/cmd/devnet/models"
+	"github.com/tenderly/zkevm-erigon/cmd/rpctest/rpctest"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/crypto"
 )
 
 // ClearDevDB cleans up the dev folder used for the operations

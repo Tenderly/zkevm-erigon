@@ -10,12 +10,12 @@ import (
 	"github.com/jackc/pgx/v4"
 	"github.com/ledgerwatch/erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/zkevm/hex"
-	"github.com/ledgerwatch/erigon/zkevm/log"
-	"github.com/ledgerwatch/erigon/zkevm/state/metrics"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/executor"
-	"github.com/ledgerwatch/erigon/zkevm/state/runtime/executor/pb"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/hex"
+	"github.com/tenderly/zkevm-erigon/zkevm/log"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/metrics"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/executor"
+	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/executor/pb"
 )
 
 const (

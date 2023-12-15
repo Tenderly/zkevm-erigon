@@ -26,10 +26,10 @@ import (
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/sentinel"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/rpc"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/rpc"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
 )
 
 const (

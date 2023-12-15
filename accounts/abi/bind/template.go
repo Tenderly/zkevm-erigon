@@ -16,7 +16,7 @@
 
 package bind
 
-import "github.com/ledgerwatch/erigon/accounts/abi"
+import "github.com/tenderly/zkevm-erigon/accounts/abi"
 
 // tmplData is the data structure required to fill the binding template.
 type tmplData struct {
@@ -91,12 +91,12 @@ import (
 	"math/big"
 	"strings"
 
-	ethereum "github.com/ledgerwatch/erigon"
-	"github.com/ledgerwatch/erigon/accounts/abi"
-	"github.com/ledgerwatch/erigon/accounts/abi/bind"
+	ethereum "github.com/tenderly/zkevm-erigon"
+	"github.com/tenderly/zkevm-erigon/accounts/abi"
+	"github.com/tenderly/zkevm-erigon/accounts/abi/bind"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/event"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/event"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

@@ -6,8 +6,8 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/core/state/temporal"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/core/state/temporal"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 )
 
 // HistoryReaderV3 Implements StateReader and StateWriter

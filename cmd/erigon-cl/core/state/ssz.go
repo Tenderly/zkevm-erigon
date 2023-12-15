@@ -4,11 +4,11 @@ import (
 	"fmt"
 
 	"github.com/ledgerwatch/erigon-lib/common/length"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/cltypes/clonable"
-	"github.com/ledgerwatch/erigon/cl/cltypes/ssz"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state/state_encoding"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes/clonable"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state/state_encoding"
 )
 
 func (b *BeaconState) baseOffsetSSZ() uint32 {

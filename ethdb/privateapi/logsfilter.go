@@ -10,7 +10,7 @@ import (
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/remote"
 	"github.com/ledgerwatch/erigon-lib/gointerfaces/types"
 
-	"github.com/ledgerwatch/erigon/turbo/shards"
+	"github.com/tenderly/zkevm-erigon/turbo/shards"
 )
 
 type LogsFilterAggregator struct {

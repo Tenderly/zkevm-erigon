@@ -9,9 +9,9 @@ import (
 
 	"github.com/ledgerwatch/erigon-lib/common/datadir"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/sync_stages"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/ugorji/go/codec"
 )
 

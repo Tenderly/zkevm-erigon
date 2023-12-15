@@ -3,10 +3,10 @@ package forkchoice
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/transition"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/forkchoice/fork_graph"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/transition"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/forkchoice/fork_graph"
 )
 
 func (f *ForkChoiceStore) OnBlock(block *cltypes.SignedBeaconBlock) error {

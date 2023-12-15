@@ -1,6 +1,6 @@
 package cltypes
 
-import "github.com/ledgerwatch/erigon/cl/utils"
+import "github.com/tenderly/zkevm-erigon/cl/utils"
 
 const JustificationBitsLength = 4
 

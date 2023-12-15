@@ -10,8 +10,8 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	len2 "github.com/ledgerwatch/erigon-lib/common/length"
 
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/turbo/rlphacks"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/turbo/rlphacks"
 )
 
 type StarkStatsBuilder struct {

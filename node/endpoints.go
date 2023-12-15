@@ -24,9 +24,9 @@ import (
 	"time"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/rpc/rpccfg"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
 )
 
 // StartHTTPEndpoint starts the HTTP RPC endpoint.

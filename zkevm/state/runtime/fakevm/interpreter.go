@@ -1,6 +1,6 @@
 package fakevm
 
-import "github.com/ledgerwatch/erigon/core/vm"
+import "github.com/tenderly/zkevm-erigon/core/vm"
 
 // Config are the configuration options for the Interpreter
 type Config struct {

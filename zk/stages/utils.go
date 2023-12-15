@@ -13,9 +13,9 @@ import (
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
 
-	db2 "github.com/ledgerwatch/erigon/smt/pkg/db"
-	"github.com/ledgerwatch/erigon/sync_stages"
-	"github.com/ledgerwatch/erigon/zk/hermez_db"
+	db2 "github.com/tenderly/zkevm-erigon/smt/pkg/db"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
+	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
 )
 
 func ShouldShortCircuitExecution(tx kv.RwTx) (bool, uint64, error) {

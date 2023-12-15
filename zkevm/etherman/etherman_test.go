@@ -18,10 +18,10 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind/backends"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/types"
 )
 
 func init() {

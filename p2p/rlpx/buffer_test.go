@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )
 
 func TestReadBufferReset(t *testing.T) {

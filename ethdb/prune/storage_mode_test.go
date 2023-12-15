@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/ledgerwatch/erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon/common/math"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenderly/zkevm-erigon/common/math"
 )
 
 func TestSetStorageModeIfNotExist(t *testing.T) {

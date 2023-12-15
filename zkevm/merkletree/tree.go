@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zkevm/hex"
-	"github.com/ledgerwatch/erigon/zkevm/merkletree/pb"
+	"github.com/tenderly/zkevm-erigon/zkevm/hex"
+	"github.com/tenderly/zkevm-erigon/zkevm/merkletree/pb"
 	"google.golang.org/protobuf/types/known/emptypb"
 )
 

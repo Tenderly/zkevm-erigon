@@ -7,12 +7,12 @@ import (
 	"path/filepath"
 
 	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/cmd/observer/database"
-	"github.com/ledgerwatch/erigon/cmd/observer/observer"
-	"github.com/ledgerwatch/erigon/cmd/observer/reports"
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/params"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/cmd/observer/database"
+	"github.com/tenderly/zkevm-erigon/cmd/observer/observer"
+	"github.com/tenderly/zkevm-erigon/cmd/observer/reports"
+	"github.com/tenderly/zkevm-erigon/cmd/utils"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 func mainWithFlags(ctx context.Context, flags observer.CommandFlags) error {

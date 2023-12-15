@@ -21,9 +21,9 @@ import (
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/chain"
+	"github.com/tenderly/zkevm-erigon/chain"
 
-	"github.com/ledgerwatch/erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
 )
 
 const (

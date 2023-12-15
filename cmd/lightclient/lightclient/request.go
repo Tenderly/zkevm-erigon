@@ -3,8 +3,8 @@ package lightclient
 import (
 	"context"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 )
 
 func (l *LightClient) FetchUpdate(ctx context.Context, period uint64) (*cltypes.LightClientUpdate, error) {

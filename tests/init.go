@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/ledgerwatch/erigon/chain"
+	"github.com/tenderly/zkevm-erigon/chain"
 )
 
 // Forks table defines supported forks and their chain config.

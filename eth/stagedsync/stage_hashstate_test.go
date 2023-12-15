@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/sync_stages"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 func TestPromoteHashedStateClearState(t *testing.T) {
