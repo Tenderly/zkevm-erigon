@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 
 	"github.com/stretchr/testify/require"
 	"github.com/tenderly/zkevm-erigon/cl/clparams"

@@ -21,8 +21,8 @@ import (
 	"math/big"
 
 	"github.com/holiman/uint256"
-	erigonchain "github.com/ledgerwatch/erigon-lib/chain"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	erigonchain "github.com/tenderly/erigon/erigon-lib/chain"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/consensus"
 	"github.com/tenderly/zkevm-erigon/consensus/serenity"

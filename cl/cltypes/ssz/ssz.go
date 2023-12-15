@@ -3,8 +3,8 @@ package ssz
 import (
 	"encoding/binary"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/length"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/common/length"
 
 	"github.com/tenderly/zkevm-erigon/cl/cltypes/clonable"
 )

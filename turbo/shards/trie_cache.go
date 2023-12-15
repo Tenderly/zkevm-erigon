@@ -7,7 +7,7 @@ import (
 	"unsafe"
 
 	"github.com/google/btree"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/dbutils"

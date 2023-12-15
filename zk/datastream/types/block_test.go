@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/erigon/erigon-lib/common"
 	"gotest.tools/v3/assert"
 )
 

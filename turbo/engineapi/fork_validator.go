@@ -18,11 +18,11 @@ import (
 	"fmt"
 	"sync"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/gointerfaces/remote"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 	"github.com/ledgerwatch/log/v3"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
+	"github.com/tenderly/erigon/erigon-lib/kv"
+	"github.com/tenderly/erigon/erigon-lib/kv/memdb"
 
 	"github.com/tenderly/zkevm-erigon/common/dbutils"
 	"github.com/tenderly/zkevm-erigon/common/math"

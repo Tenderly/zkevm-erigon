@@ -3,7 +3,7 @@ package rawdbhelpers
 import (
 	"encoding/binary"
 
-	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/tenderly/erigon/erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
 )
 

@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenderly/erigon/erigon-lib/kv/memdb"
 	"github.com/tenderly/zkevm-erigon/common/math"
 )
 

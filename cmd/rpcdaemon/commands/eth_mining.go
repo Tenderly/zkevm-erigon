@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/gointerfaces/txpool"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
 	"google.golang.org/grpc/status"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

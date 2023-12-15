@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"math/big"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/length"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/common/length"
 
 	ethereum "github.com/tenderly/zkevm-erigon"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

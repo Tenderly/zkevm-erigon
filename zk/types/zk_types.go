@@ -3,7 +3,7 @@ package types
 import (
 	"time"
 
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/common"
 
 	"github.com/holiman/uint256"
 	ethTypes "github.com/tenderly/zkevm-erigon/core/types"

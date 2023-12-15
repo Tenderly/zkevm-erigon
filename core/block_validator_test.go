@@ -20,7 +20,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/tenderly/erigon/erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/consensus/ethash"
 	"github.com/tenderly/zkevm-erigon/core"
 	"github.com/tenderly/zkevm-erigon/core/types"

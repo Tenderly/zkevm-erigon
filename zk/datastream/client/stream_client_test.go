@@ -7,8 +7,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/erigon/erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/zk/datastream/types"
 	"gotest.tools/v3/assert"
 )

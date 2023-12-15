@@ -7,8 +7,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/erigon/erigon-lib/common"
 	ethereum "github.com/tenderly/zkevm-erigon"
 
 	ethTypes "github.com/tenderly/zkevm-erigon/core/types"

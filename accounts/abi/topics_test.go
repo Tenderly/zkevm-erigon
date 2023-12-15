@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/crypto"
 )

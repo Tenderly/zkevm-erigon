@@ -3,7 +3,7 @@ package fakevm
 import (
 	"math/big"
 
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/common"
 )
 
 // FakeDB is the interface state access for the FakeEVM

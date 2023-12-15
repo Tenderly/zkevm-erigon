@@ -6,9 +6,9 @@ import (
 	"errors"
 	"fmt"
 
-	erigonchain "github.com/ledgerwatch/erigon-lib/chain"
-	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv"
+	erigonchain "github.com/tenderly/erigon/erigon-lib/chain"
+	"github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/consensus/bor"
 	"github.com/tenderly/zkevm-erigon/consensus/bor/valset"

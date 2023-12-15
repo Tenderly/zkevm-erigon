@@ -27,7 +27,7 @@ import (
 	"strconv"
 
 	"github.com/holiman/uint256"
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/common"
 	ethereum "github.com/tenderly/zkevm-erigon"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
 	"github.com/tenderly/zkevm-erigon/core/types"

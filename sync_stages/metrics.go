@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/VictoriaMetrics/metrics"
 	"github.com/huandu/xstrings"
-	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/tenderly/erigon/erigon-lib/kv"
 )
 
 var Metrics = map[SyncStage]*metrics.Counter{}

@@ -5,10 +5,10 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/ledgerwatch/erigon-lib/common/datadir"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/erigon/erigon-lib/common/datadir"
+	"github.com/tenderly/erigon/erigon-lib/kv"
+	"github.com/tenderly/erigon/erigon-lib/kv/memdb"
 	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 

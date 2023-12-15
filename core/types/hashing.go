@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"io"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/protolambda/ztyp/codec"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/crypto"
 	"github.com/tenderly/zkevm-erigon/crypto/cryptopool"

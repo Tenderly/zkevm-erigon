@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	ethereum "github.com/tenderly/zkevm-erigon"
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/accounts/abi"
 	"github.com/tenderly/zkevm-erigon/accounts/abi/bind"
 	"github.com/tenderly/zkevm-erigon/core/types"

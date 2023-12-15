@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/length"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/common/length"
 
 	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"
 	"github.com/tenderly/zkevm-erigon/cl/merkle_tree"

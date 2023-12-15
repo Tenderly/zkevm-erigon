@@ -23,7 +23,7 @@ import (
 	"crypto/elliptic"
 	"fmt"
 
-	"github.com/ledgerwatch/secp256k1"
+	"github.com/tenderly/secp256k1"
 	"github.com/tenderly/zkevm-erigon/common/math"
 )
 

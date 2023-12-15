@@ -3,9 +3,9 @@ package stagedsync
 import (
 	"context"
 
-	proto_downloader "github.com/ledgerwatch/erigon-lib/gointerfaces/downloader"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/state"
+	proto_downloader "github.com/tenderly/erigon/erigon-lib/gointerfaces/downloader"
+	"github.com/tenderly/erigon/erigon-lib/kv"
+	"github.com/tenderly/erigon/erigon-lib/state"
 
 	"github.com/tenderly/zkevm-erigon/cmd/sentry/sentry"
 	"github.com/tenderly/zkevm-erigon/consensus"

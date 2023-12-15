@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/tenderly/erigon/erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 

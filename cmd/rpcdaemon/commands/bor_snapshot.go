@@ -7,13 +7,13 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/kv"
 	"github.com/xsleonard/go-merkle"
 	"golang.org/x/crypto/sha3"
 
-	erigonchain "github.com/ledgerwatch/erigon-lib/chain"
+	erigonchain "github.com/tenderly/erigon/erigon-lib/chain"
 	"github.com/tenderly/zkevm-erigon/consensus"
 	"github.com/tenderly/zkevm-erigon/consensus/bor"
 	"github.com/tenderly/zkevm-erigon/consensus/bor/valset"

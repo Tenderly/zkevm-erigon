@@ -8,8 +8,8 @@ import (
 	"sort"
 
 	"github.com/Giulio2002/bls"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	eth2_shuffle "github.com/protolambda/eth2-shuffle"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cl/fork"

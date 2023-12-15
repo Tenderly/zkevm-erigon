@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/kv/kvcache"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"
 	"github.com/tenderly/zkevm-erigon/rpc"

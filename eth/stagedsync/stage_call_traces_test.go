@@ -6,12 +6,12 @@ import (
 	"time"
 
 	"github.com/RoaringBitmap/roaring/roaring64"
-	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/kv/bitmapdb"
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/erigon/erigon-lib/common/hexutility"
+	"github.com/tenderly/erigon/erigon-lib/kv"
+	"github.com/tenderly/erigon/erigon-lib/kv/bitmapdb"
+	"github.com/tenderly/erigon/erigon-lib/kv/memdb"
 
 	"github.com/tenderly/zkevm-erigon/sync_stages"
 )

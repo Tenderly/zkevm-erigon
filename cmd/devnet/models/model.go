@@ -3,7 +3,7 @@ package models
 import (
 	"fmt"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/accounts/abi/bind/backends"
 	"github.com/tenderly/zkevm-erigon/cmd/rpctest/rpctest"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

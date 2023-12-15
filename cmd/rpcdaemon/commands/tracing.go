@@ -8,8 +8,8 @@ import (
 
 	"github.com/holiman/uint256"
 	jsoniter "github.com/json-iterator/go"
-	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/erigon/erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
 	"github.com/tenderly/zkevm-erigon/common/math"

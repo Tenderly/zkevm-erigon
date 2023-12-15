@@ -26,8 +26,8 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/assert"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/core/types/accounts"

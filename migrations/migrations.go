@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/ledgerwatch/erigon-lib/common/datadir"
-	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/erigon/erigon-lib/common/datadir"
+	"github.com/tenderly/erigon/erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/ugorji/go/codec"

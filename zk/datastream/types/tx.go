@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/common"
 )
 
 const (

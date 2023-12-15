@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/c2h5oh/datasize"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/assert"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 	"golang.org/x/crypto/sha3"
 
 	"github.com/tenderly/zkevm-erigon/core/types/accounts"

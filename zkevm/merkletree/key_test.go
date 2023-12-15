@@ -10,9 +10,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/erigon/erigon-lib/common"
 )
 
 type testVectorKey struct {

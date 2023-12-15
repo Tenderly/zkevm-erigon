@@ -7,10 +7,10 @@ import (
 
 	"github.com/holiman/uint256"
 	jsoniter "github.com/json-iterator/go"
-	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/kv/kvcache"
 	"github.com/valyala/fastjson"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/cli/httpcfg"

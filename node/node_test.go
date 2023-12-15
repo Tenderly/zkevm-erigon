@@ -23,9 +23,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/ledgerwatch/erigon-lib/common/datadir"
-	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/erigon/erigon-lib/common/datadir"
+	"github.com/tenderly/erigon/erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/crypto"
 	"github.com/tenderly/zkevm-erigon/node/nodecfg"
 	"github.com/tenderly/zkevm-erigon/p2p"

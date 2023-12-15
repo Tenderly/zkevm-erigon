@@ -5,7 +5,7 @@ import (
 	"math/big"
 
 	"github.com/jackc/pgx/v4"
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/zkevm/merkletree"
 	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/executor/pb"

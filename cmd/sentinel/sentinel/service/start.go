@@ -6,9 +6,9 @@ import (
 	"net"
 	"time"
 
-	sentinelrpc "github.com/ledgerwatch/erigon-lib/gointerfaces/sentinel"
-	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
+	sentinelrpc "github.com/tenderly/erigon/erigon-lib/gointerfaces/sentinel"
+	"github.com/tenderly/erigon/erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel"
 	"google.golang.org/grpc"

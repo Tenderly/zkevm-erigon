@@ -23,8 +23,8 @@ import (
 	"math/big"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/secp256k1"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/secp256k1"
 	"github.com/tenderly/zkevm-erigon/chain"
 
 	"github.com/tenderly/zkevm-erigon/common/u256"

@@ -3,8 +3,8 @@ package commands
 import (
 	"testing"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/require"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"
 	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
 	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"

@@ -28,12 +28,12 @@ import (
 
 	"github.com/c2h5oh/datasize"
 	"github.com/holiman/uint256"
-	erigonchain "github.com/ledgerwatch/erigon-lib/chain"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/kv/mdbx"
-	"github.com/ledgerwatch/erigon-lib/kv/rawdbv3"
 	"github.com/ledgerwatch/log/v3"
+	erigonchain "github.com/tenderly/erigon/erigon-lib/chain"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/kv"
+	"github.com/tenderly/erigon/erigon-lib/kv/mdbx"
+	"github.com/tenderly/erigon/erigon-lib/kv/rawdbv3"
 	"golang.org/x/exp/slices"
 
 	"github.com/tenderly/zkevm-erigon/chain"

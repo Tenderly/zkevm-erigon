@@ -23,8 +23,8 @@ import (
 	"math/big"
 	"path"
 
-	erigonchain "github.com/ledgerwatch/erigon-lib/chain"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	erigonchain "github.com/tenderly/erigon/erigon-lib/chain"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/chain"
 	"github.com/tenderly/zkevm-erigon/common/paths"
 	"github.com/tenderly/zkevm-erigon/params/networkname"

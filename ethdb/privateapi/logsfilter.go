@@ -5,10 +5,10 @@ import (
 	"io"
 	"sync"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/gointerfaces"
-	"github.com/ledgerwatch/erigon-lib/gointerfaces/remote"
-	"github.com/ledgerwatch/erigon-lib/gointerfaces/types"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces/types"
 
 	"github.com/tenderly/zkevm-erigon/turbo/shards"
 )

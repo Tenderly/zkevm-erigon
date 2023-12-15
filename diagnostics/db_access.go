@@ -7,8 +7,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/kv/mdbx"
+	"github.com/tenderly/erigon/erigon-lib/kv"
+	"github.com/tenderly/erigon/erigon-lib/kv/mdbx"
 	"github.com/tenderly/zkevm-erigon/common/paths"
 	"github.com/urfave/cli/v2"
 )

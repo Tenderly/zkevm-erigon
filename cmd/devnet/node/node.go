@@ -8,8 +8,8 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon-lib/common/dbg"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/erigon/erigon-lib/common/dbg"
 	"github.com/tenderly/zkevm-erigon/cmd/devnet/devnetutils"
 	"github.com/tenderly/zkevm-erigon/cmd/devnet/models"
 	"github.com/tenderly/zkevm-erigon/cmd/devnet/requests"

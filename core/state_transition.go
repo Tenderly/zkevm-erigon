@@ -21,9 +21,9 @@ import (
 
 	"github.com/holiman/uint256"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/txpool"
-	types2 "github.com/ledgerwatch/erigon-lib/types"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/txpool"
+	types2 "github.com/tenderly/erigon/erigon-lib/types"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	cmath "github.com/tenderly/zkevm-erigon/common/math"

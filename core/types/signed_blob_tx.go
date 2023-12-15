@@ -13,8 +13,8 @@ import (
 	"github.com/protolambda/ztyp/conv"
 	. "github.com/protolambda/ztyp/view"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	types2 "github.com/ledgerwatch/erigon-lib/types"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	types2 "github.com/tenderly/erigon/erigon-lib/types"
 	"github.com/tenderly/zkevm-erigon/chain"
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/u256"

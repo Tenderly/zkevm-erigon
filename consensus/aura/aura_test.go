@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/kv/memdb"
 
 	"github.com/tenderly/zkevm-erigon/consensus/aura"
 	"github.com/tenderly/zkevm-erigon/core"

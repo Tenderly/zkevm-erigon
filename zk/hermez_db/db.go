@@ -3,9 +3,9 @@ package hermez_db
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/kv"
 
 	dstypes "github.com/tenderly/zkevm-erigon/zk/datastream/types"
 	"github.com/tenderly/zkevm-erigon/zk/types"

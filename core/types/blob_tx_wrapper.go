@@ -10,13 +10,13 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	types2 "github.com/ledgerwatch/erigon-lib/types"
+	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/tenderly/erigon/erigon-lib/common/hexutility"
+	types2 "github.com/tenderly/erigon/erigon-lib/types"
 	"github.com/tenderly/zkevm-erigon/chain"
 
-	gokzg4844 "github.com/crate-crypto/go-kzg-4844"
 	"github.com/protolambda/ztyp/codec"
+	gokzg4844 "github.com/tenderly/go-kzg-4844"
 
 	"github.com/tenderly/zkevm-erigon/crypto/kzg"
 	"github.com/tenderly/zkevm-erigon/params"
