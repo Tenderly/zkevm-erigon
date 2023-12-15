@@ -2293,7 +2293,7 @@ func TestExecutorGasRefund(t *testing.T) {
 		Value:    new(big.Int),
 		Gas:      uint64(sequencerBalance),
 		GasPrice: new(big.Int).SetUint64(0),
-		Data:     common.Hex2Bytes(scStorageByteCode),
+		StackData:     common.Hex2Bytes(scStorageByteCode),
 	})
 
 	privateKey, err := crypto.HexToECDSA(strings.TrimPrefix(sequencerPvtKey, "0x"))

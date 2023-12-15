@@ -121,7 +121,7 @@ func RevertReason(ctx context.Context, c ethClienter, tx types.Transaction, bloc
 			Gas:  tx.GetGas(),
 
 			Value: tx.GetValue(),
-			Data:  tx.GetData(),
+			StackData:  tx.GetData(),
 		}
 		hex, err := c.CallContract(ctx, msg, blockNumber)
 		if err != nil {

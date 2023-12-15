@@ -171,7 +171,7 @@ func (t *callTracer) CaptureState(pc uint64, op vm.OpCode, gas, cost uint64, sco
 		size := int(op - vm.LOG0)
 
 		stack := scope.Stack
-		stackData := stack.Data
+		stackData := stack.StackData
 
 		// Don't modify the stack
 		mStart := stackData[len(stackData)-1]

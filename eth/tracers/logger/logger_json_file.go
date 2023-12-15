@@ -73,8 +73,8 @@ func (l *JSONFileLogger) CaptureState(pc uint64, op vm.OpCode, gas, cost uint64,
 
 	if !l.cfg.DisableStack {
 		//TODO(@holiman) improve this
-		logstack := make([]string, len(stack.Data))
-		for i, item := range stack.Data {
+		logstack := make([]string, len(stack.StackData))
+		for i, item := range stack.StackData {
 			logstack[i] = item.Hex()
 		}
 		log.Stack = logstack

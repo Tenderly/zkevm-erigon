@@ -295,7 +295,7 @@ func (a *Attestation) DecodeSSZ(buf []byte) error {
 
 	tail := buf
 
-	// Field (1) 'Data'
+	// Field (1) 'StackData'
 	if a.Data == nil {
 		a.Data = new(AttestationData)
 	}
@@ -551,7 +551,7 @@ func (a *PendingAttestation) DecodeSSZ(buf []byte) error {
 
 	tail := buf
 
-	// Field (1) 'Data'
+	// Field (1) 'StackData'
 	if a.Data == nil {
 		a.Data = new(AttestationData)
 	}

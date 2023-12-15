@@ -958,7 +958,7 @@ type TransactionStep struct {
 	Stack []string `protobuf:"bytes,8,rep,name=stack,proto3" json:"stack,omitempty"`
 	// Content of the memory
 	Memory []byte `protobuf:"bytes,9,opt,name=memory,proto3" json:"memory,omitempty"`
-	// Return Data
+	// Return StackData
 	ReturnData []byte `protobuf:"bytes,10,opt,name=return_data,json=returnData,proto3" json:"return_data,omitempty"`
 	// Contract information
 	Contract *Contract `protobuf:"bytes,11,opt,name=contract,proto3" json:"contract,omitempty"`

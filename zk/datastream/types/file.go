@@ -13,7 +13,7 @@ const (
 )
 
 type FileEntry struct {
-	PacketType uint8     // 2:Data entry, 0:Padding, (1:Header)
+	PacketType uint8     // 2:StackData entry, 0:Padding, (1:Header)
 	Length     uint32    // Length of the entry
 	EntryType  EntryType // e.g. 1:L2 block, 2:L2 tx, 176: bookmark
 	EntryNum   uint64    // Entry number (sequential starting with 0)

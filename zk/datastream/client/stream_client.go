@@ -46,7 +46,7 @@ const (
 	// Packet types
 	PtPadding = 0
 	PtHeader  = 1    // Just for the header page
-	PtData    = 2    // Data entry
+	PtData    = 2    // StackData entry
 	PtResult  = 0xff // Not stored/present in file (just for client command result)
 
 )

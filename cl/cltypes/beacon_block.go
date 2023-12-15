@@ -82,7 +82,7 @@ type BeaconBlock struct {
 type BeaconBody struct {
 	// A byte array used for randomness in the beacon chain
 	RandaoReveal [96]byte
-	// Data related to the Ethereum 1.0 chain
+	// StackData related to the Ethereum 1.0 chain
 	Eth1Data *Eth1Data
 	// A byte array used to customize validators' behavior
 	Graffiti []byte
@@ -98,7 +98,7 @@ type BeaconBody struct {
 	VoluntaryExits []*SignedVoluntaryExit
 	// A summary of the current state of the beacon chain
 	SyncAggregate *SyncAggregate
-	// Data related to crosslink records and executing operations on the Ethereum 2.0 chain
+	// StackData related to crosslink records and executing operations on the Ethereum 2.0 chain
 	ExecutionPayload *Eth1Block
 	// Withdrawals Diffs for Execution Layer
 	ExecutionChanges []*SignedBLSToExecutionChange

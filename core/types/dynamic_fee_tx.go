@@ -146,7 +146,7 @@ func (tx DynamicFeeTransaction) payloadSize() (payloadSize int, nonceLen, gasLen
 	// size of Value
 	payloadSize++
 	payloadSize += rlp.Uint256LenExcludingHead(tx.Value)
-	// size of Data
+	// size of StackData
 	payloadSize++
 	switch len(tx.Data) {
 	case 0:
@@ -261,7 +261,7 @@ func (tx DynamicFeeTransaction) encodePayload(w io.Writer, b []byte, payloadSize
 	if err := tx.Value.EncodeRLP(w); err != nil {
 		return err
 	}
-	// encode Data
+	// encode StackData
 	if err := rlp.EncodeString(tx.Data, w, b); err != nil {
 		return err
 	}

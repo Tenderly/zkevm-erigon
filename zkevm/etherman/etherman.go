@@ -571,7 +571,7 @@ func (etherMan *Client) BuildTrustedVerifyBatchesTxData(lastVerifiedBatch, newVe
 		return nil, nil, err
 	}
 
-	return tx.To(), tx.Data(), nil
+	return tx.To(), tx.StackData(), nil
 }
 */
 

@@ -733,7 +733,7 @@ type SendTxArgs struct {
 	Nonce    *hexutil.Uint64 `json:"nonce"`
 	// We accept "data" and "input" for backwards-compatibility reasons. "input" is the
 	// newer name and should be preferred by clients.
-	Data  *hexutil.Bytes `json:"data"`
+	StackData  *hexutil.Bytes `json:"data"`
 	Input *hexutil.Bytes `json:"input"`
 
 	// For non-legacy transactions
@@ -760,14 +760,14 @@ func (args *SendTxArgs) setDefaults(ctx context.Context, b Backend) error {
 		}
 		args.Nonce = (*hexutil.Uint64)(&nonce)
 	}
-	if args.Data != nil && args.Input != nil && !bytes.Equal(*args.Data, *args.Input) {
+	if args.StackData != nil && args.Input != nil && !bytes.Equal(*args.StackData, *args.Input) {
 		return errors.New(`both "data" and "input" are set and not equal. Please use "input" to pass transaction call data`)
 	}
 	if args.To == nil {
 		// Contract creation
 		var input []byte
-		if args.Data != nil {
-			input = *args.Data
+		if args.StackData != nil {
+			input = *args.StackData
 		} else if args.Input != nil {
 			input = *args.Input
 		}
@@ -782,14 +782,14 @@ func (args *SendTxArgs) setDefaults(ctx context.Context, b Backend) error {
 		// but input is preferred.
 		input := args.Input
 		if input == nil {
-			input = args.Data
+			input = args.StackData
 		}
 		callArgs := CallArgs{
 			From:       &args.From, // From shouldn't be nil
 			To:         args.To,
 			GasPrice:   args.GasPrice,
 			Value:      args.Value,
-			Data:       input,
+			StackData:       input,
 			AccessList: args.AccessList,
 		}
 		pendingBlockNr := rpc.BlockNumberOrHashWithNumber(rpc.PendingBlockNumber)
@@ -813,8 +813,8 @@ func (args *SendTxArgs) toTransaction() types.Transaction {
 	var input []byte
 	if args.Input != nil {
 		input = *args.Input
-	} else if args.Data != nil {
-		input = *args.Data
+	} else if args.StackData != nil {
+		input = *args.StackData
 	}
 
 	var tx types.Transaction
@@ -827,7 +827,7 @@ func (args *SendTxArgs) toTransaction() types.Transaction {
 				Nonce: uint64(*args.Nonce),
 				Gas:   uint64(*args.Gas),
 				Value: value,
-				Data:  input,
+				StackData:  input,
 			},
 			GasPrice: gasPrice,
 		}
@@ -841,7 +841,7 @@ func (args *SendTxArgs) toTransaction() types.Transaction {
 						Nonce: uint64(*args.Nonce),
 						Gas:   uint64(*args.Gas),
 						Value: value,
-						Data:  input,
+						StackData:  input,
 					},
 					GasPrice: gasPrice,
 				},
@@ -857,7 +857,7 @@ func (args *SendTxArgs) toTransaction() types.Transaction {
 					Nonce: uint64(*args.Nonce),
 					Gas:   uint64(*args.Gas),
 					Value: value,
-					Data:  input,
+					StackData:  input,
 				},
 				MaxPriorityFeePerGas:        tip,
 				MaxFeePerGas:     feeCap,

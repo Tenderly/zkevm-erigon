@@ -211,7 +211,7 @@ func (tx LegacyTx) payloadSize() (payloadSize int, nonceLen, gasLen int) {
 	}
 	payloadSize++
 	payloadSize += rlp.Uint256LenExcludingHead(tx.Value)
-	// size of Data
+	// size of StackData
 	payloadSize++
 	switch len(tx.Data) {
 	case 0:
@@ -338,7 +338,7 @@ func (tx *LegacyTx) DecodeRLP(s *rlp.Stream, encodingSize uint64) error {
 	}
 	tx.Value = new(uint256.Int).SetBytes(b)
 	if tx.Data, err = s.Bytes(); err != nil {
-		return fmt.Errorf("read Data: %w", err)
+		return fmt.Errorf("read StackData: %w", err)
 	}
 	if b, err = s.Uint256Bytes(); err != nil {
 		return fmt.Errorf("read V: %w", err)

@@ -225,8 +225,8 @@ type TxArgs struct {
 // 	}
 
 // 	var data []byte
-// 	if args.Data != nil {
-// 		data = *args.Data
+// 	if args.StackData != nil {
+// 		data = *args.StackData
 // 	} else if args.Input != nil {
 // 		data = *args.Input
 // 	} else if args.To == nil {
@@ -244,7 +244,7 @@ type TxArgs struct {
 // 		Value:    value,
 // 		Gas:      gas,
 // 		GasPrice: gasPrice,
-// 		Data:     data,
+// 		StackData:     data,
 // 	})
 
 // 	return sender, tx, nil

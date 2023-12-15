@@ -58,7 +58,7 @@ func GetSender(tx types.Transaction) (common.Address, error) {
 // [2] Gas      uint64
 // [3] To       *common.Address
 // [4] Value    *big.Int
-// [5] Data     []byte
+// [5] StackData     []byte
 //
 // optional fields:
 // [6] V        *big.Int

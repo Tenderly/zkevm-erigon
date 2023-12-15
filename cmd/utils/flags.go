@@ -69,13 +69,13 @@ var (
 	// General settings
 	DataDirFlag = DirectoryFlag{
 		Name:  "datadir",
-		Usage: "Data directory for the databases",
+		Usage: "StackData directory for the databases",
 		Value: DirectoryString(paths.DefaultDataDir()),
 	}
 
 	AncientFlag = DirectoryFlag{
 		Name:  "datadir.ancient",
-		Usage: "Data directory for ancient chain segments (default = inside chaindata)",
+		Usage: "StackData directory for ancient chain segments (default = inside chaindata)",
 	}
 	MinFreeDiskSpaceFlag = DirectoryFlag{
 		Name:  "datadir.minfreedisk",
