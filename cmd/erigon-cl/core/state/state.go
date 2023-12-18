@@ -4,7 +4,7 @@ import (
 	"crypto/sha256"
 	"encoding/binary"
 
-	lru "github.com/hashicorp/golang-lru/v2"
+	lru "github.com/tenderly/golang-lru/v2"
 	"github.com/tenderly/zkevm-erigon-lib/common"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 

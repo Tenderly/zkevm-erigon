@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/hashicorp/golang-lru/v2"
+	"github.com/tenderly/golang-lru/v2"
 	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/xsleonard/go-merkle"
 	"golang.org/x/crypto/sha3"

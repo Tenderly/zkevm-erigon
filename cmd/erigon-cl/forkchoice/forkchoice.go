@@ -3,7 +3,7 @@ package forkchoice
 import (
 	"sync"
 
-	lru "github.com/hashicorp/golang-lru/v2"
+	lru "github.com/tenderly/golang-lru/v2"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"

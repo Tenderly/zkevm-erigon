@@ -48,7 +48,6 @@ require (
 	github.com/gorilla/websocket v1.5.1
 	github.com/grpc-ecosystem/go-grpc-middleware v1.4.0
 	github.com/hashicorp/golang-lru v0.5.5-0.20210104140557-80c98217689d
-	github.com/hashicorp/golang-lru/v2 v2.0.2
 	github.com/holiman/uint256 v1.2.3
 	github.com/huandu/xstrings v1.4.0
 	github.com/huin/goupnp v1.3.0
@@ -85,6 +84,7 @@ require (
 	github.com/tenderly/go-codec/codec v1.1.14-0.20231212094703-0bbb66a02189
 	github.com/tenderly/go-kzg-4844 v0.0.0-20231215154023-f87fedca66d0
 	github.com/tenderly/go-verkle v0.0.0-20231212093521-fbf9e5153193
+	github.com/tenderly/golang-lru/v2 v2.0.3-0.20231218144847-934fba021a0f
 	github.com/tenderly/secp256k1 v1.0.1-0.20231212115822-31dacfc1e0c7
 	github.com/tenderly/zkevm-erigon-lib v0.0.0-20231218141832-7977ddebd750
 	github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e
@@ -183,6 +183,7 @@ require (
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/gopacket v1.1.19 // indirect
 	github.com/google/pprof v0.0.0-20230207041349-798e818bf904 // indirect
+	github.com/hashicorp/golang-lru/v2 v2.0.2 // indirect
 	github.com/hermeznetwork/tracerr v0.3.2 // indirect
 	github.com/holiman/bloomfilter/v2 v2.0.3 // indirect
 	github.com/ianlancetaylor/cgosymbolizer v0.0.0-20220405231054-a1ae3e4bba26 // indirect

@@ -26,7 +26,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/crypto"
 	"github.com/tenderly/zkevm-erigon/p2p/enode"
 
-	"github.com/hashicorp/golang-lru/v2/simplelru"
+	"github.com/tenderly/golang-lru/v2/simplelru"
 )
 
 const handshakeTimeout = time.Second

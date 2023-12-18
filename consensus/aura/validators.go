@@ -9,8 +9,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/hashicorp/golang-lru/v2"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/golang-lru/v2"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/accounts/abi"

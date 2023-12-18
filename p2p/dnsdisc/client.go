@@ -27,8 +27,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hashicorp/golang-lru/v2"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/golang-lru/v2"
 	"github.com/tenderly/zkevm-erigon/common/mclock"
 	"github.com/tenderly/zkevm-erigon/crypto"
 	"github.com/tenderly/zkevm-erigon/p2p/enode"

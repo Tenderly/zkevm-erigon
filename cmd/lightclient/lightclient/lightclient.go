@@ -19,8 +19,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/hashicorp/golang-lru/v2"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/golang-lru/v2"
 	common2 "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
