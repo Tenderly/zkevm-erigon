@@ -5,7 +5,6 @@ go 1.21
 toolchain go1.21.4
 
 require (
-	github.com/ledgerwatch/erigon-lib v1.0.0
 	github.com/ledgerwatch/erigon-snapshot v1.3.1-0.20231210032908-6ff6f4c91c60
 	github.com/ledgerwatch/log/v3 v3.9.0
 	github.com/torquem-ch/mdbx-go v0.27.10
@@ -207,6 +206,8 @@ require (
 	github.com/koron/go-ssdp v0.0.3 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
+	github.com/ledgerwatch/erigon-lib v0.0.0-20230417124908-0d918d9f7d53 // indirect
+	github.com/ledgerwatch/interfaces v0.0.0-20230412092010-e1c4a1a4279e // indirect
 	github.com/ledgerwatch/secp256k1 v1.0.0 // indirect
 	github.com/libp2p/go-buffer-pool v0.1.0 // indirect
 	github.com/libp2p/go-cidranger v1.1.0 // indirect
@@ -225,6 +226,7 @@ require (
 	github.com/markbates/oncer v1.0.0 // indirect
 	github.com/markbates/safe v1.0.1 // indirect
 	github.com/marten-seemann/tcp v0.0.0-20210406111302-dfbc87cc63fd // indirect
+	github.com/matryer/moq v0.3.1 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	github.com/mattn/go-runewidth v0.0.9 // indirect
