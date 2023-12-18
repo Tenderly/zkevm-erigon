@@ -4,9 +4,9 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
-	"github.com/tenderly/erigon/erigon-lib/common/length"
-	"github.com/tenderly/erigon/erigon-lib/kv"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/common/length"
+	"github.com/ledgerwatch/erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cl/utils"

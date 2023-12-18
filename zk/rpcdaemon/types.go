@@ -11,7 +11,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/zkevm/hex"
 	"github.com/tenderly/zkevm-erigon/zkevm/state"
 
-	"github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/common"
 )
 
 var (

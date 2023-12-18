@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/jackc/pgx/v4"
-	"github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/common"
 	ericommon "github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/zkevm/hex"

@@ -17,7 +17,7 @@
 package nodecfg
 
 import (
-	"github.com/tenderly/erigon/erigon-lib/common/datadir"
+	"github.com/ledgerwatch/erigon-lib/common/datadir"
 	"github.com/tenderly/zkevm-erigon/common/paths"
 	"github.com/tenderly/zkevm-erigon/p2p"
 	"github.com/tenderly/zkevm-erigon/p2p/nat"

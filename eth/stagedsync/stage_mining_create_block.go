@@ -7,12 +7,12 @@ import (
 	"time"
 
 	mapset "github.com/deckarep/golang-set"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/chain"
 
-	"github.com/tenderly/erigon/erigon-lib/kv"
-	"github.com/tenderly/erigon/erigon-lib/txpool"
+	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/ledgerwatch/erigon-lib/txpool"
 
 	"github.com/tenderly/zkevm-erigon/common/debug"
 	"github.com/tenderly/zkevm-erigon/consensus"

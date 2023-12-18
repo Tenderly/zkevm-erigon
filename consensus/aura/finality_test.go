@@ -3,8 +3,8 @@ package aura
 import (
 	"testing"
 
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/assert"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 )
 
 func TestRollingFinality(t *testing.T) {

@@ -5,11 +5,11 @@ import (
 	"encoding/binary"
 	"testing"
 
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
-	"github.com/tenderly/erigon/erigon-lib/common/hexutility"
-	"github.com/tenderly/erigon/erigon-lib/common/length"
-	"github.com/tenderly/erigon/erigon-lib/kv"
-	"github.com/tenderly/erigon/erigon-lib/kv/memdb"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/common/hexutility"
+	"github.com/ledgerwatch/erigon-lib/common/length"
+	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/dbutils"
@@ -20,7 +20,6 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 func addTestAccount(tx kv.Putter, hash libcommon.Hash, balance uint64, incarnation uint64) error {

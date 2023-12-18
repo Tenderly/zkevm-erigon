@@ -32,8 +32,8 @@ import (
 	"sync"
 	"time"
 
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/common/debug"
 	"github.com/tenderly/zkevm-erigon/p2p/enode"

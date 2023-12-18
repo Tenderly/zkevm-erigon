@@ -8,12 +8,12 @@ import (
 	"strconv"
 	"testing"
 
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/ledgerwatch/erigon-lib/kv/memdb"
+	historyv22 "github.com/ledgerwatch/erigon-lib/kv/temporal/historyv2"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
-	"github.com/tenderly/erigon/erigon-lib/kv"
-	"github.com/tenderly/erigon/erigon-lib/kv/memdb"
-	historyv22 "github.com/tenderly/erigon/erigon-lib/kv/temporal/historyv2"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/dbutils"

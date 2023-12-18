@@ -17,11 +17,11 @@ import (
 
 	"github.com/google/btree"
 	lru "github.com/hashicorp/golang-lru/v2"
+	erigonchain "github.com/ledgerwatch/erigon-lib/chain"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/common/length"
+	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
-	erigonchain "github.com/tenderly/erigon/erigon-lib/chain"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
-	"github.com/tenderly/erigon/erigon-lib/common/length"
-	"github.com/tenderly/erigon/erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/chain"
 
 	"github.com/tenderly/zkevm-erigon/common"

@@ -21,7 +21,7 @@ import (
 	"errors"
 	"math/big"
 
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
 
 	ethereum "github.com/tenderly/zkevm-erigon"
 	"github.com/tenderly/zkevm-erigon/core/types"

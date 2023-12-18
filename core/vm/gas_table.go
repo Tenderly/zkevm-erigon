@@ -21,8 +21,8 @@ import (
 	"errors"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
-	"github.com/tenderly/erigon/erigon-lib/common/math"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/common/math"
 
 	"github.com/tenderly/zkevm-erigon/core/vm/stack"
 	"github.com/tenderly/zkevm-erigon/params"

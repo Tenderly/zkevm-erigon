@@ -3,7 +3,7 @@ package commands
 import (
 	"context"
 
-	"github.com/tenderly/erigon/erigon-lib/kv/kvcache"
+	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
 )
 
 func (api *ErigonImpl) CacheCheck() (*kvcache.CacheValidationResult, error) {

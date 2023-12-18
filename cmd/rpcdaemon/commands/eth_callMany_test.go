@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/tenderly/erigon/erigon-lib/common/datadir"
-	"github.com/tenderly/erigon/erigon-lib/common/hexutility"
-	"github.com/tenderly/erigon/erigon-lib/kv/kvcache"
+	"github.com/ledgerwatch/erigon-lib/common/datadir"
+	"github.com/ledgerwatch/erigon-lib/common/hexutility"
+	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
 
 	"github.com/tenderly/zkevm-erigon/accounts/abi/bind"
 	"github.com/tenderly/zkevm-erigon/accounts/abi/bind/backends"

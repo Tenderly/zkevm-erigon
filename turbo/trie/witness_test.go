@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"testing"
 
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
 )
 
 func generateOperands() []WitnessOperator {

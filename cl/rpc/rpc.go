@@ -9,10 +9,10 @@ import (
 
 	"github.com/c2h5oh/datasize"
 	"github.com/golang/snappy"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/gointerfaces"
+	"github.com/ledgerwatch/erigon-lib/gointerfaces/sentinel"
 	"github.com/ledgerwatch/log/v3"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces/sentinel"
 	"go.uber.org/zap/buffer"
 
 	"github.com/tenderly/zkevm-erigon/cl/clparams"

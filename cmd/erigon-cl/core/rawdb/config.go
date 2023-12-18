@@ -3,7 +3,7 @@ package rawdb
 import (
 	"encoding/json"
 
-	"github.com/tenderly/erigon/erigon-lib/kv"
+	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/common/math"
 )
 

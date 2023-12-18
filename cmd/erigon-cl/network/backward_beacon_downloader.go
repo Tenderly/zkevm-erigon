@@ -3,8 +3,8 @@ package network
 import (
 	"sync"
 
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 	"golang.org/x/net/context"
 
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"

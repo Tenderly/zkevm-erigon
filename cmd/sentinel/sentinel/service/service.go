@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ledgerwatch/erigon-lib/gointerfaces"
+	sentinelrpc "github.com/ledgerwatch/erigon-lib/gointerfaces/sentinel"
 	"github.com/ledgerwatch/log/v3"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
-	sentinelrpc "github.com/tenderly/erigon/erigon-lib/gointerfaces/sentinel"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cl/utils"
 	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel"

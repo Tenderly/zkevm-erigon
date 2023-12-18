@@ -5,8 +5,8 @@ import (
 	"errors"
 	"io"
 
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	proto "github.com/maticnetwork/polyproto/heimdall"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/consensus/bor/clerk"
 )

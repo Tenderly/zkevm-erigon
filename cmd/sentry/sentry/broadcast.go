@@ -9,8 +9,8 @@ import (
 	"strings"
 	"syscall"
 
+	proto_sentry "github.com/ledgerwatch/erigon-lib/gointerfaces/sentry"
 	"github.com/ledgerwatch/log/v3"
-	proto_sentry "github.com/tenderly/erigon/erigon-lib/gointerfaces/sentry"
 	"google.golang.org/grpc"
 
 	"github.com/tenderly/zkevm-erigon/core/types"

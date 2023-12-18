@@ -5,9 +5,9 @@ import (
 	"runtime"
 
 	"github.com/c2h5oh/datasize"
+	"github.com/ledgerwatch/erigon-lib/common/cmp"
 	"github.com/pbnjay/memory"
 	"github.com/shirou/gopsutil/v3/docker"
-	"github.com/tenderly/erigon/erigon-lib/common/cmp"
 )
 
 type estimatedRamPerWorker datasize.ByteSize

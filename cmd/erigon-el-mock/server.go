@@ -8,12 +8,12 @@ import (
 	"sync"
 
 	"github.com/holiman/uint256"
-	"github.com/tenderly/erigon/erigon-lib/common"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces/execution"
-	types2 "github.com/tenderly/erigon/erigon-lib/gointerfaces/types"
-	"github.com/tenderly/erigon/erigon-lib/kv"
+	"github.com/ledgerwatch/erigon-lib/common"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/gointerfaces"
+	"github.com/ledgerwatch/erigon-lib/gointerfaces/execution"
+	types2 "github.com/ledgerwatch/erigon-lib/gointerfaces/types"
+	"github.com/ledgerwatch/erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/core/types"

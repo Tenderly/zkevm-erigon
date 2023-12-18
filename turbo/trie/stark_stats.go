@@ -7,8 +7,8 @@ import (
 	"sort"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
-	len2 "github.com/tenderly/erigon/erigon-lib/common/length"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	len2 "github.com/ledgerwatch/erigon-lib/common/length"
 
 	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 	"github.com/tenderly/zkevm-erigon/turbo/rlphacks"

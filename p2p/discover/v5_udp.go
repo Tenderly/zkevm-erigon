@@ -29,8 +29,8 @@ import (
 	"sync"
 	"time"
 
+	common2 "github.com/ledgerwatch/erigon-lib/common/cmp"
 	"github.com/ledgerwatch/log/v3"
-	common2 "github.com/tenderly/erigon/erigon-lib/common/cmp"
 	"github.com/tenderly/zkevm-erigon/common/debug"
 	"github.com/tenderly/zkevm-erigon/common/mclock"
 	"github.com/tenderly/zkevm-erigon/p2p/discover/v5wire"

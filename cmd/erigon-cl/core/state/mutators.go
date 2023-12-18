@@ -3,7 +3,7 @@ package state
 import (
 	"fmt"
 
-	"github.com/tenderly/erigon/erigon-lib/common/math"
+	"github.com/ledgerwatch/erigon-lib/common/math"
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cl/utils"
 )

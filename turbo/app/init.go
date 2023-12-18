@@ -8,7 +8,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/urfave/cli/v2"
 
-	"github.com/tenderly/erigon/erigon-lib/kv"
+	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/cmd/utils"
 	"github.com/tenderly/zkevm-erigon/core"
 	"github.com/tenderly/zkevm-erigon/node"

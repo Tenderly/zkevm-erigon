@@ -2,7 +2,7 @@ package exec3
 
 import (
 	"github.com/holiman/uint256"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/core/vm"
 )
 

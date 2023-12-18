@@ -28,11 +28,11 @@ import (
 	"github.com/holiman/uint256"
 	"golang.org/x/crypto/sha3"
 
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
-	"github.com/tenderly/erigon/erigon-lib/common/hexutility"
-	"github.com/tenderly/erigon/erigon-lib/common/length"
-	"github.com/tenderly/erigon/erigon-lib/kv"
-	types2 "github.com/tenderly/erigon/erigon-lib/types"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/common/hexutility"
+	"github.com/ledgerwatch/erigon-lib/common/length"
+	"github.com/ledgerwatch/erigon-lib/kv"
+	types2 "github.com/ledgerwatch/erigon-lib/types"
 	"github.com/tenderly/zkevm-erigon/chain"
 
 	"github.com/tenderly/zkevm-erigon/common"

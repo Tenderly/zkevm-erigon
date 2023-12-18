@@ -8,12 +8,12 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/ledgerwatch/erigon-lib/common/datadir"
+	"github.com/ledgerwatch/erigon-lib/common/hexutility"
+	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/ledgerwatch/erigon-lib/kv/kvcfg"
+	"github.com/ledgerwatch/erigon-lib/state"
 	"github.com/ledgerwatch/log/v3"
-	"github.com/tenderly/erigon/erigon-lib/common/datadir"
-	"github.com/tenderly/erigon/erigon-lib/common/hexutility"
-	"github.com/tenderly/erigon/erigon-lib/kv"
-	"github.com/tenderly/erigon/erigon-lib/kv/kvcfg"
-	"github.com/tenderly/erigon/erigon-lib/state"
 	"github.com/tenderly/zkevm-erigon/chain"
 	"golang.org/x/sync/errgroup"
 

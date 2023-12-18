@@ -2,7 +2,7 @@ package bodydownload
 
 import (
 	"github.com/hashicorp/golang-lru/v2"
-	"github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/core/types"
 )

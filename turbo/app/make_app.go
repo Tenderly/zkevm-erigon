@@ -4,7 +4,7 @@ package app
 import (
 	"strings"
 
-	"github.com/tenderly/erigon/erigon-lib/common/datadir"
+	"github.com/ledgerwatch/erigon-lib/common/datadir"
 	"github.com/urfave/cli/v2"
 
 	"github.com/tenderly/zkevm-erigon/cmd/utils"

@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/dop251/goja"
-	"github.com/tenderly/erigon/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/common"
 	ericommon "github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/core/vm"
 	"github.com/tenderly/zkevm-erigon/crypto"

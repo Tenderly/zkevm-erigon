@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
-	"github.com/tenderly/erigon/erigon-lib/common/hexutility"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/common/hexutility"
 
 	"github.com/tenderly/zkevm-erigon/cmd/devnet/models"
 	"github.com/tenderly/zkevm-erigon/cmd/rpctest/rpctest"

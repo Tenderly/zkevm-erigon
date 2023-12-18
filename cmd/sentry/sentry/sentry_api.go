@@ -5,10 +5,10 @@ import (
 	"math/rand"
 
 	"github.com/holiman/uint256"
+	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	"github.com/ledgerwatch/erigon-lib/gointerfaces"
+	proto_sentry "github.com/ledgerwatch/erigon-lib/gointerfaces/sentry"
 	"github.com/ledgerwatch/log/v3"
-	libcommon "github.com/tenderly/erigon/erigon-lib/common"
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
-	proto_sentry "github.com/tenderly/erigon/erigon-lib/gointerfaces/sentry"
 	"google.golang.org/grpc"
 
 	"github.com/tenderly/zkevm-erigon/eth/protocols/eth"
