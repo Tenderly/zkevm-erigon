@@ -29,10 +29,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gballet/go-verkle"
 	libcommon "github.com/tenderly/erigon/erigon-lib/common"
 	"github.com/tenderly/erigon/erigon-lib/common/hexutility"
 	rlp2 "github.com/tenderly/erigon/erigon-lib/rlp"
+	"github.com/tenderly/go-verkle"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

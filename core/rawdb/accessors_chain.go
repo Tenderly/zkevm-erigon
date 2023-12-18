@@ -28,7 +28,6 @@ import (
 
 	"github.com/tenderly/erigon/erigon-lib/kv/kvcfg"
 
-	"github.com/gballet/go-verkle"
 	"github.com/ledgerwatch/log/v3"
 	common2 "github.com/tenderly/erigon/erigon-lib/common"
 	libcommon "github.com/tenderly/erigon/erigon-lib/common"
@@ -37,6 +36,7 @@ import (
 	"github.com/tenderly/erigon/erigon-lib/common/hexutility"
 	"github.com/tenderly/erigon/erigon-lib/common/length"
 	"github.com/tenderly/erigon/erigon-lib/kv"
+	"github.com/tenderly/go-verkle"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/dbutils"

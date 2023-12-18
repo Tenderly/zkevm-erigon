@@ -37,7 +37,6 @@ require (
 	github.com/ethereum/go-ethereum v1.13.2
 	github.com/fjl/gencodec v0.0.0-20230517082657-f9840df7b83e
 	github.com/gateway-fm/vectorized-poseidon-gold v0.1.2
-	github.com/gballet/go-verkle v0.0.0-20230607174250-df487255f46b
 	github.com/goccy/go-json v0.9.11
 	github.com/gofrs/flock v0.8.1
 	github.com/golang-jwt/jwt/v4 v4.5.0
@@ -85,6 +84,7 @@ require (
 	github.com/stretchr/testify v1.8.4
 	github.com/tenderly/erigon/erigon-lib v0.0.0-20231213155600-d3d9290e9e54
 	github.com/tenderly/go-kzg-4844 v0.0.0-20231215154023-f87fedca66d0
+	github.com/tenderly/go-verkle v0.0.0-20231212093521-fbf9e5153193
 	github.com/tenderly/secp256k1 v1.0.1-0.20231212115822-31dacfc1e0c7
 	github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e
 	github.com/tidwall/btree v1.6.0
