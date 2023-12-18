@@ -83,12 +83,12 @@ require (
 	github.com/status-im/keycard-go v0.2.0
 	github.com/stretchr/testify v1.8.4
 	github.com/tenderly/erigon/erigon-lib v0.0.0-20231213155600-d3d9290e9e54
+	github.com/tenderly/go-codec/codec v1.1.14-0.20231212094703-0bbb66a02189
 	github.com/tenderly/go-kzg-4844 v0.0.0-20231215154023-f87fedca66d0
 	github.com/tenderly/go-verkle v0.0.0-20231212093521-fbf9e5153193
 	github.com/tenderly/secp256k1 v1.0.1-0.20231212115822-31dacfc1e0c7
 	github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e
 	github.com/tidwall/btree v1.6.0
-	github.com/ugorji/go/codec v1.2.7
 	github.com/ugorji/go/codec/codecgen v1.1.13
 	github.com/umbracle/ethgo v0.1.3
 	github.com/urfave/cli/v2 v2.25.7
