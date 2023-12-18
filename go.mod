@@ -86,7 +86,7 @@ require (
 	github.com/tenderly/go-kzg-4844 v0.0.0-20231215154023-f87fedca66d0
 	github.com/tenderly/go-verkle v0.0.0-20231212093521-fbf9e5153193
 	github.com/tenderly/secp256k1 v1.0.1-0.20231212115822-31dacfc1e0c7
-	github.com/tenderly/zkevm-erigon-lib v0.0.0-20231218134649-2fcdb39abcf2
+	github.com/tenderly/zkevm-erigon-lib v0.0.0-20231218141832-7977ddebd750
 	github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e
 	github.com/tidwall/btree v1.6.0
 	github.com/ugorji/go/codec/codecgen v1.1.13
