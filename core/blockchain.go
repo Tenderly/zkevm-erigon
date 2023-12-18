@@ -28,6 +28,7 @@ import (
 
 	erigonchain "github.com/tenderly/zkevm-erigon-lib/chain"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	libutil "github.com/tenderly/zkevm-erigon-lib/compress"
 
 	"github.com/tenderly/zkevm-erigon/chain"
 	zktypes "github.com/tenderly/zkevm-erigon/zk/types"
@@ -314,7 +315,7 @@ func ExecuteBlockEphemerallyBor(
 	blockLogs := ibs.Logs()
 	stateSyncReceipt := &types.Receipt{}
 	if chainConfig.Consensus == erigonchain.BorConsensus && len(blockLogs) > 0 {
-		slices.SortStableFunc(blockLogs, func(i, j *types.Log) bool { return i.Index < j.Index })
+		slices.SortStableFunc(blockLogs, libutil.ConvertOldSortOrderToNew(func(i, j *types.Log) bool { return i.Index < j.Index }))
 
 		if len(blockLogs) > len(logs) {
 			stateSyncReceipt.Logs = blockLogs[len(logs):] // get state-sync logs from `state.Logs()`
