@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/u256"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 	"github.com/stretchr/testify/require"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/u256"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 
 	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/core/types"

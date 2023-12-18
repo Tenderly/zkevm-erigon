@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
 
 	"github.com/tenderly/zkevm-erigon/core"

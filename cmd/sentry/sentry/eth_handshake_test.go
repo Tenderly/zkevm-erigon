@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/gointerfaces"
-	proto_sentry "github.com/ledgerwatch/erigon-lib/gointerfaces/sentry"
 	"github.com/stretchr/testify/assert"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
+	proto_sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentry"
 
 	"github.com/tenderly/zkevm-erigon/core/forkid"
 	"github.com/tenderly/zkevm-erigon/eth/protocols/eth"

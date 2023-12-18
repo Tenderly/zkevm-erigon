@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	ericommon "github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/zkevm/encoding"

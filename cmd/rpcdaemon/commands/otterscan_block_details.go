@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
 	"github.com/tenderly/zkevm-erigon/core/rawdb"

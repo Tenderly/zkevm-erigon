@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ledgerwatch/erigon-lib/gointerfaces/remote"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
 	"github.com/urfave/cli/v2"
 	"google.golang.org/grpc"
 

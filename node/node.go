@@ -32,10 +32,10 @@ import (
 	"golang.org/x/sync/semaphore"
 
 	"github.com/gofrs/flock"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/kv/mdbx"
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	"github.com/tenderly/zkevm-erigon/migrations"
 )
 

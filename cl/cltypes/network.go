@@ -1,7 +1,7 @@
 package cltypes
 
 import (
-	"github.com/ledgerwatch/erigon-lib/common/length"
+	"github.com/tenderly/zkevm-erigon-lib/common/length"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes/clonable"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"
 	"github.com/tenderly/zkevm-erigon/common"

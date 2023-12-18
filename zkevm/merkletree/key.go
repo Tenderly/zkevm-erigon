@@ -5,7 +5,7 @@ import (
 	"math/big"
 
 	poseidon "github.com/gateway-fm/vectorized-poseidon-gold/src/vectorizedposeidongold"
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 // Key stores key of the leaf

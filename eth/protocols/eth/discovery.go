@@ -19,7 +19,7 @@ package eth
 import (
 	"fmt"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/core/forkid"
 	"github.com/tenderly/zkevm-erigon/p2p/enr"

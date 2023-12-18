@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	historyv22 "github.com/ledgerwatch/erigon-lib/kv/temporal/historyv2"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	historyv22 "github.com/tenderly/zkevm-erigon-lib/kv/temporal/historyv2"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/dbutils"

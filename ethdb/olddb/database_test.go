@@ -27,10 +27,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/ethdb"
 )

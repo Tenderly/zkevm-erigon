@@ -26,12 +26,12 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	state2 "github.com/ledgerwatch/erigon-lib/state"
-	types2 "github.com/ledgerwatch/erigon-lib/types"
 	"github.com/ledgerwatch/log/v3"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	state2 "github.com/tenderly/zkevm-erigon-lib/state"
+	types2 "github.com/tenderly/zkevm-erigon-lib/types"
 	"github.com/tenderly/zkevm-erigon/chain"
 	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
 

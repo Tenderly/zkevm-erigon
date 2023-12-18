@@ -14,10 +14,10 @@ import (
 	"strings"
 	"time"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/etl"
-	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/etl"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"golang.org/x/exp/slices"
 
 	"github.com/tenderly/zkevm-erigon/turbo/services"

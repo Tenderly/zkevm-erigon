@@ -3,8 +3,8 @@ package merkle_tree_test
 import (
 	"testing"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/require"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/cl/merkle_tree"
 	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state/state_encoding"

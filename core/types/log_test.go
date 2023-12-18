@@ -23,7 +23,7 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )

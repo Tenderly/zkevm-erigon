@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"testing"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/direct"
-	"github.com/ledgerwatch/erigon-lib/gointerfaces/sentry"
 	"github.com/stretchr/testify/require"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/direct"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentry"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcservices"
 	"github.com/tenderly/zkevm-erigon/core"

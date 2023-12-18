@@ -3,8 +3,8 @@ package migrations
 import (
 	"context"
 
-	"github.com/ledgerwatch/erigon-lib/common/datadir"
-	"github.com/ledgerwatch/erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 )
 
 var dbSchemaVersion5 = Migration{

@@ -25,9 +25,9 @@ import (
 	"reflect"
 	"strings"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon-lib/common/length"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
+	"github.com/tenderly/zkevm-erigon-lib/common/length"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )

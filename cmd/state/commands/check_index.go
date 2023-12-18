@@ -1,8 +1,8 @@
 package commands
 
 import (
-	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/spf13/cobra"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/cmd/state/verify"
 )
 

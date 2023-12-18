@@ -3,9 +3,9 @@ package cltypes_test
 import (
 	"testing"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/common"

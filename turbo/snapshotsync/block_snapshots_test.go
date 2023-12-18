@@ -7,11 +7,11 @@ import (
 	"testing/fstest"
 
 	"github.com/holiman/uint256"
-	"github.com/ledgerwatch/erigon-lib/compress"
-	"github.com/ledgerwatch/erigon-lib/downloader/snaptype"
-	"github.com/ledgerwatch/erigon-lib/recsplit"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/zkevm-erigon-lib/compress"
+	"github.com/tenderly/zkevm-erigon-lib/downloader/snaptype"
+	"github.com/tenderly/zkevm-erigon-lib/recsplit"
 
 	"github.com/tenderly/zkevm-erigon/common/math"
 	"github.com/tenderly/zkevm-erigon/eth/ethconfig"

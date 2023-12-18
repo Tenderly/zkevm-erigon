@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ledgerwatch/erigon-lib/chain"
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/chain"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/zk/zkchainconfig"
 )
 

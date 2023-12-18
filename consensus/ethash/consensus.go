@@ -26,13 +26,13 @@ import (
 
 	mapset "github.com/deckarep/golang-set"
 	"github.com/holiman/uint256"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/chain"
 	"github.com/tenderly/zkevm-erigon/consensus/ethash/ethashcfg"
 	"golang.org/x/crypto/sha3"
 
-	erigonchain "github.com/ledgerwatch/erigon-lib/chain"
+	erigonchain "github.com/tenderly/zkevm-erigon-lib/chain"
 	"github.com/tenderly/zkevm-erigon/common/math"
 	"github.com/tenderly/zkevm-erigon/common/u256"
 	"github.com/tenderly/zkevm-erigon/consensus"

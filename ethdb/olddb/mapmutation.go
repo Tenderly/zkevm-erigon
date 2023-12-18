@@ -8,9 +8,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/ledgerwatch/erigon-lib/etl"
-	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon-lib/etl"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/ethdb"
 	"sort"

@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	"github.com/tenderly/zkevm-erigon/core"
 )
 

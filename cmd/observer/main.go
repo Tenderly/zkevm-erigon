@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/cmd/observer/database"
 	"github.com/tenderly/zkevm-erigon/cmd/observer/observer"
 	"github.com/tenderly/zkevm-erigon/cmd/observer/reports"

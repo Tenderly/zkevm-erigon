@@ -1,7 +1,7 @@
 package bor
 
 import (
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/consensus"
 	"github.com/tenderly/zkevm-erigon/consensus/bor/heimdall/span"
 	"github.com/tenderly/zkevm-erigon/consensus/bor/valset"

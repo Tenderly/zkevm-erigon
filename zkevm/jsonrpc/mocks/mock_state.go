@@ -6,9 +6,9 @@ import (
 	context "context"
 	big "math/big"
 
-	common "github.com/ledgerwatch/erigon-lib/common"
+	common "github.com/tenderly/zkevm-erigon-lib/common"
 
-	coretypes "github.com/ledgerwatch/erigon-lib/common"
+	coretypes "github.com/tenderly/zkevm-erigon-lib/common"
 
 	mock "github.com/stretchr/testify/mock"
 

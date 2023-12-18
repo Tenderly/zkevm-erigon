@@ -21,8 +21,8 @@ import (
 	"math/big"
 	"testing"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/stretchr/testify/assert"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/core/types"

@@ -3,8 +3,8 @@ package trie
 import (
 	"math/big"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/tenderly/go-codec/codec"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 const (

@@ -8,9 +8,9 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/valyala/fastjson"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	types2 "github.com/ledgerwatch/erigon-lib/types"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
+	types2 "github.com/tenderly/zkevm-erigon-lib/types"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )

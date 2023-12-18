@@ -1,6 +1,6 @@
 package fakevm
 
-import "github.com/ledgerwatch/erigon-lib/common"
+import "github.com/tenderly/zkevm-erigon-lib/common"
 
 // Account represents a fake EVM account.
 type Account struct {

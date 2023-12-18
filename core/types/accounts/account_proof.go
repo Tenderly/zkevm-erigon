@@ -1,8 +1,8 @@
 package accounts
 
 import (
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/hexutility"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )

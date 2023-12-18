@@ -5,8 +5,8 @@ import (
 	"encoding/binary"
 
 	lru "github.com/hashicorp/golang-lru/v2"
-	"github.com/ledgerwatch/erigon-lib/common"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"

@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ledgerwatch/erigon-lib/common"
 	"github.com/spf13/cobra"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	chain2 "github.com/tenderly/zkevm-erigon/chain"
 	"github.com/tenderly/zkevm-erigon/core/types"
 

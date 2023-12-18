@@ -16,10 +16,10 @@ package handlers
 import (
 	"context"
 
-	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/libp2p/go-libp2p/core/host"
 	"github.com/libp2p/go-libp2p/core/network"
 	"github.com/libp2p/go-libp2p/core/protocol"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel/communication"

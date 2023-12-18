@@ -22,8 +22,8 @@ import (
 	"math/big"
 	"testing"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	"golang.org/x/crypto/sha3"
 
 	"github.com/tenderly/zkevm-erigon/common/u256"

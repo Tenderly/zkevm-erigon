@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	db2 "github.com/tenderly/zkevm-erigon/smt/pkg/db"
 	"github.com/tenderly/zkevm-erigon/sync_stages"

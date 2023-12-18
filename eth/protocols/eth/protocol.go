@@ -24,8 +24,8 @@ import (
 	"math/big"
 	"math/bits"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	proto_sentry "github.com/ledgerwatch/erigon-lib/gointerfaces/sentry"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	proto_sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentry"
 
 	"github.com/tenderly/zkevm-erigon/core/forkid"
 	"github.com/tenderly/zkevm-erigon/core/types"

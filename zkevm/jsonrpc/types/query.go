@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 // LogFilterRequest represents a log filter request.

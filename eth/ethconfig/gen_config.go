@@ -6,11 +6,11 @@ import (
 	"time"
 
 	"github.com/c2h5oh/datasize"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/consensus/ethash/ethashcfg"
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/eth/gasprice/gaspricecfg"
-	erigonchain "github.com/ledgerwatch/erigon-lib/chain"
+	erigonchain "github.com/tenderly/zkevm-erigon-lib/chain"
 
 	"github.com/tenderly/zkevm-erigon/ethdb/prune"
 	"github.com/tenderly/zkevm-erigon/params"

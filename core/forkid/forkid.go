@@ -26,8 +26,8 @@ import (
 	"reflect"
 	"strings"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/chain"
 	"golang.org/x/exp/slices"
 

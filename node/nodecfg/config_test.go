@@ -22,7 +22,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/ledgerwatch/erigon-lib/common/datadir"
+	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
 	node2 "github.com/tenderly/zkevm-erigon/node"
 	"github.com/tenderly/zkevm-erigon/node/nodecfg"
 )

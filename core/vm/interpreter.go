@@ -20,9 +20,9 @@ import (
 	"hash"
 	"sync"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/math"
 	"github.com/ledgerwatch/log/v3"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/math"
 	"github.com/tenderly/zkevm-erigon/chain"
 
 	"github.com/tenderly/zkevm-erigon/core/vm/stack"

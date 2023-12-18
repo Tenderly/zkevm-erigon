@@ -1,9 +1,9 @@
 package db
 
 import (
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/kv/mdbx"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
 )
 
 func OpenDatabase(path string, inMem bool, readonly bool) kv.RwDB {

@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/valyala/fastjson"
 
 	"github.com/tenderly/zkevm-erigon/core/state"

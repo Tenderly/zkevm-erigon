@@ -6,11 +6,11 @@ import (
 	"testing"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/gointerfaces/txpool"
-	txPoolProto "github.com/ledgerwatch/erigon-lib/gointerfaces/txpool"
-	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
 	"github.com/stretchr/testify/require"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
+	txPoolProto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
+	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

@@ -3,8 +3,8 @@ package shards
 import (
 	"sync"
 
-	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/gointerfaces/remote"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
 	"github.com/tenderly/zkevm-erigon/core/types"
 )
 

@@ -17,7 +17,7 @@
 package state
 
 import (
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 type accessList struct {

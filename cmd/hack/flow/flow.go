@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ledgerwatch/erigon-lib/common/dbg"
+	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
 
 	"github.com/tenderly/zkevm-erigon/cmd/hack/tool"
 	"github.com/tenderly/zkevm-erigon/common/debug"

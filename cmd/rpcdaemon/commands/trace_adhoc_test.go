@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"testing"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/kv/kvcache"
 	"github.com/stretchr/testify/require"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/cli/httpcfg"
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"

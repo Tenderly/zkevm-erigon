@@ -21,7 +21,6 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/libp2p/go-libp2p"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
@@ -32,6 +31,7 @@ import (
 	rcmgrObs "github.com/libp2p/go-libp2p/p2p/host/resource-manager/obs"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cl/fork"
 	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel/handlers"

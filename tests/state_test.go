@@ -27,8 +27,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	"github.com/tenderly/zkevm-erigon/core/vm"
 	"github.com/tenderly/zkevm-erigon/eth/tracers/logger"
 )

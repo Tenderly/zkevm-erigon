@@ -2,8 +2,8 @@ package statefull
 
 import (
 	"github.com/holiman/uint256"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
 	ethereum "github.com/tenderly/zkevm-erigon"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/consensus"
 	"github.com/tenderly/zkevm-erigon/core"
 	"github.com/tenderly/zkevm-erigon/core/types"

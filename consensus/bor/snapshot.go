@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 
 	lru "github.com/hashicorp/golang-lru/v2"
-	erigonchain "github.com/ledgerwatch/erigon-lib/chain"
-	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv"
+	erigonchain "github.com/tenderly/zkevm-erigon-lib/chain"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/consensus/bor/valset"
 	"github.com/tenderly/zkevm-erigon/core/types"
 )

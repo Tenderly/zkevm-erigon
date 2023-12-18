@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ledgerwatch/erigon-lib/gointerfaces"
-	"github.com/ledgerwatch/erigon-lib/gointerfaces/txpool"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
 	"github.com/tenderly/zkevm-erigon/ethdb/privateapi"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"

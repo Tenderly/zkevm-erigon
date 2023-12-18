@@ -6,10 +6,10 @@ import (
 	"fmt"
 
 	"github.com/RoaringBitmap/roaring/roaring64"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/length"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/kv/bitmapdb"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/length"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/bitmapdb"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/dbutils"

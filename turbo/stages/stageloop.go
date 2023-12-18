@@ -8,15 +8,15 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/datadir"
-	"github.com/ledgerwatch/erigon-lib/common/dbg"
-	proto_downloader "github.com/ledgerwatch/erigon-lib/gointerfaces/downloader"
-	"github.com/ledgerwatch/erigon-lib/gointerfaces/remote"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon-lib/state"
 	"github.com/ledgerwatch/log/v3"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
+	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
+	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/downloader"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
+	"github.com/tenderly/zkevm-erigon-lib/state"
 
 	"github.com/tenderly/zkevm-erigon/chain"
 

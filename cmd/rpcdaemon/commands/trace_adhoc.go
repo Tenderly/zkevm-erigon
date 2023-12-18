@@ -11,10 +11,10 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/log/v3"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	types2 "github.com/ledgerwatch/erigon-lib/types"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	types2 "github.com/tenderly/zkevm-erigon-lib/types"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

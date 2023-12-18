@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes/clonable"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"
 	"github.com/tenderly/zkevm-erigon/cl/utils"

@@ -14,7 +14,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime/instrumentation"
 	"github.com/tenderly/zkevm-erigon/zkevm/state/tree"
 	"github.com/tenderly/zkevm-erigon/zkevm/test/dbutils"
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/stretchr/testify/require"
 )
 

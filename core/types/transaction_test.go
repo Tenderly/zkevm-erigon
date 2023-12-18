@@ -29,9 +29,9 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	types2 "github.com/ledgerwatch/erigon-lib/types"
 	"github.com/stretchr/testify/assert"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	types2 "github.com/tenderly/zkevm-erigon-lib/types"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/u256"

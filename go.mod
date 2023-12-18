@@ -11,7 +11,6 @@ require (
 )
 
 require (
-	//github.com/ledgerwatch/erigon-lib v0.0.0-20230417120239-f419601a7490
 	github.com/0xPolygonHermez/zkevm-node v0.4.4
 	github.com/99designs/gqlgen v0.17.29
 	github.com/Giulio2002/bls v0.0.0-20230217173148-c87a29266b6c
@@ -87,6 +86,7 @@ require (
 	github.com/tenderly/go-kzg-4844 v0.0.0-20231215154023-f87fedca66d0
 	github.com/tenderly/go-verkle v0.0.0-20231212093521-fbf9e5153193
 	github.com/tenderly/secp256k1 v1.0.1-0.20231212115822-31dacfc1e0c7
+	github.com/tenderly/zkevm-erigon-lib v0.0.0-20231218134649-2fcdb39abcf2
 	github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e
 	github.com/tidwall/btree v1.6.0
 	github.com/ugorji/go/codec/codecgen v1.1.13
@@ -97,7 +97,7 @@ require (
 	github.com/xsleonard/go-merkle v1.1.0
 	go.uber.org/zap v1.26.0
 	golang.org/x/crypto v0.16.0
-	golang.org/x/exp v0.0.0-20230905200255-921286631fa9
+	golang.org/x/exp v0.0.0-20231127185646-65229373498e
 	golang.org/x/net v0.19.0
 	golang.org/x/sync v0.5.0
 	golang.org/x/sys v0.15.0
@@ -158,7 +158,6 @@ require (
 	github.com/docker/go-units v0.5.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/elastic/gosigar v0.14.2 // indirect
-	github.com/erigontech/mdbx-go v0.27.21 // indirect
 	github.com/ethereum/c-kzg-4844 v0.3.1 // indirect
 	github.com/flynn/noise v1.0.0 // indirect
 	github.com/francoispqt/gojay v1.2.13 // indirect
@@ -206,9 +205,8 @@ require (
 	github.com/koron/go-ssdp v0.0.3 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
-	github.com/ledgerwatch/erigon-lib v0.0.0-20230417124908-0d918d9f7d53 // indirect
-	github.com/ledgerwatch/interfaces v0.0.0-20230412092010-e1c4a1a4279e // indirect
 	github.com/ledgerwatch/secp256k1 v1.0.0 // indirect
+	github.com/ledgerwatch/trackerslist v1.1.0 // indirect
 	github.com/libp2p/go-buffer-pool v0.1.0 // indirect
 	github.com/libp2p/go-cidranger v1.1.0 // indirect
 	github.com/libp2p/go-flow-metrics v0.1.0 // indirect
@@ -226,7 +224,6 @@ require (
 	github.com/markbates/oncer v1.0.0 // indirect
 	github.com/markbates/safe v1.0.1 // indirect
 	github.com/marten-seemann/tcp v0.0.0-20210406111302-dfbc87cc63fd // indirect
-	github.com/matryer/moq v0.3.1 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	github.com/mattn/go-runewidth v0.0.9 // indirect

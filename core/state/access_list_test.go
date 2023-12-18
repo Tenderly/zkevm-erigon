@@ -3,8 +3,8 @@ package state
 import (
 	"testing"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv/memdb"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 )
 
 func verifyAddrs(t *testing.T, s *IntraBlockState, astrings ...string) {

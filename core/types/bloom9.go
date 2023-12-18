@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ledgerwatch/erigon-lib/common/hexutility"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
 
 	"github.com/tenderly/zkevm-erigon/crypto"
 	"github.com/tenderly/zkevm-erigon/crypto/cryptopool"

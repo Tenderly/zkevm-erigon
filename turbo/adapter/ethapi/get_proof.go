@@ -3,8 +3,8 @@ package ethapi
 import (
 	"bytes"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/length"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/length"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
 	"github.com/tenderly/zkevm-erigon/core/types/accounts"

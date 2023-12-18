@@ -3,7 +3,7 @@ package instrumentation
 import (
 	"math/big"
 
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 // StructLog is emitted to the EVM each cycle and lists information about the current internal state

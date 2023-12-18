@@ -11,13 +11,13 @@ import (
 	"syscall"
 	"time"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon-lib/kv"
-	kv2 "github.com/ledgerwatch/erigon-lib/kv/mdbx"
-	"github.com/ledgerwatch/erigon-lib/kv/temporal/historyv2"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/spf13/cobra"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	kv2 "github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
+	"github.com/tenderly/zkevm-erigon-lib/kv/temporal/historyv2"
 
 	"github.com/tenderly/zkevm-erigon/core/state"
 	"github.com/tenderly/zkevm-erigon/core/systemcontracts"

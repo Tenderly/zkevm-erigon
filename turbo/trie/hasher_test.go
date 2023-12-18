@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 func TestValue(t *testing.T) {

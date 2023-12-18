@@ -4,8 +4,8 @@ import (
 	"context"
 	"math/big"
 
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/chain"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
