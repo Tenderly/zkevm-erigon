@@ -86,7 +86,7 @@ require (
 	github.com/tenderly/go-verkle v0.0.0-20231212093521-fbf9e5153193
 	github.com/tenderly/golang-lru/v2 v2.0.3-0.20231218144847-934fba021a0f
 	github.com/tenderly/secp256k1 v1.0.1-0.20231212115822-31dacfc1e0c7
-	github.com/tenderly/zkevm-erigon-lib v0.0.0-20231218150553-44aebcf677ca
+	github.com/tenderly/zkevm-erigon-lib v0.0.0-20231219085645-69a8766d6cd4
 	github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e
 	github.com/tidwall/btree v1.6.0
 	github.com/ugorji/go/codec/codecgen v1.1.13
@@ -206,6 +206,7 @@ require (
 	github.com/koron/go-ssdp v0.0.3 // indirect
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
+	github.com/ledgerwatch/interfaces v0.0.0-20230412092010-e1c4a1a4279e // indirect
 	github.com/ledgerwatch/secp256k1 v1.0.0 // indirect
 	github.com/ledgerwatch/trackerslist v1.1.0 // indirect
 	github.com/libp2p/go-buffer-pool v0.1.0 // indirect
@@ -225,6 +226,7 @@ require (
 	github.com/markbates/oncer v1.0.0 // indirect
 	github.com/markbates/safe v1.0.1 // indirect
 	github.com/marten-seemann/tcp v0.0.0-20210406111302-dfbc87cc63fd // indirect
+	github.com/matryer/moq v0.3.1 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	github.com/mattn/go-runewidth v0.0.9 // indirect
