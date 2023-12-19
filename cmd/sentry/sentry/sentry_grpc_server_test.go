@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/require"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	proto_sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentry"
+	proto_sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_sentry"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	"github.com/tenderly/zkevm-erigon/chain"

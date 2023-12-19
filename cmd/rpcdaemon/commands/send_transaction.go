@@ -11,7 +11,7 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
-	txPoolProto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
+	txPoolProto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_txpool"
 
 	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/core/types"

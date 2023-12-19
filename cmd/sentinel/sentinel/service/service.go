@@ -10,7 +10,7 @@ import (
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	sentinelrpc "github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentinel"
+	sentinelrpc "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_sentinel"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cl/utils"
 	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel"

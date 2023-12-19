@@ -23,8 +23,8 @@ import (
 	"github.com/tenderly/golang-lru/v2"
 	common2 "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentinel"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
+	sentinel "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_sentinel"
 
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"

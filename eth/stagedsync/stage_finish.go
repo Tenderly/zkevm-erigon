@@ -11,8 +11,8 @@ import (
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
-	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/types"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
+	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_types"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	common2 "github.com/tenderly/zkevm-erigon/common"

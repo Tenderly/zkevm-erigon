@@ -6,8 +6,8 @@ import (
 
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
-	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/types"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
+	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_types"
 
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/eth/filters"

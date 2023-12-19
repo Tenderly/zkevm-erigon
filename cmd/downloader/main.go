@@ -21,7 +21,7 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
 	"github.com/tenderly/zkevm-erigon-lib/downloader"
 	downloadercfg2 "github.com/tenderly/zkevm-erigon-lib/downloader/downloadercfg"
-	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/downloader"
+	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_downloader"
 	"github.com/tenderly/zkevm-erigon/cmd/downloader/downloadernat"
 	"github.com/tenderly/zkevm-erigon/cmd/utils"
 	"github.com/tenderly/zkevm-erigon/common/paths"

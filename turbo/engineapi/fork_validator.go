@@ -20,7 +20,7 @@ import (
 
 	"github.com/ledgerwatch/log/v3"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 

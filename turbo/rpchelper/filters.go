@@ -15,9 +15,9 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/grpcutil"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
+	grpcutil "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_grpcutil"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
+	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_txpool"
 	txpool2 "github.com/tenderly/zkevm-erigon-lib/txpool"
 	"google.golang.org/grpc"
 

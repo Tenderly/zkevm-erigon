@@ -14,7 +14,7 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
 	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
 	"github.com/tenderly/zkevm-erigon-lib/etl"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/chain"
 

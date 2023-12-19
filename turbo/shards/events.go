@@ -4,7 +4,7 @@ import (
 	"sync"
 
 	"github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
 	"github.com/tenderly/zkevm-erigon/core/types"
 )
 

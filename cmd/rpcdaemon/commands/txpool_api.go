@@ -7,7 +7,7 @@ import (
 
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	proto_txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
+	proto_txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_txpool"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

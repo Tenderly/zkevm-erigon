@@ -18,7 +18,7 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
 	"github.com/tenderly/zkevm-erigon-lib/downloader/snaptype"
 	"github.com/tenderly/zkevm-erigon-lib/etl"
-	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/downloader"
+	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_downloader"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/kvcfg"
 	"github.com/tenderly/zkevm-erigon-lib/kv/rawdbv3"

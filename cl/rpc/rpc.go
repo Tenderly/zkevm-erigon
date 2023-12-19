@@ -12,7 +12,7 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentinel"
+	sentinel "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_sentinel"
 	"go.uber.org/zap/buffer"
 
 	"github.com/tenderly/zkevm-erigon/cl/clparams"

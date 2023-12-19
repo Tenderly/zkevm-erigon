@@ -9,7 +9,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
 
 	"github.com/stretchr/testify/require"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
+	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_txpool"
 	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"
 	"github.com/tenderly/zkevm-erigon/core/types"
