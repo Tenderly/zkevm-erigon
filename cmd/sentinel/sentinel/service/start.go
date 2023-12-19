@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/ledgerwatch/log/v3"
-	sentinelrpc "github.com/tenderly/erigon/erigon-lib/gointerfaces/sentinel"
+	sentinelrpc "github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentinel"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel"

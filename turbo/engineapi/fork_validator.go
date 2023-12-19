@@ -19,8 +19,8 @@ import (
 	"sync"
 
 	"github.com/ledgerwatch/log/v3"
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 

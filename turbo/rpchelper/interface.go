@@ -4,9 +4,9 @@ import (
 	"context"
 	"sync/atomic"
 
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
-	types2 "github.com/tenderly/erigon/erigon-lib/gointerfaces/types"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
+	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/types"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/core/types"

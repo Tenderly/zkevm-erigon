@@ -5,9 +5,9 @@ import (
 	"net"
 
 	"github.com/ledgerwatch/log/v3"
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces/grpcutil"
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
-	txpool_proto "github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/grpcutil"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
+	txpool_proto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
 	"github.com/tenderly/zkevm-erigon-lib/kv/remotedbserver"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"

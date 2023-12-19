@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces/sentinel"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentinel"
 )
 
 const (

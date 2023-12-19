@@ -6,9 +6,9 @@ import (
 
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/log/v3"
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
-	proto_sentry "github.com/tenderly/erigon/erigon-lib/gointerfaces/sentry"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
+	proto_sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentry"
 	"google.golang.org/grpc"
 
 	"github.com/tenderly/zkevm-erigon/eth/protocols/eth"

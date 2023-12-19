@@ -3,9 +3,9 @@ package rpchelper
 import (
 	"sync"
 
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
 
 	types2 "github.com/tenderly/zkevm-erigon/core/types"
 )

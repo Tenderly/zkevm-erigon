@@ -9,11 +9,11 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
-	types2 "github.com/tenderly/erigon/erigon-lib/gointerfaces/types"
 	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
+	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/types"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

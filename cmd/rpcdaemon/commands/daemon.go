@@ -1,7 +1,7 @@
 package commands
 
 import (
-	"github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 	libstate "github.com/tenderly/zkevm-erigon-lib/state"
