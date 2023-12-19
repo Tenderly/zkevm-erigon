@@ -5,6 +5,7 @@ import (
 	"path/filepath"
 
 	"github.com/c2h5oh/datasize"
+	"github.com/erigontech/mdbx-go/mdbx"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/spf13/cobra"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
@@ -14,7 +15,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/core/state/temporal"
 	"github.com/tenderly/zkevm-erigon/core/systemcontracts"
 	"github.com/tenderly/zkevm-erigon/core/types/accounts"
-	"github.com/torquem-ch/mdbx-go/mdbx"
 	"golang.org/x/sync/semaphore"
 
 	"github.com/tenderly/zkevm-erigon/cmd/utils"

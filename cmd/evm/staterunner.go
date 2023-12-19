@@ -25,10 +25,10 @@ import (
 	"path/filepath"
 
 	"github.com/c2h5oh/datasize"
+	mdbx2 "github.com/erigontech/mdbx-go/mdbx"
 	"github.com/ledgerwatch/log/v3"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
-	mdbx2 "github.com/torquem-ch/mdbx-go/mdbx"
 	"github.com/urfave/cli/v2"
 
 	"github.com/tenderly/zkevm-erigon/core/state"

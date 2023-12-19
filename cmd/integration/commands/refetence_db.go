@@ -13,6 +13,7 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/erigontech/mdbx-go/mdbx"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/spf13/cobra"
 	common2 "github.com/tenderly/zkevm-erigon-lib/common"
@@ -21,7 +22,6 @@ import (
 	mdbx2 "github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/core/rawdb/rawdbreset"
-	"github.com/torquem-ch/mdbx-go/mdbx"
 	"golang.org/x/sync/errgroup"
 	"golang.org/x/sync/semaphore"
 )

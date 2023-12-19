@@ -37,7 +37,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/rlp"
 
-	mdbx1 "github.com/torquem-ch/mdbx-go/mdbx"
+	mdbx1 "github.com/erigontech/mdbx-go/mdbx"
 )
 
 // Keys in the node database.

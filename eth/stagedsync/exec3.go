@@ -15,6 +15,7 @@ import (
 
 	"github.com/VictoriaMetrics/metrics"
 	"github.com/c2h5oh/datasize"
+	"github.com/erigontech/mdbx-go/mdbx"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
@@ -28,7 +29,6 @@ import (
 	state2 "github.com/tenderly/zkevm-erigon-lib/state"
 	"github.com/tenderly/zkevm-erigon/chain"
 	"github.com/tenderly/zkevm-erigon/common/math"
-	"github.com/torquem-ch/mdbx-go/mdbx"
 	"golang.org/x/sync/errgroup"
 
 	"github.com/tenderly/zkevm-erigon/cmd/state/exec22"
