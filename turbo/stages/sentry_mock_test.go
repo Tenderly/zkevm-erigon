@@ -7,9 +7,9 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces/sentry"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentry"
 
 	"github.com/tenderly/zkevm-erigon/common/u256"
 	"github.com/tenderly/zkevm-erigon/core"

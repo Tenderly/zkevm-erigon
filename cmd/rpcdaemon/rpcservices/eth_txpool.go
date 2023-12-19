@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/ledgerwatch/log/v3"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/grpcutil"
-	txpooproto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces/grpcutil"
+	txpooproto "github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
 	txpool2 "github.com/tenderly/zkevm-erigon-lib/txpool"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"

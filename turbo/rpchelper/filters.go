@@ -13,11 +13,11 @@ import (
 	"time"
 
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces/grpcutil"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/grpcutil"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
 	txpool2 "github.com/tenderly/zkevm-erigon-lib/txpool"
 	"google.golang.org/grpc"
 

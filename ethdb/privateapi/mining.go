@@ -7,9 +7,9 @@ import (
 	"sync"
 
 	"github.com/ledgerwatch/log/v3"
+	proto_txpool "github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
+	types2 "github.com/tenderly/erigon/erigon-lib/gointerfaces/types"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	proto_txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
-	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/types"
 	"google.golang.org/protobuf/types/known/emptypb"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

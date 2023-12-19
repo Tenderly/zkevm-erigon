@@ -13,10 +13,10 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	lru "github.com/tenderly/golang-lru/v2"
 
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
 	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
 	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 	"github.com/tenderly/zkevm-erigon-lib/kv/kvcfg"

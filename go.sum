@@ -1241,8 +1241,8 @@ github.com/tenderly/golang-lru/v2 v2.0.3-0.20231218144847-934fba021a0f h1:9Qlx7q
 github.com/tenderly/golang-lru/v2 v2.0.3-0.20231218144847-934fba021a0f/go.mod h1:1tx7gTfTFqT7G3VBa1p7AGO/tVesLTywNE+0QQeiszc=
 github.com/tenderly/secp256k1 v1.0.1-0.20231212115822-31dacfc1e0c7 h1:dXoKNz5mRiDiLuxBAnM8voo1CIgEl1K87MuVQur6R2o=
 github.com/tenderly/secp256k1 v1.0.1-0.20231212115822-31dacfc1e0c7/go.mod h1:j21vVj9UCKtBrDY71a5htZBFLBaYS5BmwL2ueIP1pFo=
-github.com/tenderly/zkevm-erigon-lib v0.0.0-20231219102333-55a3240aa53b h1:sGKk3tKgux26VLkL2JyBWA6PE7/oTHC83dC1KCg9Lyg=
-github.com/tenderly/zkevm-erigon-lib v0.0.0-20231219102333-55a3240aa53b/go.mod h1:zGhxh8w+144mX3jS5/KU6+du4341tNL3+vXIbHQYKC0=
+github.com/tenderly/zkevm-erigon-lib v0.0.0-20231219110816-ad62f92acaf8 h1:cOG3UZQvJY8tJaPplDH4yPdzmH2cqHlhKgpis9y66lQ=
+github.com/tenderly/zkevm-erigon-lib v0.0.0-20231219110816-ad62f92acaf8/go.mod h1:zGhxh8w+144mX3jS5/KU6+du4341tNL3+vXIbHQYKC0=
 github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e h1:cR8/SYRgyQCt5cNCMniB/ZScMkhI9nk8U5C7SbISXjo=
 github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e/go.mod h1:Tu4lItkATkonrYuvtVjG0/rhy15qrNGNTjPdaphtZ/8=
 github.com/tidwall/btree v1.6.0 h1:LDZfKfQIBHGHWSwckhXI0RPSXzlo+KYdjK7FWSqOzzg=

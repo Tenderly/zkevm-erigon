@@ -10,10 +10,10 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"google.golang.org/grpc"
 
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	txpool_proto "github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	txpool_proto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	types2 "github.com/tenderly/zkevm-erigon-lib/types"

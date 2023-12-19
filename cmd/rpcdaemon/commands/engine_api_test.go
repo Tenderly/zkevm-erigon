@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
 	"github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
 )
 
 // Test case for https://github.com/ethereum/execution-apis/pull/217 responses
