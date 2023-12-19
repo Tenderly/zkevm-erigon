@@ -3,7 +3,7 @@ package stagedsync
 import (
 	"context"
 
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/sync_stages"

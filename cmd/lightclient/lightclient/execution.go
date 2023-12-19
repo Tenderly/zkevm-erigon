@@ -5,8 +5,8 @@ import (
 
 	"github.com/holiman/uint256"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
-	types "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_types"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
+	types "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtypes"
 
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/ethdb/privateapi"

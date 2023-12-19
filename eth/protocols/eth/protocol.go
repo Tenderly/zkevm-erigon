@@ -25,7 +25,7 @@ import (
 	"math/bits"
 
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	proto_sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_sentry"
+	proto_sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmsentry"
 
 	"github.com/tenderly/zkevm-erigon/core/forkid"
 	"github.com/tenderly/zkevm-erigon/core/types"

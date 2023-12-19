@@ -7,8 +7,8 @@ import (
 
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
-	types "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_types"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
+	types "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtypes"
 
 	"github.com/tenderly/zkevm-erigon/turbo/shards"
 )

@@ -23,7 +23,7 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_sentry"
+	sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmsentry"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/core"

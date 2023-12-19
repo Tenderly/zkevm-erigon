@@ -3,7 +3,7 @@ package stagedsync
 import (
 	"context"
 
-	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_downloader"
+	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmdownloader"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/state"
 

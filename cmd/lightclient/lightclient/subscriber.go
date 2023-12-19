@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/ledgerwatch/log/v3"
-	grpcutil "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_grpcutil"
-	sentinel "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_sentinel"
+	grpcutil "github.com/tenderly/zkevm-erigon-lib/gointerfaces/grpcutil"
+	sentinel "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmsentinel"
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cl/utils"

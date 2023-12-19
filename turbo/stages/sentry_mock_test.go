@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
-	sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_sentry"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
+	sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmsentry"
 
 	"github.com/tenderly/zkevm-erigon/common/u256"
 	"github.com/tenderly/zkevm-erigon/core"

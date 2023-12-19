@@ -9,8 +9,8 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 	"github.com/tenderly/zkevm-erigon-lib/common"
-	sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_sentry"
-	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_txpool"
+	sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmsentry"
+	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtxpool"
 	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/commands"

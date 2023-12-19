@@ -10,8 +10,8 @@ import (
 	"github.com/holiman/uint256"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	execution "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_execution"
-	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_types"
+	execution "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmexecution"
+	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtypes"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"github.com/ledgerwatch/log/v3"

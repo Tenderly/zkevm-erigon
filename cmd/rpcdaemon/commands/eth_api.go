@@ -16,7 +16,7 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
 	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
-	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_txpool"
+	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtxpool"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 	"github.com/tenderly/zkevm-erigon-lib/kv/kvcfg"

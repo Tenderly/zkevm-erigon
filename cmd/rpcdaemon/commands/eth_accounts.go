@@ -12,7 +12,7 @@ import (
 
 	"github.com/tenderly/zkevm-erigon/turbo/rpchelper"
 
-	txpool_proto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_txpool"
+	txpool_proto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtxpool"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

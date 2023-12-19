@@ -15,8 +15,8 @@ import (
 	"google.golang.org/grpc/test/bufconn"
 
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
-	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_txpool"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
+	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtxpool"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/accounts/abi/bind"
 	"github.com/tenderly/zkevm-erigon/accounts/abi/bind/backends"

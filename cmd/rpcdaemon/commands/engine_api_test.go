@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
 )
 
 // Test case for https://github.com/ethereum/execution-apis/pull/217 responses

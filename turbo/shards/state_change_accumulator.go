@@ -5,7 +5,7 @@ import (
 
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
 )
 
 // Accumulator collects state changes in a form that can then be delivered to the RPC daemon

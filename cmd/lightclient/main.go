@@ -19,7 +19,7 @@ import (
 	"os"
 
 	"github.com/ledgerwatch/log/v3"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
 	"github.com/urfave/cli/v2"
 	"google.golang.org/grpc"
 

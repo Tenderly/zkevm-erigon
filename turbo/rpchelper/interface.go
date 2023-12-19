@@ -5,8 +5,8 @@ import (
 	"sync/atomic"
 
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_remote"
-	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_types"
+	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
+	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtypes"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/core/types"

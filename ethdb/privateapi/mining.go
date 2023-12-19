@@ -8,8 +8,8 @@ import (
 
 	"github.com/ledgerwatch/log/v3"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	proto_txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_txpool"
-	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_types"
+	proto_txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtxpool"
+	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtypes"
 	"google.golang.org/protobuf/types/known/emptypb"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

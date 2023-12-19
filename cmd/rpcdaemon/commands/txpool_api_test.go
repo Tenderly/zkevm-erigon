@@ -8,8 +8,8 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	txPoolProto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_txpool"
-	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_txpool"
+	txPoolProto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtxpool"
+	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtxpool"
 	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"

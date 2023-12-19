@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/direct"
-	sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevm_sentry"
+	sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmsentry"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcservices"
 	"github.com/tenderly/zkevm-erigon/core"
