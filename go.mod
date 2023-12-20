@@ -87,7 +87,7 @@ require (
 	github.com/tenderly/go-verkle v0.0.0-20231212093521-fbf9e5153193
 	github.com/tenderly/golang-lru/v2 v2.0.3-0.20231218144847-934fba021a0f
 	github.com/tenderly/secp256k1 v1.0.1-0.20231212115822-31dacfc1e0c7
-	github.com/tenderly/zkevm-erigon-lib v0.0.0-20231219145808-161a8167f34d
+	github.com/tenderly/zkevm-erigon-lib v0.0.0-20231220092230-616781923958
 	github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e
 	github.com/tidwall/btree v1.6.0
 	github.com/ugorji/go/codec/codecgen v1.1.13
@@ -225,6 +225,7 @@ require (
 	github.com/markbates/oncer v1.0.0 // indirect
 	github.com/markbates/safe v1.0.1 // indirect
 	github.com/marten-seemann/tcp v0.0.0-20210406111302-dfbc87cc63fd // indirect
+	github.com/matryer/moq v0.3.3 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	github.com/mattn/go-runewidth v0.0.9 // indirect
@@ -291,6 +292,7 @@ require (
 	github.com/stretchr/objx v0.5.0 // indirect
 	github.com/supranational/blst v0.3.11 // indirect
 	github.com/syndtr/goleveldb v1.0.1-0.20220614013038-64ee5596c38a // indirect
+	github.com/tenderly/erigon-interfaces v0.0.0-20231219142311-539864b62885 // indirect
 	github.com/tenderly/erigon/erigon-lib v0.0.0-20231213155600-d3d9290e9e54 // indirect
 	github.com/tklauser/go-sysconf v0.3.12 // indirect
 	github.com/tklauser/numcpus v0.6.1 // indirect
