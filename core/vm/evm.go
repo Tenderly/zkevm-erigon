@@ -375,12 +375,13 @@ func (evm *EVM) create(caller ContractRef, codeAndHash *codeAndHash, gas uint64,
 		return nil, libcommon.Address{}, 0, err
 	}
 
+	// Create a new account on the state
+	snapshot := evm.intraBlockState.Snapshot()
+
 	if evm.chainRules.IsBerlin {
 		evm.intraBlockState.AddAddressToAccessList(address)
 	}
 
-	// Create a new account on the state
-	snapshot := evm.intraBlockState.Snapshot()
 	evm.intraBlockState.CreateAccount(address, true)
 	if evm.chainRules.IsSpuriousDragon {
 		evm.intraBlockState.SetNonce(address, 1)
