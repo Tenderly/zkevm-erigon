@@ -4,7 +4,6 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/tenderly/zkevm-erigon/zk/sequencer"
 	"math/big"
 	"time"
 
@@ -37,9 +36,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
 	"github.com/tenderly/zkevm-erigon/turbo/stages/bodydownload"
 	"github.com/tenderly/zkevm-erigon/turbo/stages/headerdownload"
-	"github.com/tenderly/zkevm-erigon/zk/datastream/client"
-	zkStages "github.com/tenderly/zkevm-erigon/zk/stages"
-	"github.com/tenderly/zkevm-erigon/zk/syncer"
 )
 
 func SendPayloadStatus(hd *headerdownload.HeaderDownload, headBlockHash libcommon.Hash, err error) {
@@ -437,99 +433,6 @@ func NewDefaultStages(ctx context.Context,
 		),
 		stagedsync.StageHashStateCfg(db, dirs, cfg.HistoryV3, agg),
 		stagedsync.StageTrieCfg(db, true, true, false, dirs.Tmp, blockReader, controlServer.Hd, cfg.HistoryV3, agg),
-		stagedsync.StageHistoryCfg(db, cfg.Prune, dirs.Tmp),
-		stagedsync.StageLogIndexCfg(db, cfg.Prune, dirs.Tmp),
-		stagedsync.StageCallTracesCfg(db, cfg.Prune, 0, dirs.Tmp),
-		stagedsync.StageTxLookupCfg(db, cfg.Prune, dirs.Tmp, snapshots, controlServer.ChainConfig.Bor),
-		stagedsync.StageFinishCfg(db, dirs.Tmp, forkValidator),
-		runInTestMode)
-}
-
-func NewDefaultZkStages(ctx context.Context,
-	db kv.RwDB,
-	p2pCfg p2p.Config,
-	cfg *ethconfig.Config,
-	controlServer *sentry.MultiClient,
-	notifications *shards.Notifications,
-	snapDownloader proto_downloader.DownloaderClient,
-	snapshots *snapshotsync.RoSnapshots,
-	agg *state.AggregatorV3,
-	forkValidator *engineapi.ForkValidator,
-	engine consensus.Engine,
-	l1Syncer *syncer.L1Syncer,
-	datastreamClient *client.StreamClient,
-) []*sync_stages.Stage {
-	dirs := cfg.Dirs
-	blockReader := snapshotsync.NewBlockReaderWithSnapshots(snapshots, cfg.TransactionsV3)
-	blockRetire := snapshotsync.NewBlockRetire(1, dirs.Tmp, snapshots, db, snapDownloader, notifications.Events)
-
-	// During Import we don't want other services like header requests, body requests etc. to be running.
-	// Hence we run it in the test mode.
-	runInTestMode := cfg.ImportMode
-
-	if sequencer.IsSequencer() {
-		return zkStages.SequencerZkStages(ctx,
-			stagedsync.StageCumulativeIndexCfg(db),
-			stagedsync.StageBlockHashesCfg(db, dirs.Tmp, controlServer.ChainConfig),
-			stagedsync.StageSendersCfg(db, controlServer.ChainConfig, false, dirs.Tmp, cfg.Prune, blockRetire, controlServer.Hd),
-			zkStages.StageSequenceBlocksCfg(
-				db,
-				cfg.Prune,
-				cfg.BatchSize,
-				nil,
-				controlServer.ChainConfig,
-				controlServer.Engine,
-				&vm.Config{},
-				notifications.Accumulator,
-				cfg.StateStream,
-				/*stateStream=*/ false,
-				cfg.HistoryV3,
-				dirs,
-				blockReader,
-				controlServer.Hd,
-				cfg.Genesis,
-				cfg.Sync,
-				agg,
-				cfg.Zk,
-			),
-			stagedsync.StageHashStateCfg(db, dirs, cfg.HistoryV3, agg),
-			zkStages.StageZkInterHashesCfg(db, true, true, false, dirs.Tmp, blockReader, controlServer.Hd, cfg.HistoryV3, agg, cfg.Zk),
-			stagedsync.StageHistoryCfg(db, cfg.Prune, dirs.Tmp),
-			stagedsync.StageLogIndexCfg(db, cfg.Prune, dirs.Tmp),
-			stagedsync.StageCallTracesCfg(db, cfg.Prune, 0, dirs.Tmp),
-			stagedsync.StageTxLookupCfg(db, cfg.Prune, dirs.Tmp, snapshots, controlServer.ChainConfig.Bor),
-			stagedsync.StageFinishCfg(db, dirs.Tmp, forkValidator),
-			runInTestMode)
-	}
-
-	return zkStages.DefaultZkStages(ctx,
-		zkStages.StageL1SyncerCfg(db, l1Syncer, cfg.Zk),
-		zkStages.StageBatchesCfg(db, datastreamClient),
-		stagedsync.StageCumulativeIndexCfg(db),
-		stagedsync.StageBlockHashesCfg(db, dirs.Tmp, controlServer.ChainConfig),
-		stagedsync.StageSendersCfg(db, controlServer.ChainConfig, false, dirs.Tmp, cfg.Prune, blockRetire, controlServer.Hd),
-		stagedsync.StageExecuteBlocksCfg(
-			db,
-			cfg.Prune,
-			cfg.BatchSize,
-			nil,
-			controlServer.ChainConfig,
-			controlServer.Engine,
-			&vm.Config{},
-			notifications.Accumulator,
-			cfg.StateStream,
-			/*stateStream=*/ false,
-			cfg.HistoryV3,
-			dirs,
-			blockReader,
-			controlServer.Hd,
-			cfg.Genesis,
-			cfg.Sync,
-			agg,
-			cfg.Zk,
-		),
-		stagedsync.StageHashStateCfg(db, dirs, cfg.HistoryV3, agg),
-		zkStages.StageZkInterHashesCfg(db, true, true, false, dirs.Tmp, blockReader, controlServer.Hd, cfg.HistoryV3, agg, cfg.Zk),
 		stagedsync.StageHistoryCfg(db, cfg.Prune, dirs.Tmp),
 		stagedsync.StageLogIndexCfg(db, cfg.Prune, dirs.Tmp),
 		stagedsync.StageCallTracesCfg(db, cfg.Prune, 0, dirs.Tmp),

@@ -2,6 +2,7 @@ package cli
 
 import (
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/zk/sequencer"
 	"strings"
 	"time"
 
@@ -310,8 +311,10 @@ func ApplyFlagsForZkConfig(ctx *cli.Context, cfg *ethconfig.Config) {
 	}
 
 	checkFlag(utils.L2ChainIdFlag.Name, cfg.Zk.L2ChainId)
-	checkFlag(utils.L2RpcUrlFlag.Name, cfg.Zk.L2RpcUrl)
-	checkFlag(utils.L2DataStreamerUrlFlag.Name, cfg.Zk.L2DataStreamerUrl)
+	if !sequencer.IsSequencer() {
+		checkFlag(utils.L2RpcUrlFlag.Name, cfg.Zk.L2RpcUrl)
+		checkFlag(utils.L2DataStreamerUrlFlag.Name, cfg.Zk.L2DataStreamerUrl)
+	}
 	checkFlag(utils.L1ChainIdFlag.Name, cfg.Zk.L1ChainId)
 	checkFlag(utils.L1RpcUrlFlag.Name, cfg.Zk.L1RpcUrl)
 	checkFlag(utils.L1ContractAddressFlag.Name, cfg.Zk.L1ContractAddress.Hex())
