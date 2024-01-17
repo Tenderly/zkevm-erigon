@@ -42,7 +42,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/node"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 const (

@@ -44,7 +44,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/ethdb/cbor"
 	"github.com/tenderly/zkevm-erigon/rlp"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/tenderly/zkevm-erigon/turbo/services"
 )
 
