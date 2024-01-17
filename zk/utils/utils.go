@@ -3,9 +3,9 @@ package utils
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/sync_stages"
-	"github.com/ledgerwatch/erigon/zk/hermez_db"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon/sync_stages"
+	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
 )
 
 func ShouldShortCircuitExecution(tx kv.RwTx) (bool, uint64, error) {

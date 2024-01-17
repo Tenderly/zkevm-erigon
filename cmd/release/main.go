@@ -112,7 +112,7 @@ func main() {
 	}
 
 	// get last 5 releases
-	ghReleases, err := getReleases(githubToken, "https://api.github.com/repos/ledgerwatch/erigon/releases", releasesCount)
+	ghReleases, err := getReleases(githubToken, "https://api.github.com/repos/tenderly/zkevm-erigon/releases", releasesCount)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
