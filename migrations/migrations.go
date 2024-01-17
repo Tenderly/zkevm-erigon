@@ -5,6 +5,7 @@ import (
 	"context"
 	"encoding/binary"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"path/filepath"
 
 	"github.com/ledgerwatch/log/v3"
@@ -12,7 +13,6 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/common"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 // migrations apply sequentially in order of this array, skips applied migrations
@@ -260,7 +260,7 @@ func MarshalMigrationPayload(db kv.Getter) ([]byte, error) {
 	buf := bytes.NewBuffer(nil)
 	encoder := codec.NewEncoder(buf, &codec.CborHandle{})
 
-	for _, stage := range sync_stages.AllStages {
+	for _, stage := range stages.AllStages {
 		v, err := db.GetOne(kv.SyncStageProgress, []byte(stage))
 		if err != nil {
 			return nil, err

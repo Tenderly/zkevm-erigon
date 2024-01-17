@@ -8,6 +8,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"math/big"
 	"net/http"
 	_ "net/http/pprof" //nolint:gosec
@@ -49,7 +50,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/ethdb/cbor"
 	"github.com/tenderly/zkevm-erigon/params"
 	"github.com/tenderly/zkevm-erigon/rlp"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/tenderly/zkevm-erigon/turbo/debug"
 	"github.com/tenderly/zkevm-erigon/turbo/logging"
 	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
@@ -799,15 +799,15 @@ func advanceExec(chaindata string) error {
 	}
 	defer tx.Rollback()
 
-	stageExec, err := sync_stages.GetStageProgress(tx, sync_stages.Execution)
+	stageExec, err := stages.GetStageProgress(tx, stages.Execution)
 	if err != nil {
 		return err
 	}
 	log.Info("ID exec", "progress", stageExec)
-	if err = sync_stages.SaveStageProgress(tx, sync_stages.Execution, stageExec+1); err != nil {
+	if err = stages.SaveStageProgress(tx, stages.Execution, stageExec+1); err != nil {
 		return err
 	}
-	stageExec, err = sync_stages.GetStageProgress(tx, sync_stages.Execution)
+	stageExec, err = stages.GetStageProgress(tx, stages.Execution)
 	if err != nil {
 		return err
 	}
@@ -827,15 +827,15 @@ func backExec(chaindata string) error {
 	}
 	defer tx.Rollback()
 
-	stageExec, err := sync_stages.GetStageProgress(tx, sync_stages.Execution)
+	stageExec, err := stages.GetStageProgress(tx, stages.Execution)
 	if err != nil {
 		return err
 	}
 	log.Info("ID exec", "progress", stageExec)
-	if err = sync_stages.SaveStageProgress(tx, sync_stages.Execution, stageExec-1); err != nil {
+	if err = stages.SaveStageProgress(tx, stages.Execution, stageExec-1); err != nil {
 		return err
 	}
-	stageExec, err = sync_stages.GetStageProgress(tx, sync_stages.Execution)
+	stageExec, err = stages.GetStageProgress(tx, stages.Execution)
 	if err != nil {
 		return err
 	}

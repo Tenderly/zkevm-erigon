@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/binary"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"testing"
 	"time"
 
@@ -16,7 +17,6 @@ import (
 
 	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/core/types"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 func TestTxsBeginEnd(t *testing.T) {
@@ -51,7 +51,7 @@ func TestTxsBeginEnd(t *testing.T) {
 			err = rawdb.WriteCanonicalHash(tx, hash, i)
 			require.NoError(err)
 		}
-		if err := sync_stages.SaveStageProgress(tx, sync_stages.Bodies, 9); err != nil {
+		if err := stages.SaveStageProgress(tx, stages.Bodies, 9); err != nil {
 			return err
 		}
 		return nil

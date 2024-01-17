@@ -7,6 +7,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"os"
 	"path"
 	"path/filepath"
@@ -43,7 +44,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
 	"github.com/tenderly/zkevm-erigon/params"
 	"github.com/tenderly/zkevm-erigon/rlp"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync/snapcfg"
 	"golang.org/x/exp/slices"
 	"golang.org/x/sync/errgroup"
@@ -1119,7 +1119,7 @@ func (br *BlockRetire) PruneAncientBlocks(tx kv.RwTx, limit int) error {
 	if br.snapshots.cfg.KeepBlocks {
 		return nil
 	}
-	currentProgress, err := sync_stages.GetStageProgress(tx, sync_stages.Senders)
+	currentProgress, err := stages.GetStageProgress(tx, stages.Senders)
 	if err != nil {
 		return err
 	}

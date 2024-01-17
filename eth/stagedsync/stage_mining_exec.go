@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"io"
 	"math/big"
 	"sync/atomic"
@@ -37,7 +38,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/core/vm"
 	"github.com/tenderly/zkevm-erigon/params"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
 )
 
@@ -90,7 +90,7 @@ func StageMiningExecCfg(
 // SpawnMiningExecStage
 // TODO:
 // - resubmitAdjustCh - variable is not implemented
-func SpawnMiningExecStage(s *sync_stages.StageState, tx kv.RwTx, cfg MiningExecCfg, quit <-chan struct{}) error {
+func SpawnMiningExecStage(s *StageState, tx kv.RwTx, cfg MiningExecCfg, quit <-chan struct{}) error {
 	cfg.vmConfig.NoReceipts = false
 	chainID, _ := uint256.FromBig(cfg.chainConfig.ChainID)
 	logPrefix := s.LogPrefix()
@@ -186,7 +186,7 @@ func SpawnMiningExecStage(s *sync_stages.StageState, tx kv.RwTx, cfg MiningExecC
 	log.Debug("FinalizeBlockExecution", "current txn", current.Txs.Len(), "current receipt", current.Receipts.Len(), "payload", cfg.payloadId)
 
 	// hack: pretend that we are real execution stage - next stages will rely on this progress
-	if err := sync_stages.SaveStageProgress(tx, sync_stages.Execution, current.Header.Number.Uint64()); err != nil {
+	if err := stages.SaveStageProgress(tx, stages.Execution, current.Header.Number.Uint64()); err != nil {
 		return err
 	}
 	return nil

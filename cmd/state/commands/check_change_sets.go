@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"context"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"os"
 	"os/signal"
 	"path"
@@ -24,7 +25,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/core/vm"
 	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
 )
 
@@ -105,11 +105,11 @@ func CheckChangeSets(genesis *types.Genesis, logger log.Logger, blockNum uint64,
 	}
 	defer rwtx.Rollback()
 
-	execAt, err1 := sync_stages.GetStageProgress(rwtx, sync_stages.Execution)
+	execAt, err1 := stages.GetStageProgress(rwtx, stages.Execution)
 	if err1 != nil {
 		return err1
 	}
-	historyAt, err1 := sync_stages.GetStageProgress(rwtx, sync_stages.StorageHistoryIndex)
+	historyAt, err1 := stages.GetStageProgress(rwtx, stages.StorageHistoryIndex)
 	if err1 != nil {
 		return err1
 	}

@@ -3,6 +3,7 @@ package stages
 import (
 	"context"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync"
 	"time"
 
 	"github.com/ledgerwatch/log/v3"
@@ -14,7 +15,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
 	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/execution_client"
 	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/network"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 type StageHistoryReconstructionCfg struct {
@@ -44,7 +44,7 @@ func StageHistoryReconstruction(db kv.RwDB, downloader *network.BackwardBeaconDo
 }
 
 // SpawnStageBeaconsForward spawn the beacon forward stage
-func SpawnStageHistoryReconstruction(cfg StageHistoryReconstructionCfg, s *sync_stages.StageState, tx kv.RwTx, ctx context.Context) error {
+func SpawnStageHistoryReconstruction(cfg StageHistoryReconstructionCfg, s *stagedsync.StageState, tx kv.RwTx, ctx context.Context) error {
 	// This stage must be done only once.
 	progress := s.BlockNumber
 	if progress != 0 {

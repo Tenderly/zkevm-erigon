@@ -3,6 +3,7 @@ package migrations
 import (
 	"context"
 	"encoding/binary"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 
 	"github.com/ledgerwatch/log/v3"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
@@ -13,7 +14,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/core/rawdb/rawdbreset"
 	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
 	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync/snap"
 )
@@ -107,7 +107,7 @@ var resetBlocks4 = Migration{
 			return tx.Commit()
 		}
 
-		headersProgress, _ := sync_stages.GetStageProgress(tx, sync_stages.Headers)
+		headersProgress, _ := stages.GetStageProgress(tx, stages.Headers)
 		if headersProgress > 0 {
 			log.Warn("NOTE: this migration will remove recent blocks (and senders) to fix several recent bugs. Your node will re-download last ~400K blocks, should not take very long")
 		}

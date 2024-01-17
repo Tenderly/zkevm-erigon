@@ -2,6 +2,7 @@ package stages
 
 import (
 	"context"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 
 	"github.com/ledgerwatch/log/v3"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
@@ -12,7 +13,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
 	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/transition"
 	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/execution_client"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 type StageBeaconStateCfg struct {
@@ -44,7 +44,7 @@ func SpawnStageBeaconState(cfg StageBeaconStateCfg, tx kv.RwTx, ctx context.Cont
 		defer tx.Rollback()
 	}
 
-	endSlot, err := sync_stages.GetStageProgress(tx, sync_stages.BeaconBlocks)
+	endSlot, err := stages.GetStageProgress(tx, stages.BeaconBlocks)
 	if err != nil {
 		return err
 	}

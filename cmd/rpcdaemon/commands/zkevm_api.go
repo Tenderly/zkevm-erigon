@@ -6,6 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/tenderly/zkevm-erigon/core"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"math/big"
 
 	"github.com/tenderly/zkevm-erigon-lib/common"
@@ -17,7 +18,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
 	eritypes "github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/rpc"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
 	types "github.com/tenderly/zkevm-erigon/zk/rpcdaemon"
 	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/client"
@@ -69,7 +69,7 @@ func (api *ZkEvmAPIImpl) ConsolidatedBlockNumber(ctx context.Context) (hexutil.U
 	}
 	defer tx.Rollback()
 
-	highestVerifiedBatchNo, err := sync_stages.GetStageProgress(tx, sync_stages.L1VerificationsBatchNo)
+	highestVerifiedBatchNo, err := stages.GetStageProgress(tx, stages.L1VerificationsBatchNo)
 	if err != nil {
 		return hexutil.Uint64(0), err
 	}
@@ -95,7 +95,7 @@ func (api *ZkEvmAPIImpl) IsBlockConsolidated(ctx context.Context, blockNumber rp
 		return false, err
 	}
 
-	highestVerifiedBatchNo, err := sync_stages.GetStageProgress(tx, sync_stages.L1VerificationsBatchNo)
+	highestVerifiedBatchNo, err := stages.GetStageProgress(tx, stages.L1VerificationsBatchNo)
 	if err != nil {
 		return false, err
 	}
@@ -189,7 +189,7 @@ func (api *ZkEvmAPIImpl) VerifiedBatchNumber(ctx context.Context) (hexutil.Uint6
 	}
 	defer tx.Rollback()
 
-	highestVerifiedBatchNo, err := sync_stages.GetStageProgress(tx, sync_stages.L1VerificationsBatchNo)
+	highestVerifiedBatchNo, err := stages.GetStageProgress(tx, stages.L1VerificationsBatchNo)
 	if err != nil {
 		return hexutil.Uint64(0), err
 	}

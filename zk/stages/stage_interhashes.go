@@ -2,6 +2,8 @@ package stages
 
 import (
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 
 	"github.com/ledgerwatch/log/v3"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
@@ -30,7 +32,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/core/systemcontracts"
 	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/tenderly/zkevm-erigon/turbo/services"
 	"github.com/tenderly/zkevm-erigon/turbo/stages/headerdownload"
 	"github.com/tenderly/zkevm-erigon/turbo/trie"
@@ -67,7 +68,7 @@ func StageZkInterHashesCfg(db kv.RwDB, checkRoot, saveNewHashesToDB, badBlockHal
 	}
 }
 
-func SpawnZkIntermediateHashesStage(s *sync_stages.StageState, u sync_stages.Unwinder, tx kv.RwTx, cfg ZkInterHashesCfg, ctx context.Context, quiet bool) (libcommon.Hash, error) {
+func SpawnZkIntermediateHashesStage(s *stagedsync.StageState, u stagedsync.Unwinder, tx kv.RwTx, cfg ZkInterHashesCfg, ctx context.Context, quiet bool) (libcommon.Hash, error) {
 	logPrefix := s.LogPrefix()
 
 	quit := ctx.Done()
@@ -125,7 +126,7 @@ func SpawnZkIntermediateHashesStage(s *sync_stages.StageState, u sync_stages.Unw
 		}
 	} else {
 		// increment to latest executed block
-		incrementTo, err := sync_stages.GetStageProgress(tx, sync_stages.Execution)
+		incrementTo, err := stages.GetStageProgress(tx, stages.Execution)
 		if err != nil {
 			return trie.EmptyRoot, err
 		}
@@ -177,7 +178,7 @@ func SpawnZkIntermediateHashesStage(s *sync_stages.StageState, u sync_stages.Unw
 	return root, err
 }
 
-func UnwindZkIntermediateHashesStage(u *sync_stages.UnwindState, s *sync_stages.StageState, tx kv.RwTx, cfg ZkInterHashesCfg, ctx context.Context) (err error) {
+func UnwindZkIntermediateHashesStage(u *stagedsync.UnwindState, s *stagedsync.StageState, tx kv.RwTx, cfg ZkInterHashesCfg, ctx context.Context) (err error) {
 	quit := ctx.Done()
 	useExternalTx := tx != nil
 	if !useExternalTx {
@@ -218,7 +219,7 @@ func regenerateIntermediateHashes(logPrefix string, db kv.RwTx, eridb *db2.EriDb
 	log.Info(fmt.Sprintf("[%s] Regeneration trie hashes started", logPrefix))
 	defer log.Info(fmt.Sprintf("[%s] Regeneration ended", logPrefix))
 
-	if err := sync_stages.SaveStageProgress(db, sync_stages.IntermediateHashes, 0); err != nil {
+	if err := stages.SaveStageProgress(db, stages.IntermediateHashes, 0); err != nil {
 		log.Warn(fmt.Sprint("regenerate SaveStageProgress to zero error: ", err))
 	}
 
@@ -316,7 +317,7 @@ func regenerateIntermediateHashes(logPrefix string, db kv.RwTx, eridb *db2.EriDb
 	return libcommon.BigToHash(root), nil
 }
 
-func zkIncrementIntermediateHashes(logPrefix string, s *sync_stages.StageState, db kv.RwTx, eridb *db2.EriDb, dbSmt *smt.SMT, to uint64, cfg ZkInterHashesCfg, expectedRootHash *libcommon.Hash, quit <-chan struct{}) (libcommon.Hash, error) {
+func zkIncrementIntermediateHashes(logPrefix string, s *stagedsync.StageState, db kv.RwTx, eridb *db2.EriDb, dbSmt *smt.SMT, to uint64, cfg ZkInterHashesCfg, expectedRootHash *libcommon.Hash, quit <-chan struct{}) (libcommon.Hash, error) {
 	log.Info(fmt.Sprintf("[%s] Increment trie hashes started", logPrefix), "previousRootHeight", s.BlockNumber, "calculatingRootHeight", to)
 	defer log.Info(fmt.Sprintf("[%s] Increment ended", logPrefix))
 

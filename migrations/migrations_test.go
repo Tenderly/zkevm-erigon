@@ -3,13 +3,13 @@ package migrations
 import (
 	"context"
 	"errors"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"testing"
 
 	"github.com/stretchr/testify/require"
 	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 func TestApplyWithInit(t *testing.T) {
@@ -206,7 +206,7 @@ func TestMarshalStages(t *testing.T) {
 	require := require.New(t)
 	_, tx := memdb.NewTestTx(t)
 
-	err := sync_stages.SaveStageProgress(tx, sync_stages.Execution, 42)
+	err := stages.SaveStageProgress(tx, stages.Execution, 42)
 	require.NoError(err)
 
 	data, err := MarshalMigrationPayload(tx)
@@ -216,7 +216,7 @@ func TestMarshalStages(t *testing.T) {
 	require.NoError(err)
 
 	require.Equal(1, len(res))
-	v, ok := res[string(sync_stages.Execution)]
+	v, ok := res[string(stages.Execution)]
 	require.True(ok)
 	require.NotNil(v)
 }

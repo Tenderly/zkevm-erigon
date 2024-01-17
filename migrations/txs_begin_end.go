@@ -5,6 +5,7 @@ import (
 	"context"
 	"encoding/binary"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"runtime"
 	"time"
 
@@ -20,7 +21,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/rlp"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 var ErrTxsBeginEndNoMigration = fmt.Errorf("in this Erigon version DB format was changed: added additional first/last system-txs to blocks. There is no DB migration for this change. Please re-sync or switch to earlier version")
@@ -33,7 +33,7 @@ var txsBeginEnd = Migration{
 
 		var latestBlock uint64
 		if err := db.View(context.Background(), func(tx kv.Tx) error {
-			bodiesProgress, err := sync_stages.GetStageProgress(tx, sync_stages.Bodies)
+			bodiesProgress, err := stages.GetStageProgress(tx, stages.Bodies)
 			if err != nil {
 				return err
 			}

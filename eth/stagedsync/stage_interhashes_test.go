@@ -18,6 +18,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
 	"github.com/tenderly/zkevm-erigon/turbo/trie"
 
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

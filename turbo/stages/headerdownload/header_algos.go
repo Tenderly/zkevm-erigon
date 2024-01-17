@@ -8,6 +8,7 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"io"
 	"math/big"
 	"sort"
@@ -29,7 +30,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/params"
 	"github.com/tenderly/zkevm-erigon/rlp"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/tenderly/zkevm-erigon/turbo/engineapi"
 )
 
@@ -325,7 +325,7 @@ func (hd *HeaderDownload) RecoverFromDb(db kv.RoDB) error {
 		if err != nil {
 			return err
 		}
-		hd.highestInDb, err = sync_stages.GetStageProgress(tx, sync_stages.Headers)
+		hd.highestInDb, err = stages.GetStageProgress(tx, stages.Headers)
 		if err != nil {
 			return err
 		}
@@ -369,7 +369,7 @@ func (hd *HeaderDownload) RecoverFromDb(db kv.RoDB) error {
 func (hd *HeaderDownload) ReadProgressFromDb(tx kv.RwTx) (err error) {
 	hd.lock.Lock()
 	defer hd.lock.Unlock()
-	hd.highestInDb, err = sync_stages.GetStageProgress(tx, sync_stages.Headers)
+	hd.highestInDb, err = stages.GetStageProgress(tx, stages.Headers)
 	if err != nil {
 		return err
 	}

@@ -2,13 +2,13 @@ package rpchelper
 
 import (
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/rpc"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 )
 
 var UnknownBlockError = &rpc.CustomError{
@@ -25,7 +25,7 @@ func GetLatestBlockNumber(tx kv.Tx) (uint64, error) {
 		}
 	}
 
-	blockNum, err := sync_stages.GetStageProgress(tx, sync_stages.Execution)
+	blockNum, err := stages.GetStageProgress(tx, stages.Execution)
 	if err != nil {
 		return 0, fmt.Errorf("getting latest block number: %w", err)
 	}
@@ -57,7 +57,7 @@ func GetSafeBlockNumber(tx kv.Tx) (uint64, error) {
 }
 
 func GetLatestExecutedBlockNumber(tx kv.Tx) (uint64, error) {
-	blockNum, err := sync_stages.GetStageProgress(tx, sync_stages.Execution)
+	blockNum, err := stages.GetStageProgress(tx, stages.Execution)
 	if err != nil {
 		return 0, err
 	}

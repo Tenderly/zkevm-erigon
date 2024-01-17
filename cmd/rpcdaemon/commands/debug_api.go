@@ -3,6 +3,7 @@ package commands
 import (
 	"context"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 
 	jsoniter "github.com/json-iterator/go"
 	"github.com/tenderly/zkevm-erigon-lib/common"
@@ -18,7 +19,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 	"github.com/tenderly/zkevm-erigon/eth/tracers"
 	"github.com/tenderly/zkevm-erigon/rpc"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/tenderly/zkevm-erigon/turbo/adapter/ethapi"
 	"github.com/tenderly/zkevm-erigon/turbo/transactions"
 )
@@ -110,7 +110,7 @@ func (api *PrivateDebugAPIImpl) AccountRange(ctx context.Context, blockNrOrHash 
 		if number == rpc.LatestBlockNumber {
 			var err error
 
-			blockNumber, err = sync_stages.GetStageProgress(tx, sync_stages.Execution)
+			blockNumber, err = stages.GetStageProgress(tx, stages.Execution)
 			if err != nil {
 				return state.IteratorDump{}, fmt.Errorf("last block has not found: %w", err)
 			}
@@ -162,7 +162,7 @@ func (api *PrivateDebugAPIImpl) GetModifiedAccountsByNumber(ctx context.Context,
 	}
 	defer tx.Rollback()
 
-	latestBlock, err := sync_stages.GetStageProgress(tx, sync_stages.Finish)
+	latestBlock, err := stages.GetStageProgress(tx, stages.Finish)
 	if err != nil {
 		return nil, err
 	}

@@ -11,6 +11,8 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
+
 )
 
 func TestPromoteHashedStateClearState(t *testing.T) {

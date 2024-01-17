@@ -5,6 +5,7 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"io"
 	"os"
 	"path/filepath"
@@ -30,7 +31,6 @@ import (
 	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
 	"github.com/tenderly/zkevm-erigon/eth/ethconfig/estimate"
-	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/tenderly/zkevm-erigon/turbo/debug"
 	"github.com/tenderly/zkevm-erigon/turbo/logging"
 	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
@@ -359,7 +359,7 @@ func doRetireCommand(cliCtx *cli.Context) error {
 	if to == 0 {
 		var forwardProgress uint64
 		db.View(ctx, func(tx kv.Tx) error {
-			forwardProgress, err = sync_stages.GetStageProgress(tx, sync_stages.Senders)
+			forwardProgress, err = stages.GetStageProgress(tx, stages.Senders)
 			return err
 		})
 		from2, to2, ok := snapshotsync.CanRetire(forwardProgress, br.Snapshots())
@@ -413,7 +413,7 @@ func doRetireCommand(cliCtx *cli.Context) error {
 
 	var lastTxNum uint64
 	if err := db.View(ctx, func(tx kv.Tx) error {
-		execProgress, _ := sync_stages.GetStageProgress(tx, sync_stages.Execution)
+		execProgress, _ := stages.GetStageProgress(tx, stages.Execution)
 		lastTxNum, err = rawdbv3.TxNums.Max(tx, execProgress)
 		if err != nil {
 			return err
