@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/zk/sequencer"
 	"math/big"
 	"time"
 
@@ -466,19 +467,42 @@ func NewDefaultZkStages(ctx context.Context,
 	// Hence we run it in the test mode.
 	runInTestMode := cfg.ImportMode
 
+	if sequencer.IsSequencer() {
+		return zkStages.SequencerZkStages(ctx,
+			stagedsync.StageCumulativeIndexCfg(db),
+			stagedsync.StageBlockHashesCfg(db, dirs.Tmp, controlServer.ChainConfig),
+			stagedsync.StageSendersCfg(db, controlServer.ChainConfig, false, dirs.Tmp, cfg.Prune, blockRetire, controlServer.Hd),
+			zkStages.StageSequenceBlocksCfg(
+				db,
+				cfg.Prune,
+				cfg.BatchSize,
+				nil,
+				controlServer.ChainConfig,
+				controlServer.Engine,
+				&vm.Config{},
+				notifications.Accumulator,
+				cfg.StateStream,
+				/*stateStream=*/ false,
+				cfg.HistoryV3,
+				dirs,
+				blockReader,
+				controlServer.Hd,
+				cfg.Genesis,
+				cfg.Sync,
+				agg,
+				cfg.Zk,
+			),
+			stagedsync.StageHashStateCfg(db, dirs, cfg.HistoryV3, agg),
+			zkStages.StageZkInterHashesCfg(db, true, true, false, dirs.Tmp, blockReader, controlServer.Hd, cfg.HistoryV3, agg, cfg.Zk),
+			stagedsync.StageHistoryCfg(db, cfg.Prune, dirs.Tmp),
+			stagedsync.StageLogIndexCfg(db, cfg.Prune, dirs.Tmp),
+			stagedsync.StageCallTracesCfg(db, cfg.Prune, 0, dirs.Tmp),
+			stagedsync.StageTxLookupCfg(db, cfg.Prune, dirs.Tmp, snapshots, controlServer.ChainConfig.Bor),
+			stagedsync.StageFinishCfg(db, dirs.Tmp, forkValidator),
+			runInTestMode)
+	}
+
 	return zkStages.DefaultZkStages(ctx,
-		stagedsync.StageSnapshotsCfg(db,
-			*controlServer.ChainConfig,
-			dirs,
-			snapshots,
-			blockRetire,
-			snapDownloader,
-			blockReader,
-			notifications.Events,
-			engine,
-			cfg.HistoryV3,
-			agg,
-		),
 		zkStages.StageL1SyncerCfg(db, l1Syncer, cfg.Zk),
 		zkStages.StageBatchesCfg(db, datastreamClient),
 		stagedsync.StageCumulativeIndexCfg(db),
