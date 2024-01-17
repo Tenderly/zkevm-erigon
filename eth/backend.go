@@ -21,6 +21,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/db"
+	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
 	"io/fs"
 	"math/big"
 	"net"
@@ -673,6 +675,23 @@ func New(stack *node.Node, config *ethconfig.Config) (*Ethereum, error) {
 	}
 
 	backend.ethBackendRPC, backend.miningRPC, backend.stateChangesClient = ethBackendRPC, miningRPC, stateDiffClient
+
+	tx, err := backend.chainDB.BeginRw(ctx)
+	if err != nil {
+		return nil, err
+	}
+	// create buckets
+	if err := hermez_db.CreateHermezBuckets(tx); err != nil {
+		return nil, err
+	}
+
+	if err := db.CreateEriDbBuckets(tx); err != nil {
+		return nil, err
+	}
+
+	if err := tx.Commit(); err != nil {
+		return nil, err
+	}
 
 	if backend.config.Zk != nil {
 		cfg := backend.config.Zk

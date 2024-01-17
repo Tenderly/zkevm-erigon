@@ -32,26 +32,30 @@ type EriDb struct {
 	tx   SmtDbTx
 }
 
-func NewEriDb(tx kv.RwTx) (*EriDb, error) {
+func CreateEriDbBuckets(tx kv.RwTx) error {
 	err := tx.CreateBucket(TableSmt)
 	if err != nil {
-		return &EriDb{}, err
+		return err
 	}
 
 	err = tx.CreateBucket(TableLastRoot)
 	if err != nil {
-		return &EriDb{}, err
+		return err
 	}
 
 	err = tx.CreateBucket(TableAccountValues)
 	if err != nil {
-		return &EriDb{}, err
+		return err
 	}
 
+	return nil
+}
+
+func NewEriDb(tx kv.RwTx) *EriDb {
 	return &EriDb{
 		kvTx: tx,
 		tx:   tx,
-	}, nil
+	}
 }
 
 func (m *EriDb) OpenBatch(quitCh <-chan struct{}) {
