@@ -11,7 +11,7 @@ import (
 	"strings"
 
 	"github.com/iden3/go-iden3-crypto/keccak256"
-	"github.com/ledgerwatch/erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 type HTTPResponse struct {

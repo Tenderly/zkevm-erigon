@@ -8,11 +8,11 @@ import (
 	"sync"
 
 	"github.com/holiman/uint256"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	execution "github.com/tenderly/erigon/erigon-lib/gointerfaces/execution"
+	types2 "github.com/tenderly/erigon/erigon-lib/gointerfaces/types"
 	"github.com/tenderly/zkevm-erigon-lib/common"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	execution "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmexecution"
-	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtypes"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/core/rawdb"

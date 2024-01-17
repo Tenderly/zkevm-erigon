@@ -56,7 +56,6 @@ require (
 	github.com/json-iterator/go v1.1.12
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/kevinburke/go-bindata v3.21.0+incompatible
-	github.com/ledgerwatch/erigon-lib v1.0.0
 	github.com/libp2p/go-libp2p v0.26.4
 	github.com/libp2p/go-libp2p-pubsub v0.9.3
 	github.com/maticnetwork/crand v1.0.2
@@ -81,6 +80,7 @@ require (
 	github.com/spf13/pflag v1.0.5
 	github.com/status-im/keycard-go v0.2.0
 	github.com/stretchr/testify v1.8.4
+	github.com/tenderly/erigon/erigon-lib v0.0.0-20231213155600-d3d9290e9e54
 	github.com/tenderly/go-codec/codec v1.1.14-0.20231212094703-0bbb66a02189
 	github.com/tenderly/go-kzg-4844 v0.0.0-20231215154023-f87fedca66d0
 	github.com/tenderly/go-verkle v0.0.0-20231212093521-fbf9e5153193
@@ -265,7 +265,6 @@ require (
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/supranational/blst v0.3.11 // indirect
 	github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7 // indirect
-	github.com/tenderly/erigon/erigon-lib v0.0.0-20231213155600-d3d9290e9e54 // indirect
 	github.com/tklauser/go-sysconf v0.3.12 // indirect
 	github.com/tklauser/numcpus v0.6.1 // indirect
 	github.com/valyala/fastrand v1.1.0 // indirect

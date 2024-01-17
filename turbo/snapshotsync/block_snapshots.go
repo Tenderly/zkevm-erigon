@@ -20,6 +20,7 @@ import (
 
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/log/v3"
+	proto_downloader "github.com/tenderly/erigon/erigon-lib/gointerfaces/downloader"
 	common2 "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/background"
 	"github.com/tenderly/zkevm-erigon-lib/common/cmp"
@@ -31,7 +32,6 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/downloader/downloadergrpc"
 	"github.com/tenderly/zkevm-erigon-lib/downloader/snaptype"
 	"github.com/tenderly/zkevm-erigon-lib/etl"
-	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmdownloader"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/recsplit"
 	types2 "github.com/tenderly/zkevm-erigon-lib/types"

@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
+	sentry "github.com/tenderly/erigon/erigon-lib/gointerfaces/sentry"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/direct"
-	sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmsentry"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcservices"
 	"github.com/tenderly/zkevm-erigon/core"

@@ -14,9 +14,9 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/test/bufconn"
 
+	remote "github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
+	txpool "github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
-	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtxpool"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/accounts/abi/bind"
 	"github.com/tenderly/zkevm-erigon/accounts/abi/bind/backends"

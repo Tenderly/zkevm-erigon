@@ -4,7 +4,7 @@ import (
 	"context"
 	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
+	remote "github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/core/types"
 )

@@ -4,9 +4,9 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
-	types "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtypes"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	remote "github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
+	types "github.com/tenderly/erigon/erigon-lib/gointerfaces/types"
 
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/ethdb/privateapi"

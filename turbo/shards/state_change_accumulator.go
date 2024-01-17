@@ -3,9 +3,9 @@ package shards
 import (
 	"context"
 
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	remote "github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
 )
 
 // Accumulator collects state changes in a form that can then be delivered to the RPC daemon

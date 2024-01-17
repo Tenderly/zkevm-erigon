@@ -7,9 +7,9 @@ import (
 
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
+	txPoolProto "github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
+	txpool "github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	txPoolProto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtxpool"
-	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtxpool"
 	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"

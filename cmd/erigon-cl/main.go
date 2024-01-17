@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	sentinelrpc "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmsentinel"
+	sentinelrpc "github.com/tenderly/erigon/erigon-lib/gointerfaces/sentinel"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
 	"github.com/tenderly/zkevm-erigon/cl/clparams"

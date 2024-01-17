@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	"github.com/ledgerwatch/log/v3"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtxpool"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	txpool "github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
 	"github.com/tenderly/zkevm-erigon/ethdb/privateapi"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"

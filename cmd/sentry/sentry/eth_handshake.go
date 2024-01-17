@@ -3,8 +3,8 @@ package sentry
 import (
 	"fmt"
 
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	proto_sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmsentry"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	proto_sentry "github.com/tenderly/erigon/erigon-lib/gointerfaces/sentry"
 	"github.com/tenderly/zkevm-erigon/core/forkid"
 	"github.com/tenderly/zkevm-erigon/eth/protocols/eth"
 	"github.com/tenderly/zkevm-erigon/p2p"

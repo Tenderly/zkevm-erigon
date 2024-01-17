@@ -9,9 +9,9 @@ import (
 	"strings"
 
 	"github.com/ledgerwatch/log/v3"
+	txPoolProto "github.com/tenderly/erigon/erigon-lib/gointerfaces/txpool"
 	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
-	txPoolProto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtxpool"
 
 	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/core/types"

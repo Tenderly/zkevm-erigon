@@ -5,7 +5,7 @@ import (
 	"net"
 
 	"github.com/c2h5oh/datasize"
-	execution "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmexecution"
+	execution "github.com/tenderly/erigon/erigon-lib/gointerfaces/execution"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
 	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"

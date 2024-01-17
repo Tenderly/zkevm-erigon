@@ -20,11 +20,11 @@ import (
 	"time"
 
 	"github.com/ledgerwatch/log/v3"
+	remote "github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
+	sentinel "github.com/tenderly/erigon/erigon-lib/gointerfaces/sentinel"
 	"github.com/tenderly/golang-lru/v2"
 	common2 "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
-	sentinel "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmsentinel"
 
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"

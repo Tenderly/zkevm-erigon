@@ -6,9 +6,9 @@ import (
 
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	proto_sentry "github.com/tenderly/erigon/erigon-lib/gointerfaces/sentry"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	proto_sentry "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmsentry"
 
 	"github.com/tenderly/zkevm-erigon/core/forkid"
 	"github.com/tenderly/zkevm-erigon/eth/protocols/eth"

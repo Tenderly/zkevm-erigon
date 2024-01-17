@@ -10,10 +10,10 @@ import (
 	"sync/atomic"
 
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	remote "github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
+	types2 "github.com/tenderly/erigon/erigon-lib/gointerfaces/types"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
-	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtypes"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/status"

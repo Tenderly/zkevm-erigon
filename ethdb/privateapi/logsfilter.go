@@ -5,10 +5,10 @@ import (
 	"io"
 	"sync"
 
+	"github.com/tenderly/erigon/erigon-lib/gointerfaces"
+	remote "github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
+	types "github.com/tenderly/erigon/erigon-lib/gointerfaces/types"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
-	types "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmtypes"
 
 	"github.com/tenderly/zkevm-erigon/turbo/shards"
 )

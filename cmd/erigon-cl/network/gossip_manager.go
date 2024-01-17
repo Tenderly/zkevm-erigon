@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/ledgerwatch/log/v3"
-	sentinel "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmsentinel"
+	sentinel "github.com/tenderly/erigon/erigon-lib/gointerfaces/sentinel"
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"

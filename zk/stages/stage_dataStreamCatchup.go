@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/0xPolygonHermez/zkevm-data-streamer/datastreamer"
-	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/zk/datastream/server"
 	"github.com/tenderly/zkevm-erigon/zk/datastream/types"

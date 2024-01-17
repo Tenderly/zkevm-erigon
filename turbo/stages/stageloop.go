@@ -10,11 +10,11 @@ import (
 
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/log/v3"
+	proto_downloader "github.com/tenderly/erigon/erigon-lib/gointerfaces/downloader"
+	remote "github.com/tenderly/erigon/erigon-lib/gointerfaces/remote"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
 	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
-	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmdownloader"
-	remote "github.com/tenderly/zkevm-erigon-lib/gointerfaces/zkevmremote"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	"github.com/tenderly/zkevm-erigon-lib/state"
