@@ -2,6 +2,7 @@ package stages
 
 import (
 	"context"
+	"github.com/tenderly/zkevm-erigon/zk/txpool"
 
 	"github.com/0xPolygonHermez/zkevm-data-streamer/datastreamer"
 	proto_downloader "github.com/tenderly/erigon/erigon-lib/gointerfaces/downloader"
@@ -92,6 +93,8 @@ func NewSequencerZkStages(ctx context.Context,
 	forkValidator *engineapi.ForkValidator,
 	engine consensus.Engine,
 	datastreamServer *datastreamer.StreamServer,
+	txPool *txpool.TxPool,
+	txPoolDb kv.RwDB,
 ) []*stagedsync.Stage {
 	dirs := cfg.Dirs
 	blockReader := snapshotsync.NewBlockReaderWithSnapshots(snapshots, cfg.TransactionsV3)
@@ -103,6 +106,7 @@ func NewSequencerZkStages(ctx context.Context,
 	return zkStages.SequencerZkStages(ctx,
 		stagedsync.StageCumulativeIndexCfg(db),
 		zkStages.StageDataStreamCatchupCfg(datastreamServer, db),
+		zkStages.StageSequencerInterhashesCfg(db),
 		zkStages.StageSequenceBlocksCfg(
 			db,
 			cfg.Prune,
@@ -117,11 +121,12 @@ func NewSequencerZkStages(ctx context.Context,
 			cfg.HistoryV3,
 			dirs,
 			blockReader,
-			controlServer.Hd,
 			cfg.Genesis,
 			cfg.Sync,
 			agg,
 			cfg.Zk,
+			txPool,
+			txPoolDb,
 		),
 		stagedsync.StageHashStateCfg(db, dirs, cfg.HistoryV3, agg),
 		zkStages.StageZkInterHashesCfg(db, true, true, false, dirs.Tmp, blockReader, controlServer.Hd, cfg.HistoryV3, agg, cfg.Zk),
