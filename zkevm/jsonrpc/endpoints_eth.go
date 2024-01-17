@@ -19,6 +19,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/client"
 	"github.com/tenderly/zkevm-erigon/zkevm/log"
 	"github.com/tenderly/zkevm-erigon/zkevm/state"
+	"github.com/tenderly/zkevm-erigon/zk/sequencer"
 )
 
 // EthEndpoints contains implementations for the "eth" RPC endpoints
@@ -779,17 +780,20 @@ func (e *EthEndpoints) newPendingTransactionFilter(wsConn *websocket.Conn) (inte
 // - for Sequencer nodes it tries to add the tx to the pool
 // - for Non-Sequencer nodes it relays the Tx to the Sequencer node
 func (e *EthEndpoints) SendRawTransaction(httpRequest *http.Request, input string) (interface{}, types.Error) {
-	if e.cfg.SequencerNodeURI != "" {
-		return e.relayTxToSequencerNode(input)
-	} else {
+	if sequencer.IsSequencer() {
 		ip := ""
-		ips := httpRequest.Header.Get("X-Forwarded-For")
 
-		if ips != "" {
+		if ips := httpRequest.Header.Get("X-Forwarded-For"); ips != "" {
 			ip = strings.Split(ips, ",")[0]
 		}
 
 		return e.tryToAddTxToPool(input, ip)
+	} else {
+		if e.cfg.SequencerNodeURI != "" {
+			return e.relayTxToSequencerNode(input)
+		} else {
+			return rpcErrorResponse(types.DefaultErrorCode, "failed to relay tx to the sequencer node: no sequencer URL provider", nil)
+		}
 	}
 }
 

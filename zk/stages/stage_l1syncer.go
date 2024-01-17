@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/zk/sequencer"
 
 	"github.com/ledgerwatch/log/v3"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
@@ -59,6 +60,10 @@ func SpawnStageL1Syncer(
 
 	logPrefix := s.LogPrefix()
 	log.Info(fmt.Sprintf("[%s] Starting L1 sync stage", logPrefix))
+	if sequencer.IsSequencer() {
+		log.Info(fmt.Sprintf("[%s] skipping -- sequencer", logPrefix))
+		return nil
+	}
 	defer log.Info(fmt.Sprintf("[%s] Finished L1 sync stage ", logPrefix))
 
 	if tx == nil {

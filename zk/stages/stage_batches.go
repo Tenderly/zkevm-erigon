@@ -3,6 +3,7 @@ package stages
 import (
 	"context"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/zk/sequencer"
 	"math/big"
 	"time"
 
@@ -69,6 +70,10 @@ func SpawnStageBatches(
 ) error {
 	logPrefix := s.LogPrefix()
 	log.Info(fmt.Sprintf("[%s] Starting batches stage", logPrefix))
+	if sequencer.IsSequencer() {
+		log.Info(fmt.Sprintf("[%s] skipping -- sequencer", logPrefix))
+		return nil
+	}
 	defer log.Info(fmt.Sprintf("[%s] Finished Batches stage", logPrefix))
 
 	if tx == nil {
