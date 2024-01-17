@@ -34,7 +34,6 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
 	"github.com/tenderly/zkevm-erigon-lib/kv/rawdbv3"
-	"golang.org/x/exp/slices"
 
 	"github.com/tenderly/zkevm-erigon/chain"
 
