@@ -92,7 +92,7 @@ func RootCommand() (*cobra.Command, *httpcfg.HttpCfg) {
 	rootCmd.PersistentFlags().StringSliceVar(&cfg.HttpCORSDomain, "http.corsdomain", []string{}, "Comma separated list of domains from which to accept cross origin requests (browser enforced)")
 	rootCmd.PersistentFlags().StringSliceVar(&cfg.HttpVirtualHost, "http.vhosts", nodecfg.DefaultConfig.HTTPVirtualHosts, "Comma separated list of virtual hostnames from which to accept requests (server enforced). Accepts '*' wildcard.")
 	rootCmd.PersistentFlags().BoolVar(&cfg.HttpCompression, "http.compression", true, "Disable http compression")
-	rootCmd.PersistentFlags().StringSliceVar(&cfg.API, "http.api", []string{"eth", "erigon"}, "API's offered over the HTTP-RPC interface: eth,erigon,web3,net,debug,trace,txpool,db. Supported methods: https://github.com/tenderly/zkevm-erigon/tree/devel/cmd/rpcdaemon")
+	rootCmd.PersistentFlags().StringSliceVar(&cfg.API, "http.api", []string{"eth", "erigon"}, "API's offered over the HTTP-RPC interface: eth,erigon,web3,net,debug,trace,txpool,db. Supported methods: https://github.com/ledgerwatch/erigon/tree/devel/cmd/rpcdaemon")
 	rootCmd.PersistentFlags().Uint64Var(&cfg.Gascap, "rpc.gascap", 50_000_000, "Sets a cap on gas that can be used in eth_call/estimateGas")
 	rootCmd.PersistentFlags().Uint64Var(&cfg.MaxTraces, "trace.maxtraces", 200, "Sets a limit on traces that can be returned in trace_filter")
 	rootCmd.PersistentFlags().BoolVar(&cfg.WebsocketEnabled, "ws", false, "Enable Websockets - Same port as HTTP")
@@ -613,23 +613,18 @@ func startRegularRpcServer(ctx context.Context, cfg httpcfg.HttpCfg, rpcAPI []rp
 	return nil
 }
 
-func StartDataStream(cfg httpcfg.HttpCfg) error {
-	if cfg.DataStreamPort == 0 || cfg.DataStreamHost == "" {
-		log.Info("No data stream host or port defined - skipping creation")
+func StartDataStream(server *datastreamer.StreamServer) error {
+	if server == nil {
+		// no stream server to start, we might not have the right flags set to create one
 		return nil
-	}
-	file := cfg.Dirs.DataDir + "/data-stream"
-	// stream type 1 = sequencer
-	server, err := datastreamer.NewServer(uint16(cfg.DataStreamPort), datastreamer.StreamType(1), file, nil)
-	if err != nil {
-		return err
 	}
 
 	log.Info("Starting data stream server...")
-	err = server.Start()
+	err := server.Start()
 	if err != nil {
 		return fmt.Errorf("failed to start data stream server, error: %w", err)
 	}
+
 	return nil
 }
 
