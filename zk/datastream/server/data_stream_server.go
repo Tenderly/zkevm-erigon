@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"github.com/0xPolygonHermez/zkevm-data-streamer/datastreamer"
 	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	types2 "github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/zk/datastream/types"
+	types2 "github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/types"
 )
 
 type BookmarkType byte
