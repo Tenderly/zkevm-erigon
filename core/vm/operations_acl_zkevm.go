@@ -1,9 +1,9 @@
 package vm
 
 import (
-	libcommon "github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/vm/stack"
-	"github.com/ledgerwatch/erigon/params"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon/core/vm/stack"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 var (

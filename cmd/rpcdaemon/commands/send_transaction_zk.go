@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ledgerwatch/erigon-lib/common"
-	"github.com/ledgerwatch/erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon/zk/sequencer"
-	"github.com/ledgerwatch/erigon/zk/zkchainconfig"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/client"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
+	"github.com/tenderly/zkevm-erigon/zk/sequencer"
+	"github.com/tenderly/zkevm-erigon/zk/zkchainconfig"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/client"
 	"math/big"
 )
 
