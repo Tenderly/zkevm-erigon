@@ -20,15 +20,11 @@ import (
 	"github.com/tenderly/zkevm-erigon/crypto"
 	"github.com/tenderly/zkevm-erigon/ethclient"
 	"github.com/tenderly/zkevm-erigon/params"
-	"github.com/tenderly/zkevm-erigon/zkevm/etherman/etherscan"
-	"github.com/tenderly/zkevm-erigon/zkevm/etherman/ethgasstation"
 	"github.com/tenderly/zkevm-erigon/zkevm/etherman/smartcontracts/matic"
 	"github.com/tenderly/zkevm-erigon/zkevm/etherman/smartcontracts/polygonzkevm"
 	"github.com/tenderly/zkevm-erigon/zkevm/etherman/smartcontracts/polygonzkevmglobalexitroot"
 	ethmanTypes "github.com/tenderly/zkevm-erigon/zkevm/etherman/types"
 	"github.com/tenderly/zkevm-erigon/zkevm/log"
-	"github.com/tenderly/zkevm-erigon/zkevm/state"
-	"github.com/tenderly/zkevm-erigon/zkevm/test/operations"
 	"golang.org/x/crypto/sha3"
 )
 

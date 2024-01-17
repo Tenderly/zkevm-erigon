@@ -3,7 +3,6 @@ package hermez_db
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/log/v3"
 	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 

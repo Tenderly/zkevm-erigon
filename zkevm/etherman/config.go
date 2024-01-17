@@ -2,7 +2,6 @@ package etherman
 
 import (
 	"github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon/zkevm/etherman/etherscan"
 )
 
 // Config represents the configuration of the etherman

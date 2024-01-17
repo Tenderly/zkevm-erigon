@@ -9,8 +9,6 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/core/types"
-	"github.com/tenderly/zkevm-erigon/zkevm/state"
-	"github.com/tenderly/zkevm-erigon/zkevm/state/runtime"
 )
 
 //// PoolInterface contains the methods required to interact with the tx pool.

@@ -7,12 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jackc/pgx/v4"
 	"github.com/tenderly/zkevm-erigon-lib/common"
-	ericommon "github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/zkevm/hex"
-	"github.com/tenderly/zkevm-erigon/zkevm/state"
 
 	"github.com/holiman/uint256"
 )

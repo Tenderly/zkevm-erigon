@@ -3,13 +3,13 @@ package types
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/params"
 	"math/big"
 	"strconv"
 	"strings"
 
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/zkevm/hex"
-	"github.com/tenderly/zkevm-erigon/zkevm/state"
 
 	"github.com/tenderly/zkevm-erigon-lib/common"
 )
