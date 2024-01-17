@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/tenderly/zkevm-erigon/core"
 	"math/big"
 
 	"github.com/tenderly/zkevm-erigon-lib/common"
@@ -14,13 +15,11 @@ import (
 
 	"github.com/holiman/uint256"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
-	"github.com/tenderly/zkevm-erigon/common/u256"
 	eritypes "github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/rpc"
 	"github.com/tenderly/zkevm-erigon/sync_stages"
 	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
 	types "github.com/tenderly/zkevm-erigon/zk/rpcdaemon"
-	zktypes "github.com/tenderly/zkevm-erigon/zk/types"
 	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/client"
 )
 
@@ -534,13 +533,8 @@ func convertReceipt(
 	}
 
 	var effectiveGasPrice *types.ArgBig
-	gas := gasPrice.Clone()
-	if effectiveGasPricePercentage > zktypes.EFFECTIVE_GAS_PRICE_PERCENTAGE_DISABLED && gasPrice != nil {
-		clone := gasPrice.Clone()
-		effectiveGasPricePerc := new(uint256.Int).SetUint64(uint64(effectiveGasPricePercentage))
-		effectiveGasPricePerc.Add(effectiveGasPricePerc, u256.Num1)
-		clone.Mul(clone, effectiveGasPricePerc)
-		gas.Div(clone, zktypes.EFFECTIVE_GAS_PRICE_MAX_VAL)
+	if gasPrice != nil {
+		gas := core.CalculateEffectiveGas(gasPrice, effectiveGasPricePercentage)
 		asBig := types.ArgBig(*gas.ToBig())
 		effectiveGasPrice = &asBig
 	}
