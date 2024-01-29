@@ -36,7 +36,6 @@ require (
 	github.com/emicklei/dot v1.0.0
 	github.com/emirpasic/gods v1.18.1
 	github.com/fjl/gencodec v0.0.0-20230517082657-f9840df7b83e
-	github.com/gateway-fm/vectorized-poseidon-gold v0.1.2
 	github.com/go-stack/stack v1.8.1
 	github.com/goccy/go-json v0.9.11
 	github.com/gofrs/flock v0.8.1

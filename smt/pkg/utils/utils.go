@@ -9,7 +9,6 @@ import (
 	"strings"
 
 	"sort"
-
 	//poseidon "github.com/gateway-fm/vectorized-poseidon-gold/src/vectorizedposeidongold"
 )
 
