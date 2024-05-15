@@ -9,8 +9,8 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/ugorji/go/codec"
 )

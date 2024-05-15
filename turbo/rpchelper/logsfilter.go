@@ -7,7 +7,7 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces"
 	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/remote"
 
-	types2 "github.com/ledgerwatch/erigon/core/types"
+	types2 "github.com/tenderly/zkevm-erigon/core/types"
 )
 
 type LogsFilterAggregator struct {

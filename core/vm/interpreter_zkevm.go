@@ -1,8 +1,8 @@
 package vm
 
 import (
-	"github.com/ledgerwatch/erigon/chain"
-	"github.com/ledgerwatch/erigon/zk/sequencer"
+	"github.com/tenderly/zkevm-erigon/chain"
+	"github.com/tenderly/zkevm-erigon/zk/sequencer"
 	"github.com/ledgerwatch/log/v3"
 )
 

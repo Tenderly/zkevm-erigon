@@ -5,8 +5,8 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/common/hexutility"
 
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/turbo/rpchelper"
 )
 
 // Web3API provides interfaces for the web3_ RPC commands

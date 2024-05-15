@@ -8,8 +8,8 @@ import (
 	"bytes"
 	"encoding/binary"
 	"github.com/holiman/uint256"
-	"github.com/ledgerwatch/erigon/cl/utils"
-	ethTypes "github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
+	ethTypes "github.com/tenderly/zkevm-erigon/core/types"
 )
 
 const EFFECTIVE_GAS_PRICE_PERCENTAGE_DISABLED = 0

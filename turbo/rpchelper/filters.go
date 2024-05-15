@@ -17,13 +17,13 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/grpcutil"
 	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/remote"
 	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/txpool"
-	txpool2 "github.com/ledgerwatch/erigon/zk/txpool"
+	txpool2 "github.com/tenderly/zkevm-erigon/zk/txpool"
 	"github.com/ledgerwatch/log/v3"
 	"google.golang.org/grpc"
 
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/eth/filters"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/eth/filters"
+	"github.com/tenderly/zkevm-erigon/rlp"
 )
 
 type Filters struct {

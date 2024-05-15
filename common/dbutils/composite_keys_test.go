@@ -6,7 +6,7 @@ import (
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ledgerwatch/erigon/common"
+	"github.com/tenderly/zkevm-erigon/common"
 )
 
 func TestPlainParseStoragePrefix(t *testing.T) {

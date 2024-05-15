@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/libp2p/go-libp2p"
 	"github.com/libp2p/go-libp2p/core/crypto"

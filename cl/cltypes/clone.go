@@ -1,6 +1,6 @@
 package cltypes
 
-import "github.com/ledgerwatch/erigon/cl/cltypes/clonable"
+import "github.com/tenderly/zkevm-erigon/cl/cltypes/clonable"
 
 func (*SignedBeaconBlock) Clone() clonable.Clonable {
 	return &SignedBeaconBlock{}

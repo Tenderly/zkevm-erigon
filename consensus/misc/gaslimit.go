@@ -20,7 +20,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 // VerifyGaslimit verifies the header gas limit according increase/decrease

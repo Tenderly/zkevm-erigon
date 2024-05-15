@@ -3,7 +3,7 @@ package lightclient
 import (
 	"context"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/ledgerwatch/log/v3"
 )
 

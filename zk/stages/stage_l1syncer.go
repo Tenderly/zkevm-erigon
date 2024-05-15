@@ -11,15 +11,15 @@ import (
 	"math/big"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	ethTypes "github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	"github.com/ledgerwatch/erigon/eth/stagedsync"
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
-	"github.com/ledgerwatch/erigon/zk/contracts"
-	"github.com/ledgerwatch/erigon/zk/hermez_db"
-	"github.com/ledgerwatch/erigon/zk/sequencer"
-	"github.com/ledgerwatch/erigon/zk/types"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	ethTypes "github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
+	"github.com/tenderly/zkevm-erigon/zk/contracts"
+	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
+	"github.com/tenderly/zkevm-erigon/zk/sequencer"
+	"github.com/tenderly/zkevm-erigon/zk/types"
 )
 
 type IL1Syncer interface {

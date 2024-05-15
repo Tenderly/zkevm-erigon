@@ -19,7 +19,7 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/iden3/go-iden3-crypto/keccak256"
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	ericommon "github.com/ledgerwatch/erigon/common"
+	ericommon "github.com/tenderly/zkevm-erigon/common"
 	"github.com/ledgerwatch/log/v3"
 	"golang.org/x/time/rate"
 )

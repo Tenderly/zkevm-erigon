@@ -18,10 +18,10 @@ package nodecfg
 
 import (
 	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
-	"github.com/ledgerwatch/erigon/common/paths"
-	"github.com/ledgerwatch/erigon/p2p"
-	"github.com/ledgerwatch/erigon/p2p/nat"
-	"github.com/ledgerwatch/erigon/rpc/rpccfg"
+	"github.com/tenderly/zkevm-erigon/common/paths"
+	"github.com/tenderly/zkevm-erigon/p2p"
+	"github.com/tenderly/zkevm-erigon/p2p/nat"
+	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
 )
 
 const (

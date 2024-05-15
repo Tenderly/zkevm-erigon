@@ -8,7 +8,7 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/temporal/historyv2"
 
-	"github.com/ledgerwatch/erigon/ethdb"
+	"github.com/tenderly/zkevm-erigon/ethdb"
 )
 
 // GetModifiedAccounts returns a list of addresses that were modified in the block range

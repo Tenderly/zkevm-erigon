@@ -10,7 +10,7 @@ import (
 
 	types2 "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/types"
 
-	"github.com/ledgerwatch/erigon/eth/filters"
+	"github.com/tenderly/zkevm-erigon/eth/filters"
 )
 
 func createLog() *remote.SubscribeLogsReply {

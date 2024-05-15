@@ -8,12 +8,12 @@ import (
 	"github.com/c2h5oh/datasize"
 	erigonchain "github.com/gateway-fm/cdk-erigon-lib/chain"
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/consensus/ethash/ethashcfg"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/eth/gasprice/gaspricecfg"
+	"github.com/tenderly/zkevm-erigon/consensus/ethash/ethashcfg"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/eth/gasprice/gaspricecfg"
 
-	"github.com/ledgerwatch/erigon/ethdb/prune"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/ethdb/prune"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 // MarshalTOML marshals as TOML.

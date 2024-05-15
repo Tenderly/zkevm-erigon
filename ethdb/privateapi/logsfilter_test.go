@@ -10,7 +10,7 @@ import (
 	types2 "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/types"
 	"google.golang.org/grpc"
 
-	"github.com/ledgerwatch/erigon/turbo/shards"
+	"github.com/tenderly/zkevm-erigon/turbo/shards"
 )
 
 var (

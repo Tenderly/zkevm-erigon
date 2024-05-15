@@ -12,7 +12,7 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/common/hexutility"
 	types2 "github.com/gateway-fm/cdk-erigon-lib/types"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )
 
 // txJSON is the JSON representation of transactions.

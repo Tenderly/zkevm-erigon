@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/types"
-	ethTypes "github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/smt/pkg/smt"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	ethTypes "github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/smt"
 )
 
 /*

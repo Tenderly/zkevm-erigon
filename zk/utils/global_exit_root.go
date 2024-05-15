@@ -6,7 +6,7 @@ import (
 	"math/big"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/core/state"
 
 	"github.com/holiman/uint256"
 	"github.com/iden3/go-iden3-crypto/keccak256"

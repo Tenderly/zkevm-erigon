@@ -7,10 +7,10 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/p2p/discover/v4wire"
-	"github.com/ledgerwatch/erigon/p2p/enode"
-	"github.com/ledgerwatch/erigon/p2p/enr"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/p2p/discover/v4wire"
+	"github.com/tenderly/zkevm-erigon/p2p/enode"
+	"github.com/tenderly/zkevm-erigon/p2p/enr"
 )
 
 // This is the test network for the Lookup test.

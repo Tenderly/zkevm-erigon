@@ -7,8 +7,8 @@ import (
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/cmd/devnet/models"
-	"github.com/ledgerwatch/erigon/cmd/rpctest/rpctest"
+	"github.com/tenderly/zkevm-erigon/cmd/devnet/models"
+	"github.com/tenderly/zkevm-erigon/cmd/rpctest/rpctest"
 )
 
 func GetBalance(reqId int, address libcommon.Address, blockNum models.BlockNumber) (uint64, error) {

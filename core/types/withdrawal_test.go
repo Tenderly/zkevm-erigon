@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/common"
+	"github.com/tenderly/zkevm-erigon/common"
 )
 
 func TestWithdrawalsHash(t *testing.T) {

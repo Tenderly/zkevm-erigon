@@ -7,7 +7,7 @@ import (
 	"os"
 	"os/signal"
 
-	_debug "github.com/ledgerwatch/erigon/common/debug"
+	_debug "github.com/tenderly/zkevm-erigon/common/debug"
 	"github.com/ledgerwatch/log/v3"
 )
 

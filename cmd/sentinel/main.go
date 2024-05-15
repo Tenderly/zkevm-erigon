@@ -21,11 +21,11 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"github.com/urfave/cli/v2"
 
-	lcCli "github.com/ledgerwatch/erigon/cmd/sentinel/cli"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/cli/flags"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinel"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinel/service"
-	sentinelapp "github.com/ledgerwatch/erigon/turbo/app"
+	lcCli "github.com/tenderly/zkevm-erigon/cmd/sentinel/cli"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/cli/flags"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel/service"
+	sentinelapp "github.com/tenderly/zkevm-erigon/turbo/app"
 )
 
 func main() {

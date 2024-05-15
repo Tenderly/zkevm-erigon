@@ -10,13 +10,13 @@ import (
 	types2 "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/types"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon/chain"
+	"github.com/tenderly/zkevm-erigon/chain"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/turbo/engineapi"
-	"github.com/ledgerwatch/erigon/turbo/shards"
-	"github.com/ledgerwatch/erigon/turbo/stages/headerdownload"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/turbo/engineapi"
+	"github.com/tenderly/zkevm-erigon/turbo/shards"
+	"github.com/tenderly/zkevm-erigon/turbo/stages/headerdownload"
 )
 
 // Hashes

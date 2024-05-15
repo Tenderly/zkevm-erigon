@@ -26,7 +26,7 @@ import (
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )
 
 // API describes the set of methods offered over the RPC interface

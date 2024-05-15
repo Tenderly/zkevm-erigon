@@ -5,11 +5,11 @@ import (
 
 	mapset "github.com/deckarep/golang-set"
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/consensus/ethash/ethashcfg"
+	"github.com/tenderly/zkevm-erigon/consensus/ethash/ethashcfg"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/consensus"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/consensus"
+	"github.com/tenderly/zkevm-erigon/core/types"
 )
 
 type FakeEthash struct {

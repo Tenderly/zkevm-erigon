@@ -14,8 +14,8 @@ import (
 
 	"net/url"
 
-	"github.com/ledgerwatch/erigon/core/types"
-	db2 "github.com/ledgerwatch/erigon/smt/pkg/db"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	db2 "github.com/tenderly/zkevm-erigon/smt/pkg/db"
 )
 
 func TrimHexString(s string) string {

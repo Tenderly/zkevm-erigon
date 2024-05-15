@@ -1,7 +1,7 @@
 package commands
 
 import (
-	types "github.com/ledgerwatch/erigon/zk/rpcdaemon"
+	types "github.com/tenderly/zkevm-erigon/zk/rpcdaemon"
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 )
 

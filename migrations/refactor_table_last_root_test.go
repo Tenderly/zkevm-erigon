@@ -6,7 +6,7 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
-	smtdb "github.com/ledgerwatch/erigon/smt/pkg/db"
+	smtdb "github.com/tenderly/zkevm-erigon/smt/pkg/db"
 	"github.com/stretchr/testify/require"
 	"gotest.tools/v3/assert"
 )

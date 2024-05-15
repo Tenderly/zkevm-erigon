@@ -28,7 +28,7 @@ Use `--snap.keepblocks=true` to don't delete retired blocks from DB
 
 Any network/chain can start with snapshot sync:
 
-- node will download only snapshots registered in next repo https://github.com/ledgerwatch/erigon-snapshot
+- node will download only snapshots registered in next repo https://github.com/tenderly/zkevm-erigon-snapshot
 - node will move old blocks from DB to snapshots of 1K blocks size, then merge snapshots to bigger range, until
   snapshots of 500K blocks, then automatically start seeding new snapshot
 
@@ -44,7 +44,7 @@ Flag `--snapshots` is compatible with `--prune` flag
 erigon snapshots retire --datadir=<your_datadir> 
 
 # Create .torrent files (Downloader will seed automatically all .torrent files)
-# output format is compatible with https://github.com/ledgerwatch/erigon-snapshot
+# output format is compatible with https://github.com/tenderly/zkevm-erigon-snapshot
 downloader torrent_hashes --rebuild --datadir=<your_datadir>
 
 # Start downloader (seeds automatically)
@@ -77,7 +77,7 @@ Downloader works based on <your_datadir>/snapshots/*.torrent files. Such files c
 Erigon does:
 
 - connect to Downloader
-- share list of hashes (see https://github.com/ledgerwatch/erigon-snapshot )
+- share list of hashes (see https://github.com/tenderly/zkevm-erigon-snapshot )
 - wait for download of all snapshots
 - when .seg available - automatically create .idx files - secondary indices, for example to find block by hash
 - then switch to normal staged sync (which doesn't require connection to Downloader)

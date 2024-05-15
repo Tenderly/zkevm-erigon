@@ -23,7 +23,7 @@ import (
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/rpc"
 )
 
 func TestUnmarshalJSONNewFilterArgs(t *testing.T) {

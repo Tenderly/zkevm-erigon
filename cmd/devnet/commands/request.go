@@ -3,8 +3,8 @@ package commands
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/cmd/devnet/models"
-	"github.com/ledgerwatch/erigon/cmd/devnet/requests"
+	"github.com/tenderly/zkevm-erigon/cmd/devnet/models"
+	"github.com/tenderly/zkevm-erigon/cmd/devnet/requests"
 )
 
 func pingErigonRpc() error {

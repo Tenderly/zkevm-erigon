@@ -3,7 +3,7 @@ package state_encoding
 import (
 	"encoding/binary"
 
-	"github.com/ledgerwatch/erigon/cl/merkle_tree"
+	"github.com/tenderly/zkevm-erigon/cl/merkle_tree"
 )
 
 const (

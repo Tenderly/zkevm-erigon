@@ -22,7 +22,7 @@ import (
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/core/vm"
 )
 
 const (

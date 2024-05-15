@@ -6,8 +6,8 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/vm"
 )
 
 type CreateTracer struct {

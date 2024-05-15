@@ -15,7 +15,7 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv/order"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/rawdbv3"
 	"github.com/gateway-fm/cdk-erigon-lib/state"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
 )
 
 //Variables Naming:

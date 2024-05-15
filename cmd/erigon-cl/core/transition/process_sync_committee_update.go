@@ -1,7 +1,7 @@
 package transition
 
 import (
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
 )
 
 // ProcessSyncCommitteeUpdate implements processing for the sync committee update. unfortunately there is no easy way to test it.

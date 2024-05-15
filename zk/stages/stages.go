@@ -5,8 +5,8 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 
-	stages "github.com/ledgerwatch/erigon/eth/stagedsync"
-	stages2 "github.com/ledgerwatch/erigon/eth/stagedsync/stages"
+	stages "github.com/tenderly/zkevm-erigon/eth/stagedsync"
+	stages2 "github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 )
 
 func SequencerZkStages(

@@ -6,10 +6,10 @@ import (
 	"strconv"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zk/datastream/client"
-	"github.com/ledgerwatch/erigon/zk/datastream/test/utils"
-	"github.com/ledgerwatch/erigon/zk/datastream/types"
-	"github.com/ledgerwatch/erigon/zkevm/log"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/client"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/test/utils"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/types"
+	"github.com/tenderly/zkevm-erigon/zkevm/log"
 )
 
 const dataStreamCardona = "datastream.cardona.zkevm-rpc.com:6900"

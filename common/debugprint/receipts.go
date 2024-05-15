@@ -3,7 +3,7 @@ package debugprint
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/types"
 )
 
 // nolint

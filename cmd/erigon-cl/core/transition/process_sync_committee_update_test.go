@@ -4,11 +4,11 @@ import (
 	"encoding/binary"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/transition"
-	"github.com/ledgerwatch/erigon/common"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/transition"
+	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/stretchr/testify/require"
 )
 

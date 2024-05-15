@@ -1,7 +1,7 @@
 package transition
 
 import (
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
 )
 
 func ProcessEth1DataReset(state *state.BeaconState) {

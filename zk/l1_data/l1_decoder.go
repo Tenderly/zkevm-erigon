@@ -2,11 +2,11 @@ package l1_data
 
 import (
 	"strings"
-	"github.com/ledgerwatch/erigon/zk/contracts"
+	"github.com/tenderly/zkevm-erigon/zk/contracts"
 	"encoding/json"
 	"fmt"
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/accounts/abi"
+	"github.com/tenderly/zkevm-erigon/accounts/abi"
 )
 
 type RollupBaseEtrogBatchData struct {

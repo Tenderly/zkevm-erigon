@@ -13,7 +13,7 @@ import (
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/consensus/bor/valset"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/valset"
 )
 
 // MaxTotalVotingPower - the maximum allowed total voting power.

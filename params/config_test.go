@@ -22,7 +22,7 @@ import (
 	"testing"
 
 	chain2 "github.com/gateway-fm/cdk-erigon-lib/chain"
-	"github.com/ledgerwatch/erigon/chain"
+	"github.com/tenderly/zkevm-erigon/chain"
 )
 
 func TestCheckCompatible(t *testing.T) {

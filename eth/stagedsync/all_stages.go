@@ -6,7 +6,7 @@ import (
 	"github.com/huandu/xstrings"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 )
 
 var Metrics = map[stages.SyncStage]*metrics.Counter{}

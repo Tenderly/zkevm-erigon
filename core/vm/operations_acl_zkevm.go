@@ -2,8 +2,8 @@ package vm
 
 import (
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/core/vm/stack"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/core/vm/stack"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 var (

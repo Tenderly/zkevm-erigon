@@ -15,15 +15,15 @@ import (
 	proto_sentry "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/sentry"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon/chain"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/chain"
+	"github.com/tenderly/zkevm-erigon/core"
+	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/core/forkid"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/eth/protocols/eth"
-	"github.com/ledgerwatch/erigon/p2p"
+	"github.com/tenderly/zkevm-erigon/core/forkid"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/eth/protocols/eth"
+	"github.com/tenderly/zkevm-erigon/p2p"
 )
 
 func testSentryServer(db kv.Getter, genesis *types.Genesis, genesisHash libcommon.Hash) *GrpcServer {

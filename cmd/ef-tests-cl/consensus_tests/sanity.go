@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/beacon_changeset"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/transition"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/beacon_changeset"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/transition"
 )
 
 func testSanityFunction(context testContext) error {

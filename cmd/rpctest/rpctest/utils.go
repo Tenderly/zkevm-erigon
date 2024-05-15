@@ -15,8 +15,8 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"github.com/valyala/fastjson"
 
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/crypto"
 )
 
 func compareBlocks(b, bg *EthBlockByNumber) bool {

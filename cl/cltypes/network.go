@@ -2,9 +2,9 @@ package cltypes
 
 import (
 	"github.com/gateway-fm/cdk-erigon-lib/common/length"
-	"github.com/ledgerwatch/erigon/cl/cltypes/clonable"
-	"github.com/ledgerwatch/erigon/cl/cltypes/ssz"
-	"github.com/ledgerwatch/erigon/common"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes/clonable"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"
+	"github.com/tenderly/zkevm-erigon/common"
 )
 
 type Metadata struct {

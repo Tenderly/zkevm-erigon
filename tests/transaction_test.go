@@ -21,7 +21,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 func TestTransaction(t *testing.T) {

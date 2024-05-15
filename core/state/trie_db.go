@@ -15,12 +15,12 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/common/length"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/holiman/uint256"
-	eriCommon "github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/dbutils"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/ethdb"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
-	"github.com/ledgerwatch/erigon/turbo/trie"
+	eriCommon "github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/common/dbutils"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/ethdb"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
+	"github.com/tenderly/zkevm-erigon/turbo/trie"
 )
 
 // Buffer is a structure holding updates, deletes, and reads registered within one change period

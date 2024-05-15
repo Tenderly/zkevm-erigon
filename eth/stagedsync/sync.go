@@ -10,7 +10,7 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 )
 
 type Sync struct {

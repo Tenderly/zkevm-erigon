@@ -12,7 +12,7 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/tenderly/zkevm-erigon/turbo/logging"
 )
 
 func SetupLogsAccess(ctx *cli.Context) {

@@ -4,8 +4,8 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 
-	"github.com/ledgerwatch/erigon/consensus/bor/valset"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/valset"
+	"github.com/tenderly/zkevm-erigon/rpc"
 )
 
 // BorAPI Bor specific routines

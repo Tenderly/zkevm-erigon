@@ -17,7 +17,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinel/communication"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel/communication"
 	"github.com/libp2p/go-libp2p/core/peer"
 )
 

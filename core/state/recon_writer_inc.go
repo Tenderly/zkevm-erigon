@@ -8,9 +8,9 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	libstate "github.com/gateway-fm/cdk-erigon-lib/state"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/dbutils"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/common/dbutils"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 )
 
 type StateReconWriterInc struct {

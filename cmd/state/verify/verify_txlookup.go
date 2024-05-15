@@ -12,7 +12,7 @@ import (
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
-	"github.com/ledgerwatch/erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/ledgerwatch/log/v3"
 )
 

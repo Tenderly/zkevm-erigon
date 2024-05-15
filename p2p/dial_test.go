@@ -27,10 +27,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ledgerwatch/erigon/common/mclock"
-	"github.com/ledgerwatch/erigon/p2p/enode"
-	"github.com/ledgerwatch/erigon/p2p/netutil"
-	"github.com/ledgerwatch/erigon/turbo/testlog"
+	"github.com/tenderly/zkevm-erigon/common/mclock"
+	"github.com/tenderly/zkevm-erigon/p2p/enode"
+	"github.com/tenderly/zkevm-erigon/p2p/netutil"
+	"github.com/tenderly/zkevm-erigon/turbo/testlog"
 	"github.com/ledgerwatch/log/v3"
 )
 

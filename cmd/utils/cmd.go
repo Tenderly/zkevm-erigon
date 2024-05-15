@@ -23,8 +23,8 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/ledgerwatch/erigon/node"
-	"github.com/ledgerwatch/erigon/turbo/debug"
+	"github.com/tenderly/zkevm-erigon/node"
+	"github.com/tenderly/zkevm-erigon/turbo/debug"
 )
 
 // Fatalf formats a message to standard error and exits the program.

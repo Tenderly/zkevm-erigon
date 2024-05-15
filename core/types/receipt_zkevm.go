@@ -22,7 +22,7 @@ import (
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/crypto"
 )
 
 // DeriveFields fills the receipts with their computed fields based on consensus

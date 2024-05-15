@@ -3,7 +3,7 @@ package cltypes
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes/ssz"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"
 )
 
 const (

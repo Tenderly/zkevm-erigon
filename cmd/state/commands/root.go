@@ -7,16 +7,16 @@ import (
 	"path/filepath"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	chain2 "github.com/ledgerwatch/erigon/chain"
-	"github.com/ledgerwatch/erigon/core/types"
+	chain2 "github.com/tenderly/zkevm-erigon/chain"
+	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/spf13/cobra"
 
-	"github.com/ledgerwatch/erigon/turbo/debug"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/tenderly/zkevm-erigon/turbo/debug"
+	"github.com/tenderly/zkevm-erigon/turbo/logging"
 
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/cmd/utils"
+	"github.com/tenderly/zkevm-erigon/core"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 var (
