@@ -8,7 +8,7 @@ package types
 import (
 	"errors"
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	codec1978 "github.com/ugorji/go/codec"
+	codec1978 "github.com/tenderly/go-codec/codec"
 	pkg2_big "math/big"
 	"runtime"
 	"strconv"

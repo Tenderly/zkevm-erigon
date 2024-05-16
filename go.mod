@@ -83,9 +83,9 @@ require (
 	github.com/spf13/pflag v1.0.5
 	github.com/status-im/keycard-go v0.2.0
 	github.com/stretchr/testify v1.8.4
+	github.com/tenderly/go-codec/codec v1.1.14-0.20231212094703-0bbb66a02189
 	github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e
 	github.com/tidwall/btree v1.6.0
-	github.com/ugorji/go/codec v1.1.13
 	github.com/ugorji/go/codec/codecgen v1.1.13
 	github.com/urfave/cli/v2 v2.25.7
 	github.com/valyala/fastjson v1.6.4

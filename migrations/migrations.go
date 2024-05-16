@@ -12,7 +12,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"github.com/ledgerwatch/log/v3"
-	"github.com/ugorji/go/codec"
+	"github.com/tenderly/go-codec/codec"
 )
 
 // migrations apply sequentially in order of this array, skips applied migrations

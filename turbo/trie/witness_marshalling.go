@@ -5,7 +5,7 @@ import (
 	"io"
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ugorji/go/codec"
+	"github.com/tenderly/go-codec/codec"
 )
 
 var cbor codec.CborHandle

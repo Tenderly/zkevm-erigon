@@ -5,7 +5,7 @@ import (
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
-	"github.com/ugorji/go/codec"
+	"github.com/tenderly/go-codec/codec"
 )
 
 const (
