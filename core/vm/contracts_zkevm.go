@@ -38,14 +38,14 @@ import (
 // PrecompiledContractsZKEVMDragonfruit contains the default set of pre-compiled ForkID5 Dragonfruit
 var PrecompiledContractsZKEVMDragonfruit = map[libcommon.Address]PrecompiledContract{
 	libcommon.BytesToAddress([]byte{1}): &ecrecover_zkevm{enabled: true},
-	libcommon.BytesToAddress([]byte{2}): &sha256hash_zkevm{},
-	libcommon.BytesToAddress([]byte{3}): &ripemd160hash_zkevm{},
+	libcommon.BytesToAddress([]byte{2}): &sha256hash_zkevm{enabled: true},
+	libcommon.BytesToAddress([]byte{3}): &ripemd160hash_zkevm{enabled: false},
 	libcommon.BytesToAddress([]byte{4}): &dataCopy_zkevm{enabled: true},
-	libcommon.BytesToAddress([]byte{5}): &bigModExp_zkevm{eip2565: true},
-	libcommon.BytesToAddress([]byte{6}): &bn256AddIstanbul_zkevm{},
-	libcommon.BytesToAddress([]byte{7}): &bn256ScalarMulIstanbul_zkevm{},
-	libcommon.BytesToAddress([]byte{8}): &bn256PairingIstanbul_zkevm{},
-	libcommon.BytesToAddress([]byte{9}): &blake2F_zkevm{},
+	libcommon.BytesToAddress([]byte{5}): &bigModExp_zkevm{enabled: false, eip2565: true},
+	libcommon.BytesToAddress([]byte{6}): &bn256AddIstanbul_zkevm{enabled: true},
+	libcommon.BytesToAddress([]byte{7}): &bn256ScalarMulIstanbul_zkevm{enabled: true},
+	libcommon.BytesToAddress([]byte{8}): &bn256PairingIstanbul_zkevm{enabled: true},
+	libcommon.BytesToAddress([]byte{9}): &blake2F_zkevm{enabled: false},
 }
 
 // PrecompiledContractForkID7Etrog contains the default set of pre-compiled ForkID7 Etrog.
