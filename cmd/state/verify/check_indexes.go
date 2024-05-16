@@ -8,8 +8,8 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv/bitmapdb"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/temporal/historyv2"
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/dbutils"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/common/dbutils"
 )
 
 func CheckIndex(ctx context.Context, chaindata string, changeSetBucket string, indexBucket string) error {

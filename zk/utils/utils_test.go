@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/ledgerwatch/erigon/zk/constants"
+	"github.com/tenderly/zkevm-erigon/zk/constants"
 )
 
 type SimpleForkReader struct {

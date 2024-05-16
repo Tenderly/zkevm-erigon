@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/rpc"
 )
 
 // In this example, our client wishes to track the latest 'block number'

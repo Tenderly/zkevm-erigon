@@ -23,10 +23,10 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"golang.org/x/exp/slices"
 
-	"github.com/ledgerwatch/erigon/common/changeset"
-	"github.com/ledgerwatch/erigon/common/dbutils"
-	"github.com/ledgerwatch/erigon/ethdb"
-	"github.com/ledgerwatch/erigon/ethdb/prune"
+	"github.com/tenderly/zkevm-erigon/common/changeset"
+	"github.com/tenderly/zkevm-erigon/common/dbutils"
+	"github.com/tenderly/zkevm-erigon/ethdb"
+	"github.com/tenderly/zkevm-erigon/ethdb/prune"
 )
 
 type HistoryCfg struct {

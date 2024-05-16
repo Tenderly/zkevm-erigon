@@ -9,14 +9,14 @@ import (
 	"time"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	ethereum "github.com/ledgerwatch/erigon"
+	ethereum "github.com/tenderly/zkevm-erigon"
 	"github.com/ledgerwatch/log/v3"
 
 	"encoding/binary"
 
-	ethTypes "github.com/ledgerwatch/erigon/core/types"
-	types "github.com/ledgerwatch/erigon/zk/rpcdaemon"
-	"github.com/ledgerwatch/erigon/rpc"
+	ethTypes "github.com/tenderly/zkevm-erigon/core/types"
+	types "github.com/tenderly/zkevm-erigon/zk/rpcdaemon"
+	"github.com/tenderly/zkevm-erigon/rpc"
 )
 
 var (

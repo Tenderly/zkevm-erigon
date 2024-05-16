@@ -6,7 +6,7 @@ import (
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/common/length"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes/clonable"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes/clonable"
 )
 
 var (

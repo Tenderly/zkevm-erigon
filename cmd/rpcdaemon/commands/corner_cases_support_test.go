@@ -11,15 +11,15 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcache"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/rpcdaemontest"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/rpc/rpccfg"
-	"github.com/ledgerwatch/erigon/turbo/snapshotsync"
+	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
+	"github.com/tenderly/zkevm-erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
+	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
 )
 
 // TestNotFoundMustReturnNil - next methods - when record not found in db - must return nil instead of error
-// see https://github.com/ledgerwatch/erigon/issues/1645
+// see https://github.com/tenderly/zkevm-erigon/issues/1645
 func TestNotFoundMustReturnNil(t *testing.T) {
 	require := require.New(t)
 	m, _, _ := rpcdaemontest.CreateTestSentry(t)

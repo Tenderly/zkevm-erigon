@@ -16,9 +16,9 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/common/dbg"
 
-	"github.com/ledgerwatch/erigon/cmd/hack/tool"
-	"github.com/ledgerwatch/erigon/common/debug"
-	"github.com/ledgerwatch/erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/cmd/hack/tool"
+	"github.com/tenderly/zkevm-erigon/common/debug"
+	"github.com/tenderly/zkevm-erigon/core/vm"
 )
 
 const (

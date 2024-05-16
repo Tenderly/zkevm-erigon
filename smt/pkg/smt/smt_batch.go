@@ -5,8 +5,8 @@ import (
 	"sync"
 
 	"github.com/dgravesa/go-parallel/parallel"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
-	"github.com/ledgerwatch/erigon/zk"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
+	"github.com/tenderly/zkevm-erigon/zk"
 )
 
 func (s *SMT) InsertBatch(logPrefix string, nodeKeys []*utils.NodeKey, nodeValues []*utils.NodeValue8, nodeValuesHashes []*[4]uint64, rootNodeHash *utils.NodeKey) (*SMTResponse, error) {

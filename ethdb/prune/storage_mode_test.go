@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon/common/math"
+	"github.com/tenderly/zkevm-erigon/common/math"
 	"github.com/stretchr/testify/assert"
 )
 

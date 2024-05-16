@@ -7,8 +7,8 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"golang.org/x/net/context"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/rpc"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/rpc"
 )
 
 // Whether the reverse downloader arrived at expected height or condition.

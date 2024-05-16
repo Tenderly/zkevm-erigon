@@ -4,7 +4,7 @@ import (
 	"flag"
 	"os"
 
-	consensustests "github.com/ledgerwatch/erigon/cmd/ef-tests-cl/consensus_tests"
+	consensustests "github.com/tenderly/zkevm-erigon/cmd/ef-tests-cl/consensus_tests"
 	"github.com/ledgerwatch/log/v3"
 )
 

@@ -6,9 +6,9 @@ import (
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"golang.org/x/net/context"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/cltypes/ssz"
-	"github.com/ledgerwatch/erigon/cl/rpc"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"
+	"github.com/tenderly/zkevm-erigon/cl/rpc"
 )
 
 // Input: the currently highest slot processed and the list of blocks we want to know process

@@ -12,9 +12,9 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv/bitmapdb"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
 
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/ethdb/prune"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/ethdb/prune"
 
 	"github.com/stretchr/testify/require"
 )

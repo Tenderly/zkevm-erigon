@@ -77,7 +77,7 @@ Downloader works based on <your_datadir>/snapshots/*.torrent files. Such files c
 Erigon does:
 
 - connect to Downloader
-- share list of hashes (see https://github.com/ledgerwatch/erigon-snapshot )
+- share list of hashes (see https://github.com/tenderly/zkevm-erigonapshot )
 - wait for download of all snapshots
 - when .seg available - automatically create .idx files - secondary indices, for example to find block by hash
 - then switch to normal staged sync (which doesn't require connection to Downloader)

@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 	"github.com/stretchr/testify/assert"
 )
 

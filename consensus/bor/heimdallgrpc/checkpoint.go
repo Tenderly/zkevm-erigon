@@ -4,7 +4,7 @@ import (
 	"context"
 	"math/big"
 
-	"github.com/ledgerwatch/erigon/consensus/bor/heimdall/checkpoint"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/heimdall/checkpoint"
 	"github.com/ledgerwatch/log/v3"
 
 	proto "github.com/maticnetwork/polyproto/heimdall"

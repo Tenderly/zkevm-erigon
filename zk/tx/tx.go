@@ -15,12 +15,12 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/holiman/uint256"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/rlp"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
-	"github.com/ledgerwatch/erigon/zk/constants"
-	"github.com/ledgerwatch/erigon/zk/hermez_db"
-	"github.com/ledgerwatch/erigon/zkevm/hex"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
+	"github.com/tenderly/zkevm-erigon/zk/constants"
+	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
+	"github.com/tenderly/zkevm-erigon/zkevm/hex"
 	"github.com/ledgerwatch/log/v3"
 )
 

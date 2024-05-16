@@ -33,8 +33,8 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcache"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
 	"github.com/gateway-fm/cdk-erigon-lib/types"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	"github.com/ledgerwatch/erigon/zk/txpool"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
+	"github.com/tenderly/zkevm-erigon/zk/txpool"
 )
 
 func SaveChainConfigIfNeed(ctx context.Context, coreDB kv.RoDB, txPoolDB kv.RwDB, force bool) (cc *chain.Config, blockNum uint64, err error) {

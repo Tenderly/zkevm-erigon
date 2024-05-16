@@ -22,8 +22,8 @@ import (
 	"strings"
 
 	"github.com/btcsuite/btcd/btcec/v2"
-	"github.com/ledgerwatch/erigon/cmd/sentinel/sentinel/peers"
-	"github.com/ledgerwatch/erigon/p2p/enode"
+	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel/peers"
+	"github.com/tenderly/zkevm-erigon/p2p/enode"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/libp2p/go-libp2p/core/peer"

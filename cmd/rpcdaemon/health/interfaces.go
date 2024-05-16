@@ -3,8 +3,8 @@ package health
 import (
 	"context"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/rpc"
 )
 
 type NetAPI interface {

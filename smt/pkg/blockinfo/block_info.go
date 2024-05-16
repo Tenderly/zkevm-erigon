@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"math/big"
 
-	ethTypes "github.com/ledgerwatch/erigon/core/types"
+	ethTypes "github.com/tenderly/zkevm-erigon/core/types"
 
-	"github.com/ledgerwatch/erigon/smt/pkg/smt"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
-	zktx "github.com/ledgerwatch/erigon/zk/tx"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/smt"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
+	zktx "github.com/tenderly/zkevm-erigon/zk/tx"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 )

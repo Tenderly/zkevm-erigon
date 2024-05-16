@@ -8,9 +8,9 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/common/hexutility"
-	"github.com/ledgerwatch/erigon/zk/sequencer"
-	"github.com/ledgerwatch/erigon/zk/zkchainconfig"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/client"
+	"github.com/tenderly/zkevm-erigon/zk/sequencer"
+	"github.com/tenderly/zkevm-erigon/zk/zkchainconfig"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/client"
 )
 
 func (api *APIImpl) isPoolManagerAddressSet() bool {

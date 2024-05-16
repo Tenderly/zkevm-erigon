@@ -33,13 +33,13 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/downloader/downloadercfg"
 	"github.com/gateway-fm/cdk-erigon-lib/txpool/txpoolcfg"
 
-	"github.com/ledgerwatch/erigon/consensus/ethash/ethashcfg"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/eth/ethconfig/estimate"
-	"github.com/ledgerwatch/erigon/eth/gasprice/gaspricecfg"
-	"github.com/ledgerwatch/erigon/ethdb/prune"
-	"github.com/ledgerwatch/erigon/params"
-	"github.com/ledgerwatch/erigon/params/networkname"
+	"github.com/tenderly/zkevm-erigon/consensus/ethash/ethashcfg"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig/estimate"
+	"github.com/tenderly/zkevm-erigon/eth/gasprice/gaspricecfg"
+	"github.com/tenderly/zkevm-erigon/ethdb/prune"
+	"github.com/tenderly/zkevm-erigon/params"
+	"github.com/tenderly/zkevm-erigon/params/networkname"
 )
 
 // AggregationStep number of transactions in smallest static file

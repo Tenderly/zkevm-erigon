@@ -6,7 +6,7 @@ import (
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state/state_encoding"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state/state_encoding"
 )
 
 func TestSlashingsRoot(t *testing.T) {

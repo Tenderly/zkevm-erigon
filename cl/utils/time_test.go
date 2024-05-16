@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -6,8 +6,8 @@ import (
 	"io"
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/consensus/bor/clerk"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/clerk"
 	proto "github.com/maticnetwork/polyproto/heimdall"
 )
 

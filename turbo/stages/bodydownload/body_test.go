@@ -5,7 +5,7 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
 
-	"github.com/ledgerwatch/erigon/consensus/ethash"
+	"github.com/tenderly/zkevm-erigon/consensus/ethash"
 )
 
 func TestCreateBodyDownload(t *testing.T) {

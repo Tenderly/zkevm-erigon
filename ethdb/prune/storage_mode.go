@@ -10,7 +10,7 @@ import (
 	"strings"
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/params"
 	"github.com/ledgerwatch/log/v3"
 )
 

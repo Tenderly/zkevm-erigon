@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zk/datastream/types"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/types"
 	"github.com/stretchr/testify/require"
 	"gotest.tools/v3/assert"
 )

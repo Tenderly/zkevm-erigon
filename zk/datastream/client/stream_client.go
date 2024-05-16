@@ -10,7 +10,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ledgerwatch/erigon/zk/datastream/types"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/types"
 	"github.com/ledgerwatch/log/v3"
 )
 

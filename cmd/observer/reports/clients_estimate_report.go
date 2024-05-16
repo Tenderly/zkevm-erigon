@@ -6,7 +6,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/ledgerwatch/erigon/cmd/observer/database"
+	"github.com/tenderly/zkevm-erigon/cmd/observer/database"
 )
 
 type ClientsEstimateReportEntry struct {

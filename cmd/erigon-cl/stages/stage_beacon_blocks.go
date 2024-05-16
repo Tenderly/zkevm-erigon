@@ -9,14 +9,14 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/utils"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/rawdb"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/core/state"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/execution_client"
-	"github.com/ledgerwatch/erigon/cmd/erigon-cl/network"
-	"github.com/ledgerwatch/erigon/eth/stagedsync"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/execution_client"
+	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/network"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync"
 )
 
 type StageBeaconsBlockCfg struct {

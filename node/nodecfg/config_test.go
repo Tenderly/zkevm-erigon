@@ -23,8 +23,8 @@ import (
 	"testing"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
-	node2 "github.com/ledgerwatch/erigon/node"
-	"github.com/ledgerwatch/erigon/node/nodecfg"
+	node2 "github.com/tenderly/zkevm-erigon/node"
+	"github.com/tenderly/zkevm-erigon/node/nodecfg"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured

@@ -5,9 +5,9 @@ import (
 	"fmt"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zk/datastream/client"
-	"github.com/ledgerwatch/erigon/zk/datastream/types"
-	"github.com/ledgerwatch/erigon/zk/debug_tools"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/client"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/types"
+	"github.com/tenderly/zkevm-erigon/zk/debug_tools"
 	"github.com/ledgerwatch/log/v3"
 )
 

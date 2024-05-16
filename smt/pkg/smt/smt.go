@@ -12,8 +12,8 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/smt/pkg/db"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/db"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 	"github.com/ledgerwatch/log/v3"
 )
 

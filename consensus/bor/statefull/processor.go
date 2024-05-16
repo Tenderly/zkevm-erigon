@@ -2,12 +2,12 @@ package statefull
 
 import (
 	"github.com/holiman/uint256"
-	ethereum "github.com/ledgerwatch/erigon"
+	ethereum "github.com/tenderly/zkevm-erigon"
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/consensus"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/consensus"
+	"github.com/tenderly/zkevm-erigon/core"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/vm"
 )
 
 type ChainContext struct {

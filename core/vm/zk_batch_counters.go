@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/ledgerwatch/erigon/zk/tx"
+	"github.com/tenderly/zkevm-erigon/zk/tx"
 	"github.com/ledgerwatch/log/v3"
 )
 

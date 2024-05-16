@@ -3,8 +3,8 @@ package commands
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/cmd/devnet/models"
-	"github.com/ledgerwatch/erigon/cmd/devnet/services"
+	"github.com/tenderly/zkevm-erigon/cmd/devnet/models"
+	"github.com/tenderly/zkevm-erigon/cmd/devnet/services"
 )
 
 // ExecuteAllMethods runs all the simulation tests for erigon devnet

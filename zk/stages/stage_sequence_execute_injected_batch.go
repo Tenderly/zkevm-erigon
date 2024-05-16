@@ -5,13 +5,13 @@ import (
 
 	"errors"
 
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/core/vm/evmtypes"
-	"github.com/ledgerwatch/erigon/eth/stagedsync"
-	zktx "github.com/ledgerwatch/erigon/zk/tx"
-	zktypes "github.com/ledgerwatch/erigon/zk/types"
+	"github.com/tenderly/zkevm-erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/core/vm/evmtypes"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync"
+	zktx "github.com/tenderly/zkevm-erigon/zk/tx"
+	zktypes "github.com/tenderly/zkevm-erigon/zk/types"
 )
 
 const (

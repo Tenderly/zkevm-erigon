@@ -20,7 +20,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/core/asm"
+	"github.com/tenderly/zkevm-erigon/core/asm"
 )
 
 func Compile(fn string, src []byte, debug bool) (string, error) {

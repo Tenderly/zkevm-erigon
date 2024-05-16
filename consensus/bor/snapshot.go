@@ -9,8 +9,8 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/chain"
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/consensus/bor/valset"
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/valset"
+	"github.com/tenderly/zkevm-erigon/core/types"
 )
 
 // Snapshot is the state of the authorization voting at a given point in time.

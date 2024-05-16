@@ -14,16 +14,16 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcache"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/cli/httpcfg"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/rpcdaemontest"
-	"github.com/ledgerwatch/erigon/eth/tracers"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/rpc/rpccfg"
-	"github.com/ledgerwatch/erigon/turbo/snapshotsync"
+	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/cli/httpcfg"
+	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"
+	"github.com/tenderly/zkevm-erigon/eth/tracers"
+	"github.com/tenderly/zkevm-erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
+	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
 
 	// Force-load native and js packages, to trigger registration
-	_ "github.com/ledgerwatch/erigon/eth/tracers/js"
-	_ "github.com/ledgerwatch/erigon/eth/tracers/native"
+	_ "github.com/tenderly/zkevm-erigon/eth/tracers/js"
+	_ "github.com/tenderly/zkevm-erigon/eth/tracers/native"
 )
 
 /*

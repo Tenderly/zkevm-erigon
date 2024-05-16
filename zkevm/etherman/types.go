@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zkevm/etherman/smartcontracts/polygonzkevm"
+	"github.com/tenderly/zkevm-erigon/zkevm/etherman/smartcontracts/polygonzkevm"
 )
 
 // Block struct

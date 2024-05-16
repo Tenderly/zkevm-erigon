@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/zkevm/encoding"
-	"github.com/ledgerwatch/erigon/zkevm/jsonrpc/client"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/zkevm/encoding"
+	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/client"
 	"github.com/ledgerwatch/log/v3"
 )
 

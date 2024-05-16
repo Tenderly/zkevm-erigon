@@ -27,9 +27,9 @@ import (
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	proto_sentry "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/sentry"
 
-	"github.com/ledgerwatch/erigon/core/forkid"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/core/forkid"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/rlp"
 )
 
 // Constants to match up protocol versions and messages

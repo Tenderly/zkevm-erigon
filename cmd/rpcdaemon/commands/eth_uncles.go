@@ -7,12 +7,12 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/turbo/adapter/ethapi"
-	"github.com/ledgerwatch/erigon/turbo/rpchelper"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/turbo/adapter/ethapi"
+	"github.com/tenderly/zkevm-erigon/turbo/rpchelper"
 )
 
 func getTdField(td *big.Int) hexutil.Big {
@@ -40,7 +40,7 @@ func (api *APIImpl) GetUncleByBlockNumberAndIndex(ctx context.Context, number rp
 		return nil, err
 	}
 	if block == nil {
-		return nil, nil // not error, see https://github.com/ledgerwatch/erigon/issues/1645
+		return nil, nil // not error, see https://github.com/tenderly/zkevm-erigon/issues/1645
 	}
 	additionalFields := make(map[string]interface{})
 	td, err := rawdb.ReadTd(tx, block.Hash(), blockNum)
@@ -71,7 +71,7 @@ func (api *APIImpl) GetUncleByBlockHashAndIndex(ctx context.Context, hash common
 		return nil, err
 	}
 	if block == nil {
-		return nil, nil // not error, see https://github.com/ledgerwatch/erigon/issues/1645
+		return nil, nil // not error, see https://github.com/tenderly/zkevm-erigon/issues/1645
 	}
 	number := block.NumberU64()
 	additionalFields := make(map[string]interface{})
@@ -111,7 +111,7 @@ func (api *APIImpl) GetUncleCountByBlockNumber(ctx context.Context, number rpc.B
 		return nil, err
 	}
 	if block == nil {
-		return nil, nil // not error, see https://github.com/ledgerwatch/erigon/issues/1645
+		return nil, nil // not error, see https://github.com/tenderly/zkevm-erigon/issues/1645
 	}
 	n = hexutil.Uint(len(block.Uncles()))
 	return &n, nil
@@ -128,7 +128,7 @@ func (api *APIImpl) GetUncleCountByBlockHash(ctx context.Context, hash common.Ha
 
 	number := rawdb.ReadHeaderNumber(tx, hash)
 	if number == nil {
-		return nil, nil // not error, see https://github.com/ledgerwatch/erigon/issues/1645
+		return nil, nil // not error, see https://github.com/tenderly/zkevm-erigon/issues/1645
 	}
 
 	block, err := api.blockWithSenders(tx, hash, *number)
@@ -136,7 +136,7 @@ func (api *APIImpl) GetUncleCountByBlockHash(ctx context.Context, hash common.Ha
 		return nil, err
 	}
 	if block == nil {
-		return nil, nil // not error, see https://github.com/ledgerwatch/erigon/issues/1645
+		return nil, nil // not error, see https://github.com/tenderly/zkevm-erigon/issues/1645
 	}
 	n = hexutil.Uint(len(block.Uncles()))
 	return &n, nil

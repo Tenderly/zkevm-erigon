@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
 )
 
 func forkTest(context testContext) error {

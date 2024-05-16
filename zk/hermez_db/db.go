@@ -8,8 +8,8 @@ import (
 
 	"encoding/json"
 
-	dstypes "github.com/ledgerwatch/erigon/zk/datastream/types"
-	"github.com/ledgerwatch/erigon/zk/types"
+	dstypes "github.com/tenderly/zkevm-erigon/zk/datastream/types"
+	"github.com/tenderly/zkevm-erigon/zk/types"
 	"github.com/ledgerwatch/log/v3"
 )
 
