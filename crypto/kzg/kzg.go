@@ -7,7 +7,7 @@ import (
 	"math/big"
 	"sync"
 
-	gokzg4844 "github.com/crate-crypto/go-kzg-4844"
+	gokzg4844 "github.com/tenderly/go-kzg-4844"
 )
 
 const (

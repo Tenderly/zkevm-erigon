@@ -15,7 +15,7 @@ import (
 	types2 "github.com/gateway-fm/cdk-erigon-lib/types"
 	"github.com/tenderly/zkevm-erigon/chain"
 
-	gokzg4844 "github.com/crate-crypto/go-kzg-4844"
+	gokzg4844 "github.com/tenderly/go-kzg-4844"
 	"github.com/protolambda/ztyp/codec"
 
 	"github.com/tenderly/zkevm-erigon/crypto/kzg"
