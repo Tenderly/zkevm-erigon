@@ -29,7 +29,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gballet/go-verkle"
+	"github.com/tenderly/go-verkle"
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/common/hexutility"
 	rlp2 "github.com/gateway-fm/cdk-erigon-lib/rlp"

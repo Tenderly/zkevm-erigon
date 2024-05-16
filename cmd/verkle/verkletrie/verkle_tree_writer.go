@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/anacrolix/sync"
-	"github.com/gballet/go-verkle"
+	"github.com/tenderly/go-verkle"
 	"github.com/holiman/uint256"
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/etl"

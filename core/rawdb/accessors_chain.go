@@ -28,7 +28,7 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcfg"
 
-	"github.com/gballet/go-verkle"
+	"github.com/tenderly/go-verkle"
 	common2 "github.com/gateway-fm/cdk-erigon-lib/common"
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/common/cmp"

@@ -238,8 +238,6 @@ github.com/gateway-fm/cdk-erigon-lib v0.0.0-20240415152010-66aa405ca33f h1:/o6bj
 github.com/gateway-fm/cdk-erigon-lib v0.0.0-20240415152010-66aa405ca33f/go.mod h1:Ky//z32wQOTY/drV858kr8dECBD9OBV9Xzy+aG6TxSk=
 github.com/gateway-fm/vectorized-poseidon-gold v1.0.0 h1:Du0ZW+fkZhgRNGx/gAkHnMj3/Rl8uJkAEe+ZDPX3PDw=
 github.com/gateway-fm/vectorized-poseidon-gold v1.0.0/go.mod h1:VLGQpyjrOg8+FugH/+d8tfYd/c3z4Xqa+zbUBITygaw=
-github.com/gballet/go-verkle v0.0.0-20221121182333-31427a1f2d35 h1:I8QswD9gf3VEpr7bpepKKOm7ChxFITIG+oc1I5/S0no=
-github.com/gballet/go-verkle v0.0.0-20221121182333-31427a1f2d35/go.mod h1:DMDd04jjQgdynaAwbEgiRERIGpC8fDjx0+y06an7Psg=
 github.com/ghodss/yaml v1.0.0/go.mod h1:4dBDuWmgqj2HViK6kFavaiC9ZROes6MMH2rRYeMEF04=
 github.com/gin-contrib/sse v0.1.0 h1:Y/yl/+YNO8GZSjAhjMsSuLt29uWRFHdHYUb5lYOV9qE=
 github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF+u1gW/2HnVO7nvIa9PG3Gm+fLHvGI=
@@ -885,6 +883,8 @@ github.com/tenderly/go-codec/codec v1.1.14-0.20231212094703-0bbb66a02189 h1:iy28
 github.com/tenderly/go-codec/codec v1.1.14-0.20231212094703-0bbb66a02189/go.mod h1:VyDyxwMB96Xm9bSy7H6v459F0kV3CNNl//lwCBjynWU=
 github.com/tenderly/go-kzg-4844 v0.0.0-20231215154023-f87fedca66d0 h1:wvJW0mvoisGwrcfUnAETp+/R0FGuuJ7EoKCYe47lwtw=
 github.com/tenderly/go-kzg-4844 v0.0.0-20231215154023-f87fedca66d0/go.mod h1:jx/yoEIAqVbDc9mYLtnPe7lspyuIYRk5+Lh2/lnj968=
+github.com/tenderly/go-verkle v0.0.0-20231212093521-fbf9e5153193 h1:iuMUJy1IIgdx43G71BdtTo+G+k0RK+XArNlbj0p4A6I=
+github.com/tenderly/go-verkle v0.0.0-20231212093521-fbf9e5153193/go.mod h1:8dZxsMisyHlc3rYcJZ0CScDou/UTOaplZi1PhA6/IY0=
 github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e h1:cR8/SYRgyQCt5cNCMniB/ZScMkhI9nk8U5C7SbISXjo=
 github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e/go.mod h1:Tu4lItkATkonrYuvtVjG0/rhy15qrNGNTjPdaphtZ/8=
 github.com/tidwall/btree v1.6.0 h1:LDZfKfQIBHGHWSwckhXI0RPSXzlo+KYdjK7FWSqOzzg=
