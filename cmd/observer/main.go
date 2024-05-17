@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/cmd/observer/database"
 	"github.com/tenderly/zkevm-erigon/cmd/observer/observer"
 	"github.com/tenderly/zkevm-erigon/cmd/observer/reports"

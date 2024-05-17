@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 
 	"net/url"
 

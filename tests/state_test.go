@@ -27,7 +27,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	"github.com/tenderly/zkevm-erigon/core/vm"
 	"github.com/tenderly/zkevm-erigon/eth/tracers/logger"
 	"github.com/ledgerwatch/log/v3"

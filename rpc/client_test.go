@@ -30,7 +30,7 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/gateway-fm/cdk-erigon-lib/common/dbg"
+	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
 	"github.com/ledgerwatch/log/v3"
 )
 

@@ -1,6 +1,6 @@
 package forkchoice
 
-import libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+import libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 
 // OnTick executes on_tick operation for forkchoice.
 func (f *ForkChoiceStore) OnTick(time uint64) {

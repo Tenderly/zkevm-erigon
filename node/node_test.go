@@ -23,8 +23,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/crypto"
 	"github.com/tenderly/zkevm-erigon/node/nodecfg"
 	"github.com/tenderly/zkevm-erigon/p2p"

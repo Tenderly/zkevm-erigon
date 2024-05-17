@@ -27,15 +27,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	erigonchain "github.com/gateway-fm/cdk-erigon-lib/chain"
+	erigonchain "github.com/tenderly/zkevm-erigon-lib/chain"
 
 	lru "github.com/hashicorp/golang-lru/v2"
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/ledgerwatch/secp256k1"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/chain"
 
 	"github.com/tenderly/zkevm-erigon/accounts/abi"

@@ -9,8 +9,8 @@ import (
 	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
 	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
 
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/txpool"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcache"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
+	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/rlp"

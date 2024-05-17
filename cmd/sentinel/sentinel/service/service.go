@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces"
-	sentinelrpc "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/sentinel"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
+	sentinelrpc "github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentinel"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cl/utils"
 	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel"

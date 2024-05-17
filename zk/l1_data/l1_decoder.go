@@ -5,7 +5,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/zk/contracts"
 	"encoding/json"
 	"fmt"
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/accounts/abi"
 )
 

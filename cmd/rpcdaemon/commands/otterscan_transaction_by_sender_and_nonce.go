@@ -7,12 +7,12 @@ import (
 	"sort"
 
 	"github.com/RoaringBitmap/roaring/roaring64"
-	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/cmp"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/order"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/rawdbv3"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/temporal/historyv2"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/cmp"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/order"
+	"github.com/tenderly/zkevm-erigon-lib/kv/rawdbv3"
+	"github.com/tenderly/zkevm-erigon-lib/kv/temporal/historyv2"
 	"github.com/tenderly/zkevm-erigon/core/state/temporal"
 	"github.com/ledgerwatch/log/v3"
 

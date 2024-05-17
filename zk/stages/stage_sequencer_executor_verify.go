@@ -4,7 +4,7 @@ import (
 	"context"
 	"sort"
 
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/eth/stagedsync"
 	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"

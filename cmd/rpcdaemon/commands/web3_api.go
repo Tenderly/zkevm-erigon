@@ -3,7 +3,7 @@ package commands
 import (
 	"context"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common/hexutility"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
 
 	"github.com/tenderly/zkevm-erigon/crypto"
 	"github.com/tenderly/zkevm-erigon/turbo/rpchelper"

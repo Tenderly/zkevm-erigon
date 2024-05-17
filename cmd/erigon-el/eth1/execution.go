@@ -8,11 +8,11 @@ import (
 	"sync"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces"
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/execution"
-	types2 "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/types"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/execution"
+	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/types"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"github.com/ledgerwatch/log/v3"
 

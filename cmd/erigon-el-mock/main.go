@@ -5,10 +5,10 @@ import (
 	"net"
 
 	"github.com/c2h5oh/datasize"
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/execution"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/execution"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	"google.golang.org/grpc"
 
 	"github.com/ledgerwatch/log/v3"

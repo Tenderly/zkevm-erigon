@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 
 	"github.com/c2h5oh/datasize"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcfg"
-	kv2 "github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/kvcfg"
+	kv2 "github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
 	"github.com/tenderly/zkevm-erigon/core/state/historyv2read"
 	"github.com/tenderly/zkevm-erigon/core/state/temporal"
 	"github.com/tenderly/zkevm-erigon/core/systemcontracts"

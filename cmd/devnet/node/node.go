@@ -8,7 +8,7 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common/dbg"
+	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
 	"github.com/tenderly/zkevm-erigon/cmd/devnet/devnetutils"
 	"github.com/tenderly/zkevm-erigon/cmd/devnet/models"
 	"github.com/tenderly/zkevm-erigon/cmd/devnet/requests"

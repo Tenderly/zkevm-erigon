@@ -3,7 +3,7 @@ package stages
 import (
 	"context"
 
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/rawdb"
 	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/state"

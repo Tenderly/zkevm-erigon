@@ -32,9 +32,9 @@ import (
 	"golang.org/x/sync/semaphore"
 
 	"github.com/gofrs/flock"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	"github.com/tenderly/zkevm-erigon/migrations"
 	"github.com/ledgerwatch/log/v3"
 )

@@ -27,8 +27,8 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	types2 "github.com/gateway-fm/cdk-erigon-lib/types"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	types2 "github.com/tenderly/zkevm-erigon-lib/types"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/protolambda/ztyp/codec"
 

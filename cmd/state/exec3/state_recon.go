@@ -9,11 +9,11 @@ import (
 	"github.com/RoaringBitmap/roaring/roaring64"
 	"github.com/ledgerwatch/log/v3"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/length"
-	"github.com/gateway-fm/cdk-erigon-lib/etl"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	libstate "github.com/gateway-fm/cdk-erigon-lib/state"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/length"
+	"github.com/tenderly/zkevm-erigon-lib/etl"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	libstate "github.com/tenderly/zkevm-erigon-lib/state"
 	"github.com/tenderly/zkevm-erigon/chain"
 
 	"github.com/tenderly/zkevm-erigon/cmd/state/exec22"

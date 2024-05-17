@@ -3,7 +3,7 @@ package network
 import (
 	"context"
 
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/sentinel"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentinel"
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"

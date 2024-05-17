@@ -3,10 +3,10 @@ package commands
 import (
 	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"github.com/spf13/cobra"
-	common2 "github.com/gateway-fm/cdk-erigon-lib/common"
+	common2 "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/core"
 	erigoncli "github.com/tenderly/zkevm-erigon/turbo/cli"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
 	"context"
 	"github.com/ledgerwatch/log/v3"

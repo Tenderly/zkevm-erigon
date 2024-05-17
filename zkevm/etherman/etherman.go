@@ -12,7 +12,7 @@ import (
 
 	"github.com/holiman/uint256"
 	ethereum "github.com/tenderly/zkevm-erigon"
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/accounts/abi"
 	"github.com/tenderly/zkevm-erigon/accounts/abi/bind"
 	"github.com/tenderly/zkevm-erigon/chain"

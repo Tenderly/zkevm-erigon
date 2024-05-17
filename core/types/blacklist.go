@@ -1,7 +1,7 @@
 package types
 
 import (
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 // This is introduced because of the Tendermint IAVL Merkle Proof verification exploitation.

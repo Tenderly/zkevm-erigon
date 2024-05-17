@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
 	"github.com/spf13/cobra"
 
 	"github.com/tenderly/zkevm-erigon/cmd/sentry/sentry"

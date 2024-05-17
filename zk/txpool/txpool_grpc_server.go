@@ -37,12 +37,12 @@ import (
 	"google.golang.org/grpc/reflection"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces"
-	txpool_proto "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/txpool"
-	types2 "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/types"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/types"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
+	txpool_proto "github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
+	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/types"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/types"
 )
 
 // TxPoolAPIVersion

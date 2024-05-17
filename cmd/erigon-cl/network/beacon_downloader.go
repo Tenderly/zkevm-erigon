@@ -3,7 +3,7 @@ package network
 import (
 	"sync"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"golang.org/x/net/context"
 
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"

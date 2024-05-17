@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"golang.org/x/crypto/sha3"
 
 	"github.com/tenderly/zkevm-erigon/common/dbutils"

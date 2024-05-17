@@ -3,7 +3,7 @@ package rawdb_test
 import (
 	"testing"
 
-	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/rawdb"
 	"github.com/stretchr/testify/require"

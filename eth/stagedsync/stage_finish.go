@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"time"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/hexutility"
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces"
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/remote"
-	types2 "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/types"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
+	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/types"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
 
 	common2 "github.com/tenderly/zkevm-erigon/common"

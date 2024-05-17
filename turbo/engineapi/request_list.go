@@ -7,8 +7,8 @@ import (
 
 	"github.com/emirpasic/gods/maps/treemap"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/remote"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
 
 	"github.com/tenderly/zkevm-erigon/core/types"
 )

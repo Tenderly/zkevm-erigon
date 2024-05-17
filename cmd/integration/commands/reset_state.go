@@ -8,11 +8,11 @@ import (
 	"os"
 	"text/tabwriter"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcfg"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/rawdbv3"
-	"github.com/gateway-fm/cdk-erigon-lib/state"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/kvcfg"
+	"github.com/tenderly/zkevm-erigon-lib/kv/rawdbv3"
+	"github.com/tenderly/zkevm-erigon-lib/state"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/spf13/cobra"
 

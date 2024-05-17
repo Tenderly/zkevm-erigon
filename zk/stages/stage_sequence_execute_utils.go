@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/c2h5oh/datasize"
-	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	libstate "github.com/gateway-fm/cdk-erigon-lib/state"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	libstate "github.com/tenderly/zkevm-erigon-lib/state"
 
 	"math/big"
 

@@ -28,9 +28,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/hexutility"
-	rlp2 "github.com/gateway-fm/cdk-erigon-lib/rlp"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
+	rlp2 "github.com/tenderly/zkevm-erigon-lib/rlp"
 
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

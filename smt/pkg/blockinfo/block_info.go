@@ -10,7 +10,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 	zktx "github.com/tenderly/zkevm-erigon/zk/tx"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 const (

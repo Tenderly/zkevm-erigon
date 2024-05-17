@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	state2 "github.com/gateway-fm/cdk-erigon-lib/state"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	state2 "github.com/tenderly/zkevm-erigon-lib/state"
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/core/state"
 	"github.com/tenderly/zkevm-erigon/core/types/accounts"

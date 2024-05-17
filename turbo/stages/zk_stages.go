@@ -4,9 +4,9 @@ import (
 	"context"
 
 	"github.com/0xPolygonHermez/zkevm-data-streamer/datastreamer"
-	proto_downloader "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/downloader"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/state"
+	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/downloader"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/state"
 	"github.com/tenderly/zkevm-erigon/cmd/sentry/sentry"
 	"github.com/tenderly/zkevm-erigon/consensus"
 	"github.com/tenderly/zkevm-erigon/core/vm"

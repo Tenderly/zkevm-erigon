@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/cmd/integration/commands"
 )
 

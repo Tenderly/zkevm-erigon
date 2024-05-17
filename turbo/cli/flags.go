@@ -5,16 +5,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gateway-fm/cdk-erigon-lib/txpool/txpoolcfg"
+	"github.com/tenderly/zkevm-erigon-lib/txpool/txpoolcfg"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
 
 	"github.com/c2h5oh/datasize"
-	"github.com/gateway-fm/cdk-erigon-lib/etl"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcache"
+	"github.com/tenderly/zkevm-erigon-lib/etl"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/spf13/pflag"
 	"github.com/urfave/cli/v2"

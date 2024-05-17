@@ -2,7 +2,7 @@ package fork_graph
 
 import (
 	lru "github.com/hashicorp/golang-lru/v2"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cmd/erigon-cl/core/beacon_changeset"

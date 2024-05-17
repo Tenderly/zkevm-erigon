@@ -11,7 +11,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/params"
 	"github.com/tenderly/zkevm-erigon/zkevm/hex"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 var (

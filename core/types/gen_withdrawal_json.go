@@ -5,7 +5,7 @@ package types
 import (
 	"encoding/json"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )
 

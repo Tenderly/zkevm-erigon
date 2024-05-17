@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 
 	jsoniter "github.com/json-iterator/go"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/cli/httpcfg"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

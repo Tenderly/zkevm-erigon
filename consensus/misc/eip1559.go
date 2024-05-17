@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"math/big"
 
-	erigonchain "github.com/gateway-fm/cdk-erigon-lib/chain"
+	erigonchain "github.com/tenderly/zkevm-erigon-lib/chain"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/chain"
 
 	"github.com/tenderly/zkevm-erigon/common/math"

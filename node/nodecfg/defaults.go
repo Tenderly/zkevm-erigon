@@ -17,7 +17,7 @@
 package nodecfg
 
 import (
-	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
+	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
 	"github.com/tenderly/zkevm-erigon/common/paths"
 	"github.com/tenderly/zkevm-erigon/p2p"
 	"github.com/tenderly/zkevm-erigon/p2p/nat"

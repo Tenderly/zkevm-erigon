@@ -6,8 +6,8 @@ import (
 	"net"
 	"time"
 
-	sentinelrpc "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/sentinel"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	sentinelrpc "github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentinel"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel"
 	"github.com/ledgerwatch/log/v3"

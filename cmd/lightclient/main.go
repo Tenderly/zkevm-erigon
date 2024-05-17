@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/remote"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/urfave/cli/v2"
 	"google.golang.org/grpc"

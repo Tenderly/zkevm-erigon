@@ -6,9 +6,9 @@ import (
 	"errors"
 	"sync"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	proto_txpool "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/txpool"
-	types2 "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/types"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	proto_txpool "github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
+	types2 "github.com/tenderly/zkevm-erigon-lib/gointerfaces/types"
 	"github.com/ledgerwatch/log/v3"
 	"google.golang.org/protobuf/types/known/emptypb"
 

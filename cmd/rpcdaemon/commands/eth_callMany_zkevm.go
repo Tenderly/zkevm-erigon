@@ -7,7 +7,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/holiman/uint256"
 	"github.com/ledgerwatch/log/v3"
 

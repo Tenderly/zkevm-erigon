@@ -6,7 +6,7 @@ package commands
 import (
 	"testing"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"
 	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
 	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"

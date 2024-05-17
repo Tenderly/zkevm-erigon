@@ -3,10 +3,10 @@ package stages
 import (
 	"fmt"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/length"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/state"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/length"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/state"
 	"github.com/holiman/uint256"
 	state2 "github.com/tenderly/zkevm-erigon/core/state"
 	"github.com/tenderly/zkevm-erigon/core/types"
@@ -35,7 +35,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/turbo/trie"
 	"github.com/tenderly/zkevm-erigon/zk"
 	"github.com/status-im/keycard-go/hexutils"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	"math"
 )
 

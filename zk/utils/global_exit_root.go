@@ -5,7 +5,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/core/state"
 
 	"github.com/holiman/uint256"

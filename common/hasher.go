@@ -4,7 +4,7 @@ import (
 	"hash"
 	"sync"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"golang.org/x/crypto/sha3"
 )
 

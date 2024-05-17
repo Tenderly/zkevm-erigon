@@ -4,15 +4,15 @@ import (
 	"context"
 	"time"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/length"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/length"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"bytes"
 	"io"
 
 	mapset "github.com/deckarep/golang-set/v2"
-	types2 "github.com/gateway-fm/cdk-erigon-lib/types"
+	types2 "github.com/tenderly/zkevm-erigon-lib/types"
 	"github.com/tenderly/zkevm-erigon/core"
 	"github.com/tenderly/zkevm-erigon/core/state"
 	"github.com/tenderly/zkevm-erigon/core/types"

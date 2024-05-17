@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/smt/pkg/blockinfo"
 
 	"github.com/tenderly/zkevm-erigon/chain"

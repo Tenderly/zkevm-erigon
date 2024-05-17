@@ -3,7 +3,7 @@ package state
 import (
 	"fmt"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common/length"
+	"github.com/tenderly/zkevm-erigon-lib/common/length"
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes/clonable"

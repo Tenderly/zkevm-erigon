@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/ethdb"
 	"github.com/tenderly/zkevm-erigon/ethdb/olddb"
 	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"

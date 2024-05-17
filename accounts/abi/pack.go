@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"reflect"
 
-	common2 "github.com/gateway-fm/cdk-erigon-lib/common"
+	common2 "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/common/math"
 )

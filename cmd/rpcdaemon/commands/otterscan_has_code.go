@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/rpc"
 	"github.com/tenderly/zkevm-erigon/turbo/rpchelper"

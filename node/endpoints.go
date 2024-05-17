@@ -23,7 +23,7 @@ import (
 	"net/http"
 	"time"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/rpc"
 	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
 	"github.com/ledgerwatch/log/v3"

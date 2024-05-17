@@ -10,8 +10,8 @@ import (
 	"time"
 
 	jsoniter "github.com/json-iterator/go"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
 
 	ethereum "github.com/tenderly/zkevm-erigon"

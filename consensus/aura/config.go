@@ -23,8 +23,8 @@ import (
 
 	"github.com/holiman/uint256"
 
-	erigonchain "github.com/gateway-fm/cdk-erigon-lib/chain"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	erigonchain "github.com/tenderly/zkevm-erigon-lib/chain"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/common/u256"
 	"github.com/tenderly/zkevm-erigon/consensus"

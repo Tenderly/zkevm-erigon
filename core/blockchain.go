@@ -26,13 +26,13 @@ import (
 	"golang.org/x/crypto/sha3"
 	"golang.org/x/exp/slices"
 
-	erigonchain "github.com/gateway-fm/cdk-erigon-lib/chain"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	erigonchain "github.com/tenderly/zkevm-erigon-lib/chain"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 
 	"github.com/tenderly/zkevm-erigon/chain"
 	zktypes "github.com/tenderly/zkevm-erigon/zk/types"
 
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	"github.com/tenderly/zkevm-erigon/common/math"
 	"github.com/tenderly/zkevm-erigon/common/u256"

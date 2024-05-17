@@ -3,7 +3,7 @@ package forkchoice
 import (
 	"fmt"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 )
 

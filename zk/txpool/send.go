@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/gateway-fm/cdk-erigon-lib/direct"
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/sentry"
-	"github.com/gateway-fm/cdk-erigon-lib/rlp"
-	types2 "github.com/gateway-fm/cdk-erigon-lib/types"
+	"github.com/tenderly/zkevm-erigon-lib/direct"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentry"
+	"github.com/tenderly/zkevm-erigon-lib/rlp"
+	types2 "github.com/tenderly/zkevm-erigon-lib/types"
 	"github.com/ledgerwatch/log/v3"
 	"google.golang.org/grpc"
 )

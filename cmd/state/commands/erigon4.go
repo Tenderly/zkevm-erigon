@@ -18,16 +18,16 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"github.com/spf13/cobra"
 
-	"github.com/gateway-fm/cdk-erigon-lib/commitment"
+	"github.com/tenderly/zkevm-erigon-lib/commitment"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/dbg"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
 	chain2 "github.com/tenderly/zkevm-erigon/chain"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	kv2 "github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
-	libstate "github.com/gateway-fm/cdk-erigon-lib/state"
+	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	kv2 "github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
+	libstate "github.com/tenderly/zkevm-erigon-lib/state"
 
 	"github.com/tenderly/zkevm-erigon/cmd/state/exec3"
 	"github.com/tenderly/zkevm-erigon/consensus"

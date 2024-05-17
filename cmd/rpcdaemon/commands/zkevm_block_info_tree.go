@@ -16,7 +16,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/turbo/transactions"
 	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/holiman/uint256"
 )
 

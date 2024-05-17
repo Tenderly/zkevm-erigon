@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common/dbg"
+	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
 )
 
 func PrintMemStats(short bool) {

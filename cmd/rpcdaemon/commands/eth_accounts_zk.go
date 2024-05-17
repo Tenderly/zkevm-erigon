@@ -4,7 +4,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/zkevm/jsonrpc/client"
 	"fmt"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/rpc"
 	"strings"
 	"github.com/tenderly/zkevm-erigon/zkevm/hex"

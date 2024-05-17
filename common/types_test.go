@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 func TestBytesConversion(t *testing.T) {

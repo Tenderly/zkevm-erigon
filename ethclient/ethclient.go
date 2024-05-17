@@ -28,7 +28,7 @@ import (
 
 	"github.com/holiman/uint256"
 	ethereum "github.com/tenderly/zkevm-erigon"
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/rpc"

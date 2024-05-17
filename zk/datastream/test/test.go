@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/zk/datastream/client"
 	"github.com/tenderly/zkevm-erigon/zk/datastream/test/utils"
 	"github.com/tenderly/zkevm-erigon/zk/datastream/types"

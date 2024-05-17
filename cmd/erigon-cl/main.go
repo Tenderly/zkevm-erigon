@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"os"
 
-	sentinelrpc "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/sentinel"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
+	sentinelrpc "github.com/tenderly/zkevm-erigon-lib/gointerfaces/sentinel"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/tenderly/zkevm-erigon/cl/clparams/initial_state"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"

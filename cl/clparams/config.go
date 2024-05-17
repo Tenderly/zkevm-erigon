@@ -21,7 +21,7 @@ import (
 	"os"
 	"time"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"gopkg.in/yaml.v2"
 
 	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"

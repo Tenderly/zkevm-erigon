@@ -3,7 +3,7 @@ package core
 import (
 	"math/big"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/params"
 	"github.com/tenderly/zkevm-erigon/smt/pkg/smt"

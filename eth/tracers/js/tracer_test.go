@@ -28,10 +28,10 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/chain"
 
-	chain2 "github.com/gateway-fm/cdk-erigon-lib/chain"
+	chain2 "github.com/tenderly/zkevm-erigon-lib/chain"
 	"github.com/tenderly/zkevm-erigon/core/state"
 	"github.com/tenderly/zkevm-erigon/core/vm"
 	"github.com/tenderly/zkevm-erigon/core/vm/evmtypes"

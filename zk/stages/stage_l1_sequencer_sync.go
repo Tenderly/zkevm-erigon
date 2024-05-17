@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/iden3/go-iden3-crypto/keccak256"
 	ethTypes "github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/tenderly/zkevm-erigon/eth/ethconfig"

@@ -2,7 +2,7 @@ package l1_data
 
 import (
 	"testing"
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	zktx "github.com/tenderly/zkevm-erigon/zk/tx"
 )
 

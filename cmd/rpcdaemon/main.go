@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/cli"
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/commands"
 	"github.com/tenderly/zkevm-erigon/consensus/ethash"

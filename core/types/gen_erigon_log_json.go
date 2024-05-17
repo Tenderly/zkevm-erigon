@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/hexutility"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )

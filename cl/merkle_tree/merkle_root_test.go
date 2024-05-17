@@ -3,7 +3,7 @@ package merkle_tree_test
 import (
 	"testing"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/stretchr/testify/require"
 
 	"github.com/tenderly/zkevm-erigon/cl/merkle_tree"

@@ -29,7 +29,7 @@ import (
 	"sync"
 	"time"
 
-	common2 "github.com/gateway-fm/cdk-erigon-lib/common/cmp"
+	common2 "github.com/tenderly/zkevm-erigon-lib/common/cmp"
 	"github.com/tenderly/zkevm-erigon/common/debug"
 	"github.com/tenderly/zkevm-erigon/common/mclock"
 	"github.com/tenderly/zkevm-erigon/p2p/discover/v5wire"

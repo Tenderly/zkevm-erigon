@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/zk/datastream/client"
 	"github.com/tenderly/zkevm-erigon/zk/datastream/types"
 	"github.com/tenderly/zkevm-erigon/zk/debug_tools"

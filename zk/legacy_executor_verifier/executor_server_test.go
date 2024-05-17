@@ -2,7 +2,7 @@ package legacy_executor_verifier
 
 //
 //import (
-//	"github.com/gateway-fm/cdk-erigon-lib/common"
+//	"github.com/tenderly/zkevm-erigon-lib/common"
 //	"testing"
 //	"time"
 //)

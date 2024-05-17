@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
+	"github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
 	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 	"github.com/stretchr/testify/assert"
 )

@@ -21,7 +21,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 	"github.com/tenderly/zkevm-erigon/cl/fork"
 	"github.com/tenderly/zkevm-erigon/cmd/sentinel/sentinel/handlers"

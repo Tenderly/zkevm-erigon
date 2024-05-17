@@ -26,7 +26,7 @@ import (
 	"unicode"
 
 	jsoniter "github.com/json-iterator/go"
-	"github.com/gateway-fm/cdk-erigon-lib/common/dbg"
+	"github.com/tenderly/zkevm-erigon-lib/common/dbg"
 	"github.com/ledgerwatch/log/v3"
 )
 

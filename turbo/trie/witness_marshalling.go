@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 // OperatorMarshaller provides all needed primitives to read witness operators from a serialized form.

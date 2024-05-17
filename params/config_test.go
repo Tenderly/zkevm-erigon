@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	chain2 "github.com/gateway-fm/cdk-erigon-lib/chain"
+	chain2 "github.com/tenderly/zkevm-erigon-lib/chain"
 	"github.com/tenderly/zkevm-erigon/chain"
 )
 

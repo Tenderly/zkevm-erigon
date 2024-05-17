@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/length"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/length"
 	"github.com/ledgerwatch/log/v3"
 
 	"github.com/tenderly/zkevm-erigon/consensus"

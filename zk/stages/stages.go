@@ -3,7 +3,7 @@ package stages
 import (
 	"context"
 
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 
 	stages "github.com/tenderly/zkevm-erigon/eth/stagedsync"
 	stages2 "github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"

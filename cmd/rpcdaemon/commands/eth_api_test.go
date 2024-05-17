@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/holiman/uint256"
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/stretchr/testify/assert"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"
@@ -20,7 +20,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/turbo/adapter/ethapi"
 	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
 
-	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcache"
+	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/rpcdaemontest"
 )

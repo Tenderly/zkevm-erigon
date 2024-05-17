@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/holiman/uint256"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/hexutility"
-	types2 "github.com/gateway-fm/cdk-erigon-lib/types"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
+	types2 "github.com/tenderly/zkevm-erigon-lib/types"
 	"github.com/tenderly/zkevm-erigon/chain"
 
 	gokzg4844 "github.com/crate-crypto/go-kzg-4844"

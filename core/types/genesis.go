@@ -24,8 +24,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/hexutility"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
 	"github.com/tenderly/zkevm-erigon/chain"
 
 	common2 "github.com/tenderly/zkevm-erigon/common"

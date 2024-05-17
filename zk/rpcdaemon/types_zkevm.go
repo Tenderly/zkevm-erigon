@@ -1,6 +1,6 @@
 package types
 
-import "github.com/gateway-fm/cdk-erigon-lib/common"
+import "github.com/tenderly/zkevm-erigon-lib/common"
 
 // Batch structure
 type Batch struct {

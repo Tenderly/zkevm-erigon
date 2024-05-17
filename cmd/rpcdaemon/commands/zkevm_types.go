@@ -2,7 +2,7 @@ package commands
 
 import (
 	types "github.com/tenderly/zkevm-erigon/zk/rpcdaemon"
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 type ZkExitRoots struct {

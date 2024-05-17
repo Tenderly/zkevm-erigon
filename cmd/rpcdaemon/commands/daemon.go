@@ -1,10 +1,10 @@
 package commands
 
 import (
-	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/txpool"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcache"
-	libstate "github.com/gateway-fm/cdk-erigon-lib/state"
+	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/txpool"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
+	libstate "github.com/tenderly/zkevm-erigon-lib/state"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/cli/httpcfg"
 	"github.com/tenderly/zkevm-erigon/consensus"

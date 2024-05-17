@@ -27,11 +27,11 @@ import (
 	"time"
 
 	"github.com/c2h5oh/datasize"
-	"github.com/gateway-fm/cdk-erigon-lib/chain"
-	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
-	"github.com/gateway-fm/cdk-erigon-lib/downloader/downloadercfg"
-	"github.com/gateway-fm/cdk-erigon-lib/txpool/txpoolcfg"
+	"github.com/tenderly/zkevm-erigon-lib/chain"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
+	"github.com/tenderly/zkevm-erigon-lib/downloader/downloadercfg"
+	"github.com/tenderly/zkevm-erigon-lib/txpool/txpoolcfg"
 
 	"github.com/tenderly/zkevm-erigon/consensus/ethash/ethashcfg"
 	"github.com/tenderly/zkevm-erigon/core/types"

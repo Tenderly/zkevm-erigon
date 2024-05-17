@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	chain2 "github.com/tenderly/zkevm-erigon/chain"
 	"github.com/tenderly/zkevm-erigon/core/types"
 	"github.com/spf13/cobra"

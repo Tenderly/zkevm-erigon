@@ -3,7 +3,7 @@ package checkpoint
 import (
 	"math/big"
 
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 )
 
 // Checkpoint defines a response object type of bor checkpoint

@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	kv2 "github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	kv2 "github.com/tenderly/zkevm-erigon-lib/kv/mdbx"
 	"github.com/tenderly/zkevm-erigon/common/debug"
 	"github.com/ledgerwatch/log/v3"
 )

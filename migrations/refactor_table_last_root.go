@@ -3,8 +3,8 @@ package migrations
 import (
 	"context"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
 	smtdb "github.com/tenderly/zkevm-erigon/smt/pkg/db"
 )
 

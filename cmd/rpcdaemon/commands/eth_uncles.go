@@ -4,7 +4,7 @@ import (
 	"context"
 	"math/big"
 
-	"github.com/gateway-fm/cdk-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/ledgerwatch/log/v3"
 
 	"github.com/tenderly/zkevm-erigon/common/hexutil"

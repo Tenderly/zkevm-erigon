@@ -7,12 +7,12 @@ import (
 	"math/big"
 
 	"github.com/RoaringBitmap/roaring/roaring64"
-	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/bitmapdb"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/iter"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/order"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/rawdbv3"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/bitmapdb"
+	"github.com/tenderly/zkevm-erigon-lib/kv/iter"
+	"github.com/tenderly/zkevm-erigon-lib/kv/order"
+	"github.com/tenderly/zkevm-erigon-lib/kv/rawdbv3"
 	jsoniter "github.com/json-iterator/go"
 
 	"github.com/tenderly/zkevm-erigon/chain"

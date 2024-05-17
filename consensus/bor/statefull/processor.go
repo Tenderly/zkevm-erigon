@@ -3,7 +3,7 @@ package statefull
 import (
 	"github.com/holiman/uint256"
 	ethereum "github.com/tenderly/zkevm-erigon"
-	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
+	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/consensus"
 	"github.com/tenderly/zkevm-erigon/core"
 	"github.com/tenderly/zkevm-erigon/core/types"

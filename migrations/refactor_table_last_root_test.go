@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
+	"github.com/tenderly/zkevm-erigon-lib/kv"
+	"github.com/tenderly/zkevm-erigon-lib/kv/memdb"
 	smtdb "github.com/tenderly/zkevm-erigon/smt/pkg/db"
 	"github.com/stretchr/testify/require"
 	"gotest.tools/v3/assert"
