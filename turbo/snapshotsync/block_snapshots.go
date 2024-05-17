@@ -1991,7 +1991,7 @@ func (*Merger) FindMergeRanges(currentRanges []Range) (toMerge []Range) {
 			break
 		}
 	}
-	slices.SortFunc(toMerge, func(i, j Range) bool { return i.from < j.from })
+	slices.SortFunc(toMerge, func(i, j Range) int { if i.from < j.from { return -1 } else { return 1 } })
 	return toMerge
 }
 
@@ -2147,10 +2147,6 @@ func BuildProtoRequest(downloadRequest []DownloadRequest) *proto_downloader.Down
 	for _, r := range downloadRequest {
 		if r.path != "" {
 			if r.torrentHash != "" {
-				req.Items = append(req.Items, &proto_downloader.DownloadItem{
-					TorrentHash: downloadergrpc.String2Proto(r.torrentHash),
-					Path:        r.path,
-				})
 			} else {
 				req.Items = append(req.Items, &proto_downloader.DownloadItem{
 					Path: r.path,

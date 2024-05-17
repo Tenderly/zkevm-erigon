@@ -8,6 +8,7 @@ import (
 	"math/bits"
 	"sync/atomic"
 
+	"github.com/ledgerwatch/log/v3"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
 	"github.com/tenderly/zkevm-erigon-lib/common/length"
@@ -18,7 +19,6 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/kv/temporal/historyv2"
 	"github.com/tenderly/zkevm-erigon-lib/state"
 	"github.com/tenderly/zkevm-erigon/core/state/temporal"
-	"github.com/ledgerwatch/log/v3"
 	"golang.org/x/exp/slices"
 
 	"github.com/tenderly/zkevm-erigon/common"
@@ -342,7 +342,7 @@ func (p *HashPromoter) Promote(logPrefix string, from, to uint64, storage bool, 
 	}
 
 	if !storage { // delete Intermediate hashes of deleted accounts
-		slices.SortFunc(deletedAccounts, func(a, b []byte) bool { return bytes.Compare(a, b) < 0 })
+		slices.SortFunc(deletedAccounts, func(a, b []byte) int { if bytes.Compare(a, b) < 0 {return -1} else {return 1} })
 		for _, k := range deletedAccounts {
 			if err := p.tx.ForPrefix(kv.TrieOfStorage, k, func(k, v []byte) error {
 				if err := p.tx.Delete(kv.TrieOfStorage, k); err != nil {
@@ -440,7 +440,7 @@ func (p *HashPromoter) UnwindOnHistoryV3(logPrefix string, agg *state.Aggregator
 	}
 
 	// delete Intermediate hashes of deleted accounts
-	slices.SortFunc(deletedAccounts, func(a, b []byte) bool { return bytes.Compare(a, b) < 0 })
+	slices.SortFunc(deletedAccounts, func(a, b []byte) int { if bytes.Compare(a, b) < 0 {return -1} else {return 1} })
 	for _, k := range deletedAccounts {
 		if err := p.tx.ForPrefix(kv.TrieOfStorage, k, func(k, v []byte) error {
 			if err := p.tx.Delete(kv.TrieOfStorage, k); err != nil {
@@ -527,7 +527,7 @@ func (p *HashPromoter) Unwind(logPrefix string, s *StageState, u *UnwindState, s
 	}
 
 	if !storage { // delete Intermediate hashes of deleted accounts
-		slices.SortFunc(deletedAccounts, func(a, b []byte) bool { return bytes.Compare(a, b) < 0 })
+		slices.SortFunc(deletedAccounts, func(a, b []byte) int { if bytes.Compare(a, b) < 0 {return -1} else {return 1} })
 		for _, k := range deletedAccounts {
 			if err := p.tx.ForPrefix(kv.TrieOfStorage, k, func(k, v []byte) error {
 				if err := p.tx.Delete(kv.TrieOfStorage, k); err != nil {
