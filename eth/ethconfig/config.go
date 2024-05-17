@@ -30,7 +30,6 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/chain"
 	"github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
-	"github.com/tenderly/zkevm-erigon-lib/downloader/downloadercfg"
 	"github.com/tenderly/zkevm-erigon-lib/txpool/txpoolcfg"
 
 	"github.com/tenderly/zkevm-erigon/consensus/ethash/ethashcfg"
@@ -188,7 +187,6 @@ type Config struct {
 	BadBlockHash common.Hash // hash of the block marked as bad
 
 	Snapshot   Snapshot
-	Downloader *downloadercfg.Cfg
 
 	Dirs datadir.Dirs
 
