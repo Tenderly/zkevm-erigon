@@ -22,8 +22,8 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/chain"
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/zk/constants"
-	"github.com/ledgerwatch/erigon/zk/zkchainconfig"
+	"github.com/tenderly/zkevm-erigon/zk/constants"
+	"github.com/tenderly/zkevm-erigon/zk/zkchainconfig"
 )
 
 // this needs to always be in descending order

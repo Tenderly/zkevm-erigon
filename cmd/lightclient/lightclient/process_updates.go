@@ -3,8 +3,8 @@ package lightclient
 import (
 	"fmt"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
 )
 
 func (l *LightClient) isBetterUpdate(oldUpdate *cltypes.LightClientUpdate, newUpdate *cltypes.LightClientUpdate) bool {

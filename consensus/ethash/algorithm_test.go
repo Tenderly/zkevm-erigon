@@ -25,7 +25,7 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/common/length"
 
-	"github.com/ledgerwatch/erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
 )
 
 // prepare converts an ethash cache or dataset from a byte stream into the internal

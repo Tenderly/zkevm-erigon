@@ -7,8 +7,8 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	ethTypes "github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	ethTypes "github.com/tenderly/zkevm-erigon/core/types"
 )
 
 var sha3UncleHash = common.HexToHash("0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347")

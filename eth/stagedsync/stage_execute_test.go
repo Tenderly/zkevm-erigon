@@ -12,12 +12,12 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv/rawdbv3"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/temporal/historyv2"
 	libstate "github.com/gateway-fm/cdk-erigon-lib/state"
-	"github.com/ledgerwatch/erigon/cmd/state/exec22"
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
-	"github.com/ledgerwatch/erigon/ethdb/prune"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/cmd/state/exec22"
+	"github.com/tenderly/zkevm-erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
+	"github.com/tenderly/zkevm-erigon/ethdb/prune"
+	"github.com/tenderly/zkevm-erigon/params"
 	"github.com/stretchr/testify/require"
 )
 

@@ -9,16 +9,16 @@ import (
 
 	"math/big"
 
-	"github.com/ledgerwatch/erigon/chain"
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/eth/stagedsync"
-	"github.com/ledgerwatch/erigon/smt/pkg/blockinfo"
-	"github.com/ledgerwatch/erigon/zk/erigon_db"
-	"github.com/ledgerwatch/erigon/zk/hermez_db"
-	zktypes "github.com/ledgerwatch/erigon/zk/types"
+	"github.com/tenderly/zkevm-erigon/chain"
+	"github.com/tenderly/zkevm-erigon/core"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/blockinfo"
+	"github.com/tenderly/zkevm-erigon/zk/erigon_db"
+	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
+	zktypes "github.com/tenderly/zkevm-erigon/zk/types"
 	"github.com/ledgerwatch/secp256k1"
 )
 

@@ -11,7 +11,7 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/gateway-fm/cdk-erigon-lib/types"
 	"github.com/holiman/uint256"
-	"github.com/ledgerwatch/erigon/common/math"
+	"github.com/tenderly/zkevm-erigon/common/math"
 	"github.com/ledgerwatch/log/v3"
 )
 

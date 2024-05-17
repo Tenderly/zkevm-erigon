@@ -7,10 +7,10 @@ import (
 	"github.com/0xPolygonHermez/zkevm-data-streamer/datastreamer"
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	eritypes "github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/zk/datastream/types"
-	"github.com/ledgerwatch/erigon/zk/hermez_db"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	eritypes "github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/zk/datastream/types"
+	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
 	"github.com/ledgerwatch/log/v3"
 )
 

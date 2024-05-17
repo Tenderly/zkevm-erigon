@@ -16,11 +16,11 @@ import (
 	"github.com/ledgerwatch/log/v3"
 	"github.com/spf13/cobra"
 
-	"github.com/ledgerwatch/erigon/core/rawdb/rawdbhelpers"
-	reset2 "github.com/ledgerwatch/erigon/core/rawdb/rawdbreset"
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
-	"github.com/ledgerwatch/erigon/ethdb/prune"
-	"github.com/ledgerwatch/erigon/turbo/snapshotsync"
+	"github.com/tenderly/zkevm-erigon/core/rawdb/rawdbhelpers"
+	reset2 "github.com/tenderly/zkevm-erigon/core/rawdb/rawdbreset"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
+	"github.com/tenderly/zkevm-erigon/ethdb/prune"
+	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
 )
 
 var cmdResetState = &cobra.Command{

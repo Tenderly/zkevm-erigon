@@ -25,10 +25,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/p2p/enode"
-	"github.com/ledgerwatch/erigon/p2p/enr"
-	"github.com/ledgerwatch/erigon/p2p/netutil"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/p2p/enode"
+	"github.com/tenderly/zkevm-erigon/p2p/enr"
+	"github.com/tenderly/zkevm-erigon/p2p/netutil"
 )
 
 func TestTable_pingReplace(t *testing.T) {

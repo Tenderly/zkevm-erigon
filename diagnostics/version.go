@@ -5,7 +5,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/params"
 )
 
 const Version = 1

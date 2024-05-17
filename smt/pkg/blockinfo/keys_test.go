@@ -1,7 +1,7 @@
 package blockinfo
 
 import (
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 	"github.com/stretchr/testify/assert"
 	"math/big"
 	"testing"

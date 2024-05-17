@@ -6,7 +6,7 @@ import (
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ledgerwatch/erigon/cmd/devnet/models"
+	"github.com/tenderly/zkevm-erigon/cmd/devnet/models"
 )
 
 func MockRequestGenerator(reqId int) *RequestGenerator {

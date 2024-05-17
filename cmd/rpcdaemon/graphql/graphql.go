@@ -6,9 +6,9 @@ import (
 
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/playground"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/commands"
-	"github.com/ledgerwatch/erigon/cmd/rpcdaemon/graphql/graph"
-	"github.com/ledgerwatch/erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/commands"
+	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/graphql/graph"
+	"github.com/tenderly/zkevm-erigon/rpc"
 )
 
 const (

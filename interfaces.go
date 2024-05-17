@@ -26,7 +26,7 @@ import (
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	types2 "github.com/gateway-fm/cdk-erigon-lib/types"
 
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/types"
 )
 
 // NotFound is returned by API methods if the requested item does not exist.

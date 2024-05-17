@@ -6,15 +6,15 @@ import (
 	"fmt"
 	"math/big"
 
-	zktx "github.com/ledgerwatch/erigon/zk/tx"
+	zktx "github.com/tenderly/zkevm-erigon/zk/tx"
 
-	"github.com/ledgerwatch/erigon/core"
-	"github.com/ledgerwatch/erigon/core/state"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/turbo/transactions"
-	"github.com/ledgerwatch/erigon/zk/hermez_db"
+	"github.com/tenderly/zkevm-erigon/core"
+	"github.com/tenderly/zkevm-erigon/core/state"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/turbo/transactions"
+	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/holiman/uint256"

@@ -4,10 +4,10 @@ import (
 	"fmt"
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/chain"
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
-	"github.com/ledgerwatch/erigon/zk/constants"
-	"github.com/ledgerwatch/erigon/zk/hermez_db"
+	"github.com/tenderly/zkevm-erigon/chain"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
+	"github.com/tenderly/zkevm-erigon/zk/constants"
+	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
 	"github.com/ledgerwatch/log/v3"
 )
 

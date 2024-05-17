@@ -29,11 +29,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/p2p/enode"
-	"github.com/ledgerwatch/erigon/p2p/enr"
-	"github.com/ledgerwatch/erigon/p2p/rlpx"
-	"github.com/ledgerwatch/erigon/turbo/testlog"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/p2p/enode"
+	"github.com/tenderly/zkevm-erigon/p2p/enr"
+	"github.com/tenderly/zkevm-erigon/p2p/rlpx"
+	"github.com/tenderly/zkevm-erigon/turbo/testlog"
 	"github.com/ledgerwatch/log/v3"
 )
 

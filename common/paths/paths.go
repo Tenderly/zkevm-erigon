@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ledgerwatch/erigon/params/networkname"
+	"github.com/tenderly/zkevm-erigon/params/networkname"
 	"github.com/ledgerwatch/log/v3"
 )
 

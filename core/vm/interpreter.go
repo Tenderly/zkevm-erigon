@@ -22,10 +22,10 @@ import (
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/common/math"
-	"github.com/ledgerwatch/erigon/chain"
+	"github.com/tenderly/zkevm-erigon/chain"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/core/vm/stack"
+	"github.com/tenderly/zkevm-erigon/core/vm/stack"
 )
 
 // Config are the configuration options for the Interpreter

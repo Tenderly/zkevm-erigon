@@ -25,10 +25,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/bitutil"
-	"github.com/ledgerwatch/erigon/p2p/rlpx"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/common/bitutil"
+	"github.com/tenderly/zkevm-erigon/p2p/rlpx"
+	"github.com/tenderly/zkevm-erigon/rlp"
 )
 
 const (

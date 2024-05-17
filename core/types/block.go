@@ -34,9 +34,9 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/common/hexutility"
 	rlp2 "github.com/gateway-fm/cdk-erigon-lib/rlp"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/hexutil"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/common/hexutil"
+	"github.com/tenderly/zkevm-erigon/rlp"
 )
 
 var (

@@ -1,4 +1,4 @@
-module github.com/ledgerwatch/erigon
+module github.com/tenderly/zkevm-erigon
 
 go 1.19
 

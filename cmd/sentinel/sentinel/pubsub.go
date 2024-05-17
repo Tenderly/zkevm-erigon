@@ -19,7 +19,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ledgerwatch/erigon/cl/fork"
+	"github.com/tenderly/zkevm-erigon/cl/fork"
 	"github.com/ledgerwatch/log/v3"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 )

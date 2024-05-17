@@ -24,8 +24,8 @@ import (
 	"testing"
 	"testing/quick"
 
-	"github.com/ledgerwatch/erigon/p2p/enr"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/p2p/enr"
+	"github.com/tenderly/zkevm-erigon/rlp"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -8,12 +8,12 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
 	"github.com/spf13/cobra"
 
-	"github.com/ledgerwatch/erigon/cmd/sentry/sentry"
-	"github.com/ledgerwatch/erigon/cmd/utils"
-	"github.com/ledgerwatch/erigon/common/paths"
-	"github.com/ledgerwatch/erigon/turbo/debug"
-	"github.com/ledgerwatch/erigon/turbo/logging"
-	node2 "github.com/ledgerwatch/erigon/turbo/node"
+	"github.com/tenderly/zkevm-erigon/cmd/sentry/sentry"
+	"github.com/tenderly/zkevm-erigon/cmd/utils"
+	"github.com/tenderly/zkevm-erigon/common/paths"
+	"github.com/tenderly/zkevm-erigon/turbo/debug"
+	"github.com/tenderly/zkevm-erigon/turbo/logging"
+	node2 "github.com/tenderly/zkevm-erigon/turbo/node"
 )
 
 // generate the messages

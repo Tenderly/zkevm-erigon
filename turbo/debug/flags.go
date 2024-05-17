@@ -31,10 +31,10 @@ import (
 	"github.com/urfave/cli/v2"
 	"gopkg.in/yaml.v2"
 
-	"github.com/ledgerwatch/erigon/common/fdlimit"
-	"github.com/ledgerwatch/erigon/diagnostics"
-	"github.com/ledgerwatch/erigon/metrics/exp"
-	"github.com/ledgerwatch/erigon/turbo/logging"
+	"github.com/tenderly/zkevm-erigon/common/fdlimit"
+	"github.com/tenderly/zkevm-erigon/diagnostics"
+	"github.com/tenderly/zkevm-erigon/metrics/exp"
+	"github.com/tenderly/zkevm-erigon/turbo/logging"
 )
 
 var (

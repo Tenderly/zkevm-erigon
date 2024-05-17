@@ -1,6 +1,6 @@
 package zkchainconfig
 
-import "github.com/ledgerwatch/erigon/params/networkname"
+import "github.com/tenderly/zkevm-erigon/params/networkname"
 
 var chainIds = []uint64{
 	195,    // xlayer-testnet

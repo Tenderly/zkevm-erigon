@@ -3,7 +3,7 @@ package execution_client
 import (
 	"sync"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
 )
 
 const batchSize = 10000

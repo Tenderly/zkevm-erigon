@@ -21,7 +21,7 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/types"
 )
 
 // WriteTxLookupEntries stores a positional metadata for every transaction from

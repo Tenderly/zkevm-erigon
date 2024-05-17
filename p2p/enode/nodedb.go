@@ -33,8 +33,8 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/rlp"
 	"github.com/ledgerwatch/log/v3"
 
 	mdbx1 "github.com/torquem-ch/mdbx-go/mdbx"

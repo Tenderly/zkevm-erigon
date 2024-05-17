@@ -12,7 +12,7 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/ethdb"
+	"github.com/tenderly/zkevm-erigon/ethdb"
 	"sort"
 	"strings"
 )

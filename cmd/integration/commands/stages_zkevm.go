@@ -1,23 +1,23 @@
 package commands
 
 import (
-	stages2 "github.com/ledgerwatch/erigon/turbo/stages"
-	"github.com/ledgerwatch/erigon/eth/stagedsync"
+	stages2 "github.com/tenderly/zkevm-erigon/turbo/stages"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync"
 	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
-	"github.com/ledgerwatch/erigon/core"
+	"github.com/tenderly/zkevm-erigon/core"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/c2h5oh/datasize"
 	chain3 "github.com/gateway-fm/cdk-erigon-lib/chain"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcfg"
-	"github.com/ledgerwatch/erigon/cmd/hack/tool/fromdb"
-	"github.com/ledgerwatch/erigon/turbo/shards"
-	"github.com/ledgerwatch/erigon/cmd/sentry/sentry"
+	"github.com/tenderly/zkevm-erigon/cmd/hack/tool/fromdb"
+	"github.com/tenderly/zkevm-erigon/turbo/shards"
+	"github.com/tenderly/zkevm-erigon/cmd/sentry/sentry"
 	"context"
-	"github.com/ledgerwatch/erigon/core/vm"
-	"github.com/ledgerwatch/erigon/consensus"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
-	stages3 "github.com/ledgerwatch/erigon/zk/stages"
-	"github.com/ledgerwatch/erigon/zk/sequencer"
+	"github.com/tenderly/zkevm-erigon/core/vm"
+	"github.com/tenderly/zkevm-erigon/consensus"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
+	stages3 "github.com/tenderly/zkevm-erigon/zk/stages"
+	"github.com/tenderly/zkevm-erigon/zk/sequencer"
 )
 
 func newSyncZk(ctx context.Context, db kv.RwDB) (consensus.Engine, *vm.Config, *stagedsync.Sync) {

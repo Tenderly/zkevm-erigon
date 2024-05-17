@@ -5,9 +5,9 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces"
 	proto_sentry "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/sentry"
-	"github.com/ledgerwatch/erigon/core/forkid"
-	"github.com/ledgerwatch/erigon/eth/protocols/eth"
-	"github.com/ledgerwatch/erigon/p2p"
+	"github.com/tenderly/zkevm-erigon/core/forkid"
+	"github.com/tenderly/zkevm-erigon/eth/protocols/eth"
+	"github.com/tenderly/zkevm-erigon/p2p"
 )
 
 func readAndValidatePeerStatusMessage(

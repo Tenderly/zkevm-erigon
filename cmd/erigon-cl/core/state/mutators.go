@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common/math"
-	"github.com/ledgerwatch/erigon/cl/clparams"
-	"github.com/ledgerwatch/erigon/cl/utils"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/utils"
 )
 
 func (b *BeaconState) IncreaseBalance(index, delta uint64) error {

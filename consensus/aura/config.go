@@ -26,8 +26,8 @@ import (
 	erigonchain "github.com/gateway-fm/cdk-erigon-lib/chain"
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/common/u256"
-	"github.com/ledgerwatch/erigon/consensus"
+	"github.com/tenderly/zkevm-erigon/common/u256"
+	"github.com/tenderly/zkevm-erigon/consensus"
 )
 
 // Draws an validator nonce modulo number of validators.

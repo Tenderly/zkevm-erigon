@@ -12,8 +12,8 @@ import (
 	"io"
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/ethclient"
-	"github.com/ledgerwatch/erigon/zk/debug_tools"
+	"github.com/tenderly/zkevm-erigon/ethclient"
+	"github.com/tenderly/zkevm-erigon/zk/debug_tools"
 )
 
 type HTTPResponse struct {

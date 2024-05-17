@@ -6,14 +6,14 @@ import (
 	"math/big"
 	"testing"
 
-	zkhex "github.com/ledgerwatch/erigon/zkevm/hex"
+	zkhex "github.com/tenderly/zkevm-erigon/zkevm/hex"
 
 	"encoding/binary"
 
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/holiman/uint256"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/zk/constants"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/zk/constants"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

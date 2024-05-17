@@ -18,7 +18,7 @@ import (
 	"math/bits"
 
 	"github.com/golang/snappy"
-	"github.com/ledgerwatch/erigon/cl/cltypes/ssz"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes/ssz"
 )
 
 func Uint32ToBytes4(n uint32) (ret [4]byte) {

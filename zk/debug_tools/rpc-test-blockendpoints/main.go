@@ -6,8 +6,8 @@ import (
 
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/ethclient"
-	"github.com/ledgerwatch/erigon/zk/debug_tools"
+	"github.com/tenderly/zkevm-erigon/ethclient"
+	"github.com/tenderly/zkevm-erigon/zk/debug_tools"
 )
 
 func main() {

@@ -3,8 +3,8 @@ package tracers
 import (
 	"encoding/json"
 
-	"github.com/ledgerwatch/erigon/eth/tracers/logger"
-	"github.com/ledgerwatch/erigon/turbo/adapter/ethapi"
+	"github.com/tenderly/zkevm-erigon/eth/tracers/logger"
+	"github.com/tenderly/zkevm-erigon/turbo/adapter/ethapi"
 )
 
 // TraceConfig holds extra parameters to trace functions.

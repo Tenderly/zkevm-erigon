@@ -25,12 +25,12 @@ import (
 	"github.com/holiman/uint256"
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/crypto/blake2b"
-	"github.com/ledgerwatch/erigon/crypto/bls12381"
-	"github.com/ledgerwatch/erigon/params"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/common/math"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/crypto/blake2b"
+	"github.com/tenderly/zkevm-erigon/crypto/bls12381"
+	"github.com/tenderly/zkevm-erigon/params"
 	"golang.org/x/crypto/ripemd160"
 	//lint:ignore SA1019 Needed for precompile
 )

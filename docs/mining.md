@@ -26,7 +26,7 @@ to `integration state_stages` command:
 ```
 
 * TODO:
-  + we don't broadcast mined blocks to p2p-network yet, [but it's easy to accomplish](https://github.com/ledgerwatch/erigon/blob/9b8cdc0f2289a7cef78218a15043de5bdff4465e/eth/downloader/downloader.go#L673)
+  + we don't broadcast mined blocks to p2p-network yet, [but it's easy to accomplish](https://github.com/tenderly/zkevm-erigon/blob/9b8cdc0f2289a7cef78218a15043de5bdff4465e/eth/downloader/downloader.go#L673)
   + eth_newPendingTransactionFilter
   + eth_newBlockFilter
   + eth_newFilter

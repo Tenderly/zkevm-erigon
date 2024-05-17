@@ -29,8 +29,8 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/memdb"
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/ethdb"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/ethdb"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

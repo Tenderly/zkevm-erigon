@@ -8,8 +8,8 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/remote"
 	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/types"
 
-	"github.com/ledgerwatch/erigon/cl/cltypes"
-	"github.com/ledgerwatch/erigon/ethdb/privateapi"
+	"github.com/tenderly/zkevm-erigon/cl/cltypes"
+	"github.com/tenderly/zkevm-erigon/ethdb/privateapi"
 )
 
 func convertLightrpcExecutionPayloadToEthbacked(e *cltypes.Eth1Block) (*types.ExecutionPayload, error) {

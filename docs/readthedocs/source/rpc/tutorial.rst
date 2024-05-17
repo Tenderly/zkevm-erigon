@@ -15,8 +15,8 @@ our daemon will only contain one method: `myNamespace_getBlockNumberByHash` whic
         "context"
 
         "github.com/gateway-fm/cdk-erigon-lib/kv"
-        "github.com/ledgerwatch/erigon/common"
-        "github.com/ledgerwatch/erigon/core/rawdb"
+        "github.com/tenderly/zkevm-erigon/common"
+        "github.com/tenderly/zkevm-erigon/core/rawdb"
     )
 
     type API struct {
@@ -59,9 +59,9 @@ Now we are going to make our `main.go` where we are going to serve the api we ma
         "os"
 
         "github.com/gateway-fm/cdk-erigon-lib/kv"
-        "github.com/ledgerwatch/erigon/cmd/rpcdaemon/cli"
-        "github.com/ledgerwatch/erigon/cmd/utils"
-        "github.com/ledgerwatch/erigon/rpc"
+        "github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/cli"
+        "github.com/tenderly/zkevm-erigon/cmd/utils"
+        "github.com/tenderly/zkevm-erigon/rpc"
         "github.com/ledgerwatch/log/v3"
         "github.com/spf13/cobra"
     )

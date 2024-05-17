@@ -21,7 +21,7 @@ import (
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/common"
+	"github.com/tenderly/zkevm-erigon/common"
 )
 
 // DAOForkBlockExtra is the block header extra-data field to set for the DAO fork

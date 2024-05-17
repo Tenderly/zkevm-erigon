@@ -41,7 +41,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/crypto"
 )
 
 var dumpEnc bool

@@ -12,12 +12,12 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv/bitmapdb"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/temporal/historyv2"
 
-	"github.com/ledgerwatch/erigon/common"
-	"github.com/ledgerwatch/erigon/common/dbutils"
-	"github.com/ledgerwatch/erigon/common/math"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
-	"github.com/ledgerwatch/erigon/ethdb"
-	"github.com/ledgerwatch/erigon/turbo/trie"
+	"github.com/tenderly/zkevm-erigon/common"
+	"github.com/tenderly/zkevm-erigon/common/dbutils"
+	"github.com/tenderly/zkevm-erigon/common/math"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/ethdb"
+	"github.com/tenderly/zkevm-erigon/turbo/trie"
 )
 
 // This type is now used in GenerateChain to generate blockchains for the tests (core/chain_makers.go)

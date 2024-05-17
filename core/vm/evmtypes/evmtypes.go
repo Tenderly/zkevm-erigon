@@ -7,7 +7,7 @@ import (
 	types2 "github.com/gateway-fm/cdk-erigon-lib/types"
 	"github.com/holiman/uint256"
 
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/types"
 )
 
 // BlockContext provides the EVM with auxiliary information. Once provided

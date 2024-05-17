@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/eth/ethconfig"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig"
 )
 
 func IdxStepsCountV3(tx kv.Tx) float64 {

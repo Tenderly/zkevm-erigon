@@ -5,7 +5,7 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	smtdb "github.com/ledgerwatch/erigon/smt/pkg/db"
+	smtdb "github.com/tenderly/zkevm-erigon/smt/pkg/db"
 )
 
 var refactorTableLastRoot = Migration{

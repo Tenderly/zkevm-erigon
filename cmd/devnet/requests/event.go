@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/ledgerwatch/erigon/cmd/devnet/devnetutils"
-	"github.com/ledgerwatch/erigon/cmd/devnet/models"
-	"github.com/ledgerwatch/erigon/cmd/rpctest/rpctest"
+	"github.com/tenderly/zkevm-erigon/cmd/devnet/devnetutils"
+	"github.com/tenderly/zkevm-erigon/cmd/devnet/models"
+	"github.com/tenderly/zkevm-erigon/cmd/rpctest/rpctest"
 )
 
 func GetAndCompareLogs(reqId int, fromBlock uint64, toBlock uint64, expected rpctest.Log) error {

@@ -29,10 +29,10 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ledgerwatch/erigon/crypto"
-	"github.com/ledgerwatch/erigon/crypto/ecies"
-	"github.com/ledgerwatch/erigon/p2p/simulations/pipes"
-	"github.com/ledgerwatch/erigon/rlp"
+	"github.com/tenderly/zkevm-erigon/crypto"
+	"github.com/tenderly/zkevm-erigon/crypto/ecies"
+	"github.com/tenderly/zkevm-erigon/p2p/simulations/pipes"
+	"github.com/tenderly/zkevm-erigon/rlp"
 	"github.com/stretchr/testify/assert"
 )
 

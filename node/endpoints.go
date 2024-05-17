@@ -24,8 +24,8 @@ import (
 	"time"
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/rpc"
-	"github.com/ledgerwatch/erigon/rpc/rpccfg"
+	"github.com/tenderly/zkevm-erigon/rpc"
+	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
 	"github.com/ledgerwatch/log/v3"
 )
 

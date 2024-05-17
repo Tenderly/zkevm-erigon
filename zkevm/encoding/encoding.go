@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"strings"
 
-	ericommon "github.com/ledgerwatch/erigon/common"
+	ericommon "github.com/tenderly/zkevm-erigon/common"
 
-	"github.com/ledgerwatch/erigon/zkevm/hex"
+	"github.com/tenderly/zkevm-erigon/zkevm/hex"
 )
 
 const (

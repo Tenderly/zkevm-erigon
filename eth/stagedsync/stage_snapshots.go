@@ -23,16 +23,16 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcfg"
 	"github.com/gateway-fm/cdk-erigon-lib/kv/rawdbv3"
 	"github.com/gateway-fm/cdk-erigon-lib/state"
-	"github.com/ledgerwatch/erigon/chain"
+	"github.com/tenderly/zkevm-erigon/chain"
 
-	"github.com/ledgerwatch/erigon/consensus"
-	"github.com/ledgerwatch/erigon/core/rawdb"
-	"github.com/ledgerwatch/erigon/core/types"
-	"github.com/ledgerwatch/erigon/eth/ethconfig/estimate"
-	"github.com/ledgerwatch/erigon/eth/stagedsync/stages"
-	"github.com/ledgerwatch/erigon/turbo/services"
-	"github.com/ledgerwatch/erigon/turbo/snapshotsync"
-	"github.com/ledgerwatch/erigon/turbo/snapshotsync/snapcfg"
+	"github.com/tenderly/zkevm-erigon/consensus"
+	"github.com/tenderly/zkevm-erigon/core/rawdb"
+	"github.com/tenderly/zkevm-erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/eth/ethconfig/estimate"
+	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
+	"github.com/tenderly/zkevm-erigon/turbo/services"
+	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync"
+	"github.com/tenderly/zkevm-erigon/turbo/snapshotsync/snapcfg"
 )
 
 type SnapshotsCfg struct {

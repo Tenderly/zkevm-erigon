@@ -4,7 +4,7 @@ import (
 	"github.com/hashicorp/golang-lru/v2"
 	"github.com/gateway-fm/cdk-erigon-lib/common"
 
-	"github.com/ledgerwatch/erigon/core/types"
+	"github.com/tenderly/zkevm-erigon/core/types"
 )
 
 type PrefetchedBlocks struct {

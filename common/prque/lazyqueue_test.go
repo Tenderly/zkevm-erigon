@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ledgerwatch/erigon/common/mclock"
+	"github.com/tenderly/zkevm-erigon/common/mclock"
 )
 
 const (

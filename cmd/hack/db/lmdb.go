@@ -15,7 +15,7 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
 	kv2 "github.com/gateway-fm/cdk-erigon-lib/kv/mdbx"
-	"github.com/ledgerwatch/erigon/common/debug"
+	"github.com/tenderly/zkevm-erigon/common/debug"
 	"github.com/ledgerwatch/log/v3"
 )
 

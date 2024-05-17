@@ -2,7 +2,7 @@ package stagedsync
 
 import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/ledgerwatch/erigon/zk/hermez_db"
+	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
 	"github.com/ledgerwatch/log/v3"
 	"fmt"
 )

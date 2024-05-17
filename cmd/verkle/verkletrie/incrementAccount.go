@@ -12,8 +12,8 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/kv/temporal/historyv2"
 	"github.com/ledgerwatch/log/v3"
 
-	"github.com/ledgerwatch/erigon/common/debug"
-	"github.com/ledgerwatch/erigon/core/types/accounts"
+	"github.com/tenderly/zkevm-erigon/common/debug"
+	"github.com/tenderly/zkevm-erigon/core/types/accounts"
 )
 
 func IncrementAccount(vTx kv.RwTx, tx kv.Tx, workers uint64, verkleWriter *VerkleTreeWriter, from, to uint64) error {

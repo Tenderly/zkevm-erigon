@@ -4,8 +4,8 @@ import (
 	"context"
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
-	"github.com/ledgerwatch/erigon/turbo/trie"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
+	"github.com/tenderly/zkevm-erigon/turbo/trie"
 )
 
 func BuildWitness(s *SMT, rd trie.RetainDecider, ctx context.Context) (*trie.Witness, error) {

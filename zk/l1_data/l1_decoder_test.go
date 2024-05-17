@@ -3,7 +3,7 @@ package l1_data
 import (
 	"testing"
 	"github.com/gateway-fm/cdk-erigon-lib/common"
-	zktx "github.com/ledgerwatch/erigon/zk/tx"
+	zktx "github.com/tenderly/zkevm-erigon/zk/tx"
 )
 
 // taken from https://sepolia.etherscan.io/tx/0x44b7aacaf535bd947803c88c18e63358c8ddd44fbb24950efbb5abb50f938cef

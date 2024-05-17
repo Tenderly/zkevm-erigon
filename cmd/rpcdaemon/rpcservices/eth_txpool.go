@@ -8,7 +8,7 @@ import (
 	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces"
 	"github.com/gateway-fm/cdk-erigon-lib/gointerfaces/grpcutil"
 	txpooproto "github.com/gateway-fm/cdk-erigon-lib/gointerfaces/txpool"
-	txpool2 "github.com/ledgerwatch/erigon/zk/txpool"
+	txpool2 "github.com/tenderly/zkevm-erigon/zk/txpool"
 	"github.com/ledgerwatch/log/v3"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"

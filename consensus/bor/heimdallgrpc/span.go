@@ -3,8 +3,8 @@ package heimdallgrpc
 import (
 	"context"
 
-	"github.com/ledgerwatch/erigon/consensus/bor/heimdall/span"
-	"github.com/ledgerwatch/erigon/consensus/bor/valset"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/heimdall/span"
+	"github.com/tenderly/zkevm-erigon/consensus/bor/valset"
 	"github.com/ledgerwatch/log/v3"
 
 	proto "github.com/maticnetwork/polyproto/heimdall"

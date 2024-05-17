@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ledgerwatch/erigon/smt/pkg/utils"
+	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
 )
 
 // Test vectors from JS implementation: https://github.com/0xPolygonHermez/zkevm-testvectors/blob/main/merkle-tree/smt-raw.json

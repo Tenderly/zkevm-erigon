@@ -2,7 +2,7 @@ package downloadernat
 
 import (
 	"github.com/gateway-fm/cdk-erigon-lib/downloader/downloadercfg"
-	"github.com/ledgerwatch/erigon/p2p/nat"
+	"github.com/tenderly/zkevm-erigon/p2p/nat"
 	"github.com/ledgerwatch/log/v3"
 )
 

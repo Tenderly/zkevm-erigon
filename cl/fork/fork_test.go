@@ -16,7 +16,7 @@ package fork
 import (
 	"testing"
 
-	"github.com/ledgerwatch/erigon/cl/clparams"
+	"github.com/tenderly/zkevm-erigon/cl/clparams"
 	"github.com/stretchr/testify/require"
 )
 
