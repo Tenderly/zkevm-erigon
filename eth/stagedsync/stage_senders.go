@@ -17,7 +17,7 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon/chain"
 	"github.com/ledgerwatch/log/v3"
-	"github.com/ledgerwatch/secp256k1"
+	"github.com/tenderly/secp256k1"
 
 	"github.com/tenderly/zkevm-erigon/common/dbutils"
 	"github.com/tenderly/zkevm-erigon/common/debug"

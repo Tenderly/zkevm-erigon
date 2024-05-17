@@ -5,7 +5,6 @@ go 1.19
 require (
 	github.com/ledgerwatch/erigon-snapshot v1.1.1-0.20230404044759-5dec854ce336
 	github.com/ledgerwatch/log/v3 v3.7.0
-	github.com/ledgerwatch/secp256k1 v1.0.0
 	github.com/torquem-ch/mdbx-go v0.27.10
 )
 
@@ -78,6 +77,7 @@ require (
 	github.com/spf13/pflag v1.0.5
 	github.com/status-im/keycard-go v0.2.0
 	github.com/stretchr/testify v1.8.4
+	github.com/tenderly/secp256k1 v1.0.1-0.20231212115822-31dacfc1e0c7
 	github.com/tenderly/zkevm-erigon-lib v0.0.0-20240517161432-827e15831f74
 	github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e
 	github.com/tidwall/btree v1.6.0

@@ -24,7 +24,7 @@ import (
 	"fmt"
 
 	"github.com/tenderly/zkevm-erigon/common/math"
-	"github.com/ledgerwatch/secp256k1"
+	"github.com/tenderly/secp256k1"
 )
 
 // Ecrecover returns the uncompressed public key that created the given signature.

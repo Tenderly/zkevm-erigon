@@ -19,7 +19,7 @@ import (
 	"github.com/tenderly/zkevm-erigon/zk/erigon_db"
 	"github.com/tenderly/zkevm-erigon/zk/hermez_db"
 	zktypes "github.com/tenderly/zkevm-erigon/zk/types"
-	"github.com/ledgerwatch/secp256k1"
+	"github.com/tenderly/secp256k1"
 )
 
 func handleStateForNewBlockStarting(
