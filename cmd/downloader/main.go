@@ -1,40 +1,16 @@
 package main
 
 import (
-	"context"
-	"errors"
 	"fmt"
-	"net"
-	"os"
-	"path/filepath"
-	"strings"
-	"time"
-
-	"github.com/anacrolix/torrent/metainfo"
-	"github.com/c2h5oh/datasize"
-	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
-	grpc_recovery "github.com/grpc-ecosystem/go-grpc-middleware/recovery"
-	"github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
-	"github.com/tenderly/zkevm-erigon-lib/downloader"
-	downloadercfg2 "github.com/tenderly/zkevm-erigon-lib/downloader/downloadercfg"
-	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/downloader"
-	"github.com/tenderly/zkevm-erigon/cmd/downloader/downloadernat"
-	"github.com/tenderly/zkevm-erigon/cmd/utils"
-	"github.com/tenderly/zkevm-erigon/common/paths"
-	"github.com/tenderly/zkevm-erigon/p2p/nat"
-	"github.com/tenderly/zkevm-erigon/params"
-	"github.com/tenderly/zkevm-erigon/turbo/debug"
-	"github.com/tenderly/zkevm-erigon/turbo/logging"
 	"github.com/ledgerwatch/log/v3"
 	"github.com/pelletier/go-toml/v2"
 	"github.com/spf13/cobra"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/health"
-	"google.golang.org/grpc/health/grpc_health_v1"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/reflection"
+	"github.com/tenderly/zkevm-erigon-lib/common"
+	"github.com/tenderly/zkevm-erigon/cmd/utils"
+	"github.com/tenderly/zkevm-erigon/common/paths"
+	"github.com/tenderly/zkevm-erigon/turbo/debug"
+	"github.com/tenderly/zkevm-erigon/turbo/logging"
+	"os"
 )
 
 var (
@@ -115,113 +91,14 @@ var rootCmd = &cobra.Command{
 	},
 	Run: func(cmd *cobra.Command, args []string) {
 		logging.SetupLoggerCmd("downloader", cmd)
-		if err := Downloader(cmd.Context()); err != nil {
-			if !errors.Is(err, context.Canceled) {
-				log.Error(err.Error())
-			}
-			return
-		}
 	},
-}
-
-func Downloader(ctx context.Context) error {
-	dirs := datadir.New(datadirCli)
-	torrentLogLevel, _, err := downloadercfg2.Int2LogLevel(torrentVerbosity)
-	if err != nil {
-		return err
-	}
-
-	var downloadRate, uploadRate datasize.ByteSize
-	if err := downloadRate.UnmarshalText([]byte(downloadRateStr)); err != nil {
-		return err
-	}
-	if err := uploadRate.UnmarshalText([]byte(uploadRateStr)); err != nil {
-		return err
-	}
-
-	log.Info("Run snapshot downloader", "addr", downloaderApiAddr, "datadir", dirs.DataDir, "ipv6-enabled", !disableIPV6, "ipv4-enabled", !disableIPV4, "download.rate", downloadRate.String(), "upload.rate", uploadRate.String())
-	natif, err := nat.Parse(natSetting)
-	if err != nil {
-		return fmt.Errorf("invalid nat option %s: %w", natSetting, err)
-	}
-	staticPeers := strings.Split(staticPeersStr, ",")
-
-	version := "erigon: " + params.VersionWithCommit(params.GitCommit)
-	cfg, err := downloadercfg2.New(dirs.Snap, version, torrentLogLevel, downloadRate, uploadRate, torrentPort, torrentConnsPerFile, torrentDownloadSlots, staticPeers)
-	if err != nil {
-		return err
-	}
-	downloadernat.DoNat(natif, cfg)
-
-	cfg.ClientConfig.DisableIPv6 = disableIPV6
-	cfg.ClientConfig.DisableIPv4 = disableIPV4
-
-	d, err := downloader.New(ctx, cfg)
-	if err != nil {
-		return err
-	}
-	defer d.Close()
-	log.Info("[torrent] Start", "my peerID", fmt.Sprintf("%x", d.Torrent().PeerID()))
-	d.MainLoopInBackground(ctx, false)
-
-	bittorrentServer, err := downloader.NewGrpcServer(d)
-	if err != nil {
-		return fmt.Errorf("new server: %w", err)
-	}
-
-	grpcServer, err := StartGrpc(bittorrentServer, downloaderApiAddr, nil)
-	if err != nil {
-		return err
-	}
-	defer grpcServer.GracefulStop()
-
-	<-ctx.Done()
-	return nil
 }
 
 var printTorrentHashes = &cobra.Command{
 	Use:     "torrent_hashes",
 	Example: "go run ./cmd/downloader torrent_hashes --datadir <your_datadir>",
 	RunE: func(cmd *cobra.Command, args []string) error {
-		dirs := datadir.New(datadirCli)
-		ctx := cmd.Context()
-
-		if forceVerify { // remove and create .torrent files (will re-read all snapshots)
-			return downloader.VerifyDtaFiles(ctx, dirs.Snap)
-		}
-
-		if forceRebuild { // remove and create .torrent files (will re-read all snapshots)
-			//removePieceCompletionStorage(snapDir)
-			files, err := downloader.AllTorrentPaths(dirs.Snap)
-			if err != nil {
-				return err
-			}
-			for _, filePath := range files {
-				if err := os.Remove(filePath); err != nil {
-					return err
-				}
-			}
-			if _, err := downloader.BuildTorrentFilesIfNeed(ctx, dirs.Snap); err != nil {
-				return err
-			}
-		}
-
 		res := map[string]string{}
-		files, err := downloader.AllTorrentPaths(dirs.Snap)
-		if err != nil {
-			return err
-		}
-		for _, torrentFilePath := range files {
-			mi, err := metainfo.LoadFromFile(torrentFilePath)
-			if err != nil {
-				return err
-			}
-			info, err := mi.UnmarshalInfo()
-			if err != nil {
-				return err
-			}
-			res[info.Name] = mi.HashInfoBytes().String()
-		}
 		serialized, err := toml.Marshal(res)
 		if err != nil {
 			return err
@@ -249,68 +126,4 @@ var printTorrentHashes = &cobra.Command{
 		}
 		return nil
 	},
-}
-
-// nolint
-func removePieceCompletionStorage(snapDir string) {
-	_ = os.RemoveAll(filepath.Join(snapDir, "db"))
-	_ = os.RemoveAll(filepath.Join(snapDir, ".torrent.db"))
-	_ = os.RemoveAll(filepath.Join(snapDir, ".torrent.bolt.db"))
-	_ = os.RemoveAll(filepath.Join(snapDir, ".torrent.db-shm"))
-	_ = os.RemoveAll(filepath.Join(snapDir, ".torrent.db-wal"))
-}
-
-func StartGrpc(snServer *downloader.GrpcServer, addr string, creds *credentials.TransportCredentials) (*grpc.Server, error) {
-	lis, err := net.Listen("tcp", addr)
-	if err != nil {
-		return nil, fmt.Errorf("could not create listener: %w, addr=%s", err, addr)
-	}
-
-	var (
-		streamInterceptors []grpc.StreamServerInterceptor
-		unaryInterceptors  []grpc.UnaryServerInterceptor
-	)
-	streamInterceptors = append(streamInterceptors, grpc_recovery.StreamServerInterceptor())
-	unaryInterceptors = append(unaryInterceptors, grpc_recovery.UnaryServerInterceptor())
-
-	//if metrics.Enabled {
-	//	streamInterceptors = append(streamInterceptors, grpc_prometheus.StreamServerInterceptor)
-	//	unaryInterceptors = append(unaryInterceptors, grpc_prometheus.UnaryServerInterceptor)
-	//}
-
-	opts := []grpc.ServerOption{
-		// https://github.com/grpc/grpc-go/issues/3171#issuecomment-552796779
-		grpc.KeepaliveEnforcementPolicy(keepalive.EnforcementPolicy{
-			MinTime:             10 * time.Second,
-			PermitWithoutStream: true,
-		}),
-		grpc.StreamInterceptor(grpc_middleware.ChainStreamServer(streamInterceptors...)),
-		grpc.UnaryInterceptor(grpc_middleware.ChainUnaryServer(unaryInterceptors...)),
-	}
-	if creds == nil {
-		// no specific opts
-	} else {
-		opts = append(opts, grpc.Creds(*creds))
-	}
-	grpcServer := grpc.NewServer(opts...)
-	reflection.Register(grpcServer) // Register reflection service on gRPC server.
-	if snServer != nil {
-		proto_downloader.RegisterDownloaderServer(grpcServer, snServer)
-	}
-
-	//if metrics.Enabled {
-	//	grpc_prometheus.Register(grpcServer)
-	//}
-
-	healthServer := health.NewServer()
-	grpc_health_v1.RegisterHealthServer(grpcServer, healthServer)
-
-	go func() {
-		defer healthServer.Shutdown()
-		if err := grpcServer.Serve(lis); err != nil {
-			log.Error("gRPC server stop", "err", err)
-		}
-	}()
-	log.Info("Started gRPC server", "on", addr)
-	return grpcServer, nil
 }

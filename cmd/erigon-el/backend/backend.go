@@ -23,12 +23,7 @@ import (
 	"google.golang.org/protobuf/types/known/emptypb"
 
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
-	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
-	"github.com/tenderly/zkevm-erigon-lib/common/dir"
 	"github.com/tenderly/zkevm-erigon-lib/direct"
-	downloader3 "github.com/tenderly/zkevm-erigon-lib/downloader"
-	"github.com/tenderly/zkevm-erigon-lib/downloader/downloadercfg"
-	"github.com/tenderly/zkevm-erigon-lib/downloader/downloadergrpc"
 	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/downloader"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/execution"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/grpcutil"
@@ -153,7 +148,6 @@ type Ethereum struct {
 	txPool2GrpcServer       txpool_proto.TxpoolServer
 	notifyMiningAboutNewTxs chan struct{}
 	forkValidator           *engineapi.ForkValidator
-	downloader              *downloader3.Downloader
 	blockReader             services.FullBlockReader
 
 	agg *libstate.AggregatorV3
@@ -271,7 +265,6 @@ func NewBackend(stack *node.Node, config *ethconfig.Config, logger log.Logger) (
 		allSnapshots *snapshotsync.RoSnapshots
 		agg          *libstate.AggregatorV3
 	)
-	backend.blockReader, allSnapshots, agg, err = backend.setUpBlockReader(ctx, config.Dirs, config.Snapshot, config.Downloader, config.TransactionsV3)
 	if err != nil {
 		return nil, err
 	}
@@ -861,65 +854,6 @@ func (s *Ethereum) NodesInfo(limit int) (*remote.NodesInfoReply, error) {
 	return nodesInfo, nil
 }
 
-// sets up blockReader and client downloader
-func (s *Ethereum) setUpBlockReader(ctx context.Context, dirs datadir.Dirs, snConfig ethconfig.Snapshot, downloaderCfg *downloadercfg.Cfg, transactionsV3 bool) (services.FullBlockReader, *snapshotsync.RoSnapshots, *libstate.AggregatorV3, error) {
-	allSnapshots := snapshotsync.NewRoSnapshots(snConfig, dirs.Snap)
-	var err error
-	if !snConfig.NoDownloader {
-		allSnapshots.OptimisticalyReopenWithDB(s.chainDB)
-	}
-	blockReader := snapshotsync.NewBlockReaderWithSnapshots(allSnapshots, transactionsV3)
-
-	if !snConfig.NoDownloader {
-		if snConfig.DownloaderAddr != "" {
-			// connect to external Downloader
-			s.downloaderClient, err = downloadergrpc.NewClient(ctx, snConfig.DownloaderAddr)
-		} else {
-			// start embedded Downloader
-			s.downloader, err = downloader3.New(ctx, downloaderCfg)
-			if err != nil {
-				return nil, nil, nil, err
-			}
-			s.downloader.MainLoopInBackground(ctx, true)
-			bittorrentServer, err := downloader3.NewGrpcServer(s.downloader)
-			if err != nil {
-				return nil, nil, nil, fmt.Errorf("new server: %w", err)
-			}
-
-			s.downloaderClient = direct.NewDownloaderClient(bittorrentServer)
-		}
-		if err != nil {
-			return nil, nil, nil, err
-		}
-	}
-
-	dir.MustExist(dirs.SnapHistory)
-	agg, err := libstate.NewAggregatorV3(ctx, dirs.SnapHistory, dirs.Tmp, ethconfig.HistoryV3AggregationStep, s.chainDB)
-	if err != nil {
-		return nil, nil, nil, err
-	}
-	if err = agg.OpenFolder(); err != nil {
-		return nil, nil, nil, err
-	}
-	agg.OnFreeze(func(frozenFileNames []string) {
-		events := s.notifications.Events
-		events.OnNewSnapshot()
-		if s.downloaderClient != nil {
-			req := &proto_downloader.DownloadRequest{Items: make([]*proto_downloader.DownloadItem, 0, len(frozenFileNames))}
-			for _, fName := range frozenFileNames {
-				req.Items = append(req.Items, &proto_downloader.DownloadItem{
-					Path: filepath.Join("history", fName),
-				})
-			}
-			if _, err := s.downloaderClient.Download(ctx, req); err != nil {
-				log.Warn("[snapshots] notify downloader", "err", err)
-			}
-		}
-	})
-
-	return blockReader, allSnapshots, agg, nil
-}
-
 func (s *Ethereum) Peers(ctx context.Context) (*remote.PeersReply, error) {
 	var reply remote.PeersReply
 	for _, sentryClient := range s.sentriesClient.Sentries() {
@@ -974,9 +908,6 @@ func (s *Ethereum) Stop() error {
 	s.sentryCancel()
 	if s.unsubscribeEthstat != nil {
 		s.unsubscribeEthstat()
-	}
-	if s.downloader != nil {
-		s.downloader.Close()
 	}
 	if s.privateAPI != nil {
 		shutdownDone := make(chan bool)

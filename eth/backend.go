@@ -44,9 +44,7 @@ import (
 	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
 	"github.com/tenderly/zkevm-erigon-lib/common/dir"
 	"github.com/tenderly/zkevm-erigon-lib/direct"
-	downloader3 "github.com/tenderly/zkevm-erigon-lib/downloader"
 	"github.com/tenderly/zkevm-erigon-lib/downloader/downloadercfg"
-	"github.com/tenderly/zkevm-erigon-lib/downloader/downloadergrpc"
 	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/downloader"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/grpcutil"
 	"github.com/tenderly/zkevm-erigon-lib/gointerfaces/remote"
@@ -184,7 +182,6 @@ type Ethereum struct {
 	txPool2GrpcServer       txpool_proto.TxpoolServer
 	notifyMiningAboutNewTxs chan struct{}
 	forkValidator           *engineapi.ForkValidator
-	downloader              *downloader3.Downloader
 
 	agg            *libstate.AggregatorV3
 	blockSnapshots *snapshotsync.RoSnapshots
@@ -1270,23 +1267,6 @@ func (s *Ethereum) setUpBlockReader(ctx context.Context, dirs datadir.Dirs, snCo
 	blockReader := snapshotsync.NewBlockReaderWithSnapshots(allSnapshots, transactionsV3)
 
 	if !snConfig.NoDownloader {
-		if snConfig.DownloaderAddr != "" {
-			// connect to external Downloader
-			s.downloaderClient, err = downloadergrpc.NewClient(ctx, snConfig.DownloaderAddr)
-		} else {
-			// start embedded Downloader
-			s.downloader, err = downloader3.New(ctx, downloaderCfg)
-			if err != nil {
-				return nil, nil, nil, err
-			}
-			s.downloader.MainLoopInBackground(ctx, true)
-			bittorrentServer, err := downloader3.NewGrpcServer(s.downloader)
-			if err != nil {
-				return nil, nil, nil, fmt.Errorf("new server: %w", err)
-			}
-
-			s.downloaderClient = direct.NewDownloaderClient(bittorrentServer)
-		}
 		if err != nil {
 			return nil, nil, nil, err
 		}

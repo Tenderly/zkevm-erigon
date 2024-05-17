@@ -26,7 +26,6 @@ import (
 	dir2 "github.com/tenderly/zkevm-erigon-lib/common/dir"
 	"github.com/tenderly/zkevm-erigon-lib/common/hexutility"
 	"github.com/tenderly/zkevm-erigon-lib/compress"
-	"github.com/tenderly/zkevm-erigon-lib/downloader/downloadergrpc"
 	"github.com/tenderly/zkevm-erigon-lib/downloader/snaptype"
 	"github.com/tenderly/zkevm-erigon-lib/etl"
 	proto_downloader "github.com/tenderly/zkevm-erigon-lib/gointerfaces/downloader"

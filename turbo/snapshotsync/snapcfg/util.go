@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	snapshothashes "github.com/ledgerwatch/erigon-snapshot"
-	"github.com/tenderly/zkevm-erigon/params/networkname"
 	"github.com/pelletier/go-toml/v2"
+	"github.com/tenderly/zkevm-erigon/params/networkname"
 	"golang.org/x/exp/slices"
 )
 
@@ -49,7 +49,7 @@ func doSort(in preverified) Preverified {
 	for k, v := range in {
 		out = append(out, PreverifiedItem{k, v})
 	}
-	slices.SortFunc(out, func(i, j PreverifiedItem) bool { return i.Name < j.Name })
+	slices.SortFunc(out, func(i, j PreverifiedItem) int { if i.Name < j.Name { return -1 } else { return 1 } })
 	return out
 }
 
