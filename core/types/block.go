@@ -18,7 +18,6 @@
 package types
 
 import (
-	"bytes"
 	"encoding/binary"
 	"errors"
 	"fmt"
@@ -29,7 +28,6 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gballet/go-verkle"
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/common/hexutility"
 	rlp2 "github.com/gateway-fm/cdk-erigon-lib/rlp"
@@ -103,7 +101,6 @@ type Header struct {
 	// The verkle proof is ignored in legacy headers
 	Verkle        bool
 	VerkleProof   []byte
-	VerkleKeyVals []verkle.KeyValuePair
 }
 
 // ParentExcessDataGas is a helper that returns the excess data gas value of the parent block.  It
@@ -193,12 +190,6 @@ func (h *Header) EncodingSize() int {
 			encodingSize += len(h.VerkleProof)
 		}
 		encodingSize++
-
-		var tmpBuffer bytes.Buffer
-		if err := rlp.Encode(&tmpBuffer, h.VerkleKeyVals); err != nil {
-			panic(err)
-		}
-		encodingSize += tmpBuffer.Len()
 	}
 
 	return encodingSize
@@ -328,10 +319,6 @@ func (h *Header) EncodeRLP(w io.Writer) error {
 	if h.Verkle {
 		if err := rlp.EncodeString(h.VerkleProof, w, b[:]); err != nil {
 			return err
-		}
-
-		if err := rlp.Encode(w, h.VerkleKeyVals); err != nil {
-			return nil
 		}
 	}
 
@@ -482,17 +469,6 @@ func (h *Header) DecodeRLP(s *rlp.Stream) error {
 		return fmt.Errorf("read ExcessDataGas: %w", err)
 	}
 	h.ExcessDataGas = new(big.Int).SetBytes(b)
-
-	if h.Verkle {
-		if h.VerkleProof, err = s.Bytes(); err != nil {
-			return fmt.Errorf("read VerkleProof: %w", err)
-		}
-		rawKv, err := s.Raw()
-		if err != nil {
-			return err
-		}
-		rlp.DecodeBytes(rawKv, h.VerkleKeyVals)
-	}
 
 	if err := s.ListEnd(); err != nil {
 		return fmt.Errorf("close header struct: %w", err)

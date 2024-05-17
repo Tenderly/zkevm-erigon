@@ -28,7 +28,6 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/kv/kvcfg"
 
-	"github.com/gballet/go-verkle"
 	common2 "github.com/gateway-fm/cdk-erigon-lib/common"
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/gateway-fm/cdk-erigon-lib/common/cmp"
@@ -1769,30 +1768,4 @@ func ReadVerkleRoot(tx kv.Tx, blockNum uint64) (libcommon.Hash, error) {
 
 func WriteVerkleRoot(tx kv.RwTx, blockNum uint64, root libcommon.Hash) error {
 	return tx.Put(kv.VerkleRoots, hexutility.EncodeTs(blockNum), root[:])
-}
-
-func WriteVerkleNode(tx kv.RwTx, node verkle.VerkleNode) error {
-	var (
-		root    libcommon.Hash
-		encoded []byte
-		err     error
-	)
-	root = node.Commitment().Bytes()
-	encoded, err = node.Serialize()
-	if err != nil {
-		return err
-	}
-
-	return tx.Put(kv.VerkleTrie, root[:], encoded)
-}
-
-func ReadVerkleNode(tx kv.RwTx, root libcommon.Hash) (verkle.VerkleNode, error) {
-	encoded, err := tx.GetOne(kv.VerkleTrie, root[:])
-	if err != nil {
-		return nil, err
-	}
-	if len(encoded) == 0 {
-		return verkle.New(), nil
-	}
-	return verkle.ParseNode(encoded, 0, root[:])
 }

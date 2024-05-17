@@ -1,8 +1,6 @@
 package vtree
 
 import (
-	"github.com/crate-crypto/go-ipa/bandersnatch/fr"
-	"github.com/gballet/go-verkle"
 	"github.com/holiman/uint256"
 )
 
@@ -21,17 +19,7 @@ var (
 	MainStorageOffset   = new(uint256.Int).Lsh(uint256.NewInt(256), 31)
 	VerkleNodeWidth     = uint256.NewInt(256)
 	codeStorageDelta    = uint256.NewInt(0).Sub(CodeOffset, HeaderStorageOffset)
-
-	getTreePolyIndex0Point *verkle.Point
 )
-
-func init() {
-	getTreePolyIndex0Point = new(verkle.Point)
-	err := getTreePolyIndex0Point.SetBytes([]byte{34, 25, 109, 242, 193, 5, 144, 224, 76, 52, 189, 92, 197, 126, 9, 145, 27, 152, 199, 130, 165, 3, 210, 27, 193, 131, 142, 28, 110, 26, 16, 191})
-	if err != nil {
-		panic(err)
-	}
-}
 
 // GetTreeKey performs both the work of the spec's get_tree_key function, and that
 // of pedersen_hash: it builds the polynomial in pedersen_hash without having to
@@ -39,56 +27,13 @@ func init() {
 // array. Since at most the first 5 coefficients of the polynomial will be non-zero,
 // these 5 coefficients are created directly.
 func GetTreeKey(address []byte, treeIndex *uint256.Int, subIndex byte) []byte {
-	if len(address) < 32 {
-		var aligned [32]byte
-		address = append(aligned[:32-len(address)], address...)
-	}
-	var poly [5]fr.Element
-
-	poly[0].SetZero()
-
-	// 32-byte address, interpreted as two little endian
-	// 16-byte numbers.
-	verkle.FromLEBytes(&poly[1], address[:16])
-	verkle.FromLEBytes(&poly[2], address[16:])
-
-	// little-endian, 32-byte aligned treeIndex
-	var index [32]byte
-	for i, b := range treeIndex.Bytes() {
-		index[len(treeIndex.Bytes())-1-i] = b
-	}
-	verkle.FromLEBytes(&poly[3], index[:16])
-	verkle.FromLEBytes(&poly[4], index[16:])
-
-	cfg := verkle.GetConfig()
-	ret := cfg.CommitToPoly(poly[:], 0)
-
-	// add a constant point
-	ret.Add(ret, getTreePolyIndex0Point)
-
-	return PointToHash(ret, subIndex)
-
-}
-
-func GetTreeKeyAccountLeaf(address []byte, leaf byte) []byte {
-	return GetTreeKey(address, zero, leaf)
+	return nil
 }
 
 func GetTreeKeyVersion(address []byte) []byte {
 	return GetTreeKey(address, zero, VersionLeafKey)
 }
 
-func GetTreeKeyBalance(address []byte) []byte {
-	return GetTreeKey(address, zero, BalanceLeafKey)
-}
-
-func GetTreeKeyNonce(address []byte) []byte {
-	return GetTreeKey(address, zero, NonceLeafKey)
-}
-
-func GetTreeKeyCodeKeccak(address []byte) []byte {
-	return GetTreeKey(address, zero, CodeKeccakLeafKey)
-}
 
 func GetTreeKeyCodeSize(address []byte) []byte {
 	return GetTreeKey(address, zero, CodeSizeLeafKey)
@@ -125,20 +70,6 @@ func GetTreeKeyStorageSlot(address []byte, storageKey *uint256.Int) []byte {
 		subIndex = subIndexMod[0] & 0xFF
 	}
 	return GetTreeKey(address, treeIndex, subIndex)
-}
-
-func PointToHash(evaluated *verkle.Point, suffix byte) []byte {
-	// The output of Byte() is big engian for banderwagon. This
-	// introduces an imbalance in the tree, because hashes are
-	// elements of a 253-bit field. This means more than half the
-	// tree would be empty. To avoid this problem, use a little
-	// endian commitment and chop the MSB.
-	retb := evaluated.Bytes()
-	for i := 0; i < 16; i++ {
-		retb[31-i], retb[i] = retb[i], retb[31-i]
-	}
-	retb[31] = suffix
-	return retb[:]
 }
 
 const (
