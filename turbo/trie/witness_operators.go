@@ -5,7 +5,6 @@ import (
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon/smt/pkg/utils"
-	"github.com/ugorji/go/codec"
 )
 
 const (
@@ -303,8 +302,7 @@ func (o *OperatorBranch) WriteTo(output *OperatorMarshaller) error {
 		return err
 	}
 
-	encoder := codec.NewEncoder(output.WithColumn(ColumnStructure), &cbor)
-	return encoder.Encode(o.Mask)
+	return nil
 }
 
 func (o *OperatorBranch) LoadFrom(loader *OperatorUnmarshaller) error {

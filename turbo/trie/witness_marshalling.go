@@ -5,28 +5,19 @@ import (
 	"io"
 
 	libcommon "github.com/gateway-fm/cdk-erigon-lib/common"
-	"github.com/ugorji/go/codec"
 )
-
-var cbor codec.CborHandle
 
 // OperatorMarshaller provides all needed primitives to read witness operators from a serialized form.
 type OperatorUnmarshaller struct {
 	reader  io.Reader
-	decoder *codec.Decoder
 }
 
 func NewOperatorUnmarshaller(r io.Reader) *OperatorUnmarshaller {
-	return &OperatorUnmarshaller{r, codec.NewDecoder(r, &cbor)}
+	return nil
 }
 
 func (l *OperatorUnmarshaller) ReadByteArray() ([]byte, error) {
 	var buffer []byte
-	err := l.decoder.Decode(&buffer)
-	if err != nil {
-		return []byte{}, err
-	}
-
 	return buffer, nil
 }
 
@@ -44,9 +35,6 @@ func (l *OperatorUnmarshaller) ReadHash() (libcommon.Hash, error) {
 
 func (l *OperatorUnmarshaller) ReadUint32() (uint32, error) {
 	var value uint32
-	if err := l.decoder.Decode(&value); err != nil {
-		return 0, err
-	}
 	return value, nil
 }
 
@@ -72,20 +60,12 @@ func (l *OperatorUnmarshaller) ReadKey() ([]byte, error) {
 
 func (l *OperatorUnmarshaller) ReadUInt64() (uint64, error) {
 	var value uint64
-	err := l.decoder.Decode(&value)
-	if err != nil {
-		return 0, err
-	}
 	return value, nil
 
 }
 
 func (l *OperatorUnmarshaller) ReadUInt8() (uint8, error) {
 	var value uint8
-	err := l.decoder.Decode(&value)
-	if err != nil {
-		return 0, err
-	}
 	return value, nil
 
 }
@@ -95,17 +75,13 @@ func (l *OperatorUnmarshaller) ReadUInt8() (uint8, error) {
 // IMPORTANT: not thread-safe! use from a single thread only
 type OperatorMarshaller struct {
 	currentColumn StatsColumn
-	encoder       *codec.Encoder
 	w             io.Writer
 	stats         map[StatsColumn]uint64
 	total         uint64
 }
 
 func NewOperatorMarshaller(w io.Writer) *OperatorMarshaller {
-	marshaller := &OperatorMarshaller{w: w, stats: make(map[StatsColumn]uint64)}
-	// so we can collect stats
-	marshaller.encoder = codec.NewEncoder(marshaller, &cbor)
-	return marshaller
+	return nil
 }
 
 func (w *OperatorMarshaller) WriteOpCode(opcode OperatorKindCode) error {
@@ -115,8 +91,7 @@ func (w *OperatorMarshaller) WriteOpCode(opcode OperatorKindCode) error {
 }
 
 func (w *OperatorMarshaller) WriteKey(keyNibbles []byte) error {
-	w.WithColumn(ColumnLeafKeys)
-	return w.encoder.Encode(keyNibblesToBytes(keyNibbles))
+	return nil
 }
 
 func (w *OperatorMarshaller) WriteByteValue(value byte) error {
@@ -126,23 +101,19 @@ func (w *OperatorMarshaller) WriteByteValue(value byte) error {
 }
 
 func (w *OperatorMarshaller) WriteUint64Value(value uint64) error {
-	w.WithColumn(ColumnLeafValues)
-	return w.encoder.Encode(value)
+	return nil
 }
 
 func (w *OperatorMarshaller) WriteUint8Value(value uint8) error {
-	w.WithColumn(ColumnLeafValues)
-	return w.encoder.Encode(value)
+	return nil
 }
 
 func (w *OperatorMarshaller) WriteByteArrayValue(value []byte) error {
-	w.WithColumn(ColumnLeafValues)
-	return w.encoder.Encode(value)
+	return nil
 }
 
 func (w *OperatorMarshaller) WriteCode(value []byte) error {
-	w.WithColumn(ColumnCodes)
-	return w.encoder.Encode(value)
+	return nil
 }
 
 func (w *OperatorMarshaller) WriteHash(hash libcommon.Hash) error {

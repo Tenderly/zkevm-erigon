@@ -9,10 +9,8 @@ import (
 
 	"github.com/gateway-fm/cdk-erigon-lib/common/datadir"
 	"github.com/gateway-fm/cdk-erigon-lib/kv"
-	"github.com/tenderly/zkevm-erigon/common"
-	"github.com/tenderly/zkevm-erigon/eth/stagedsync/stages"
 	"github.com/ledgerwatch/log/v3"
-	"github.com/ugorji/go/codec"
+	"github.com/tenderly/zkevm-erigon/common"
 )
 
 // migrations apply sequentially in order of this array, skips applied migrations
@@ -256,32 +254,9 @@ func (m *Migrator) Apply(db kv.RwDB, dataDir string) error {
 }
 
 func MarshalMigrationPayload(db kv.Getter) ([]byte, error) {
-	s := map[string][]byte{}
-
-	buf := bytes.NewBuffer(nil)
-	encoder := codec.NewEncoder(buf, &codec.CborHandle{})
-
-	for _, stage := range stages.AllStages {
-		v, err := db.GetOne(kv.SyncStageProgress, []byte(stage))
-		if err != nil {
-			return nil, err
-		}
-		if len(v) > 0 {
-			s[string(stage)] = common.CopyBytes(v)
-		}
-	}
-
-	if err := encoder.Encode(s); err != nil {
-		return nil, err
-	}
-	return buf.Bytes(), nil
+	return nil, nil
 }
 
 func UnmarshalMigrationPayload(data []byte) (map[string][]byte, error) {
-	s := map[string][]byte{}
-
-	if err := codec.NewDecoder(bytes.NewReader(data), &codec.CborHandle{}).Decode(&s); err != nil {
-		return nil, err
-	}
-	return s, nil
+	return nil, nil
 }

@@ -21,6 +21,5 @@ import (
 	_ "github.com/kevinburke/go-bindata"
 	_ "github.com/torquem-ch/mdbx-go"
 	_ "github.com/torquem-ch/mdbx-go/mdbxdist"
-	_ "github.com/ugorji/go/codec/codecgen"
 	_ "google.golang.org/grpc/cmd/protoc-gen-go-grpc"
 )
