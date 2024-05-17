@@ -27,6 +27,9 @@ import (
 	"strings"
 
 	"github.com/c2h5oh/datasize"
+	"github.com/ledgerwatch/log/v3"
+	"github.com/spf13/cobra"
+	"github.com/spf13/pflag"
 	libcommon "github.com/tenderly/zkevm-erigon-lib/common"
 	"github.com/tenderly/zkevm-erigon-lib/common/cmp"
 	"github.com/tenderly/zkevm-erigon-lib/common/datadir"
@@ -37,9 +40,6 @@ import (
 	common2 "github.com/tenderly/zkevm-erigon/common"
 	"github.com/tenderly/zkevm-erigon/consensus/ethash/ethashcfg"
 	"github.com/tenderly/zkevm-erigon/eth/gasprice/gaspricecfg"
-	"github.com/ledgerwatch/log/v3"
-	"github.com/spf13/cobra"
-	"github.com/spf13/pflag"
 	"github.com/urfave/cli/v2"
 
 	"encoding/json"
@@ -47,7 +47,6 @@ import (
 	"path"
 
 	"github.com/tenderly/zkevm-erigon/cl/clparams"
-	"github.com/tenderly/zkevm-erigon/cmd/downloader/downloadernat"
 	"github.com/tenderly/zkevm-erigon/common/paths"
 	"github.com/tenderly/zkevm-erigon/core"
 	"github.com/tenderly/zkevm-erigon/crypto"
@@ -1739,12 +1738,6 @@ func SetEthConfig(ctx *cli.Context, nodeConfig *nodecfg.Config, cfg *ethconfig.C
 			panic(err)
 		}
 		log.Info("torrent verbosity", "level", lvl.LogString())
-		version := "erigon: " + params.VersionWithCommit(params.GitCommit)
-		cfg.Downloader, err = downloadercfg2.New(cfg.Dirs.Snap, version, lvl, downloadRate, uploadRate, ctx.Int(TorrentPortFlag.Name), ctx.Int(TorrentConnsPerFileFlag.Name), ctx.Int(TorrentDownloadSlotsFlag.Name), ctx.StringSlice(TorrentDownloadSlotsFlag.Name))
-		if err != nil {
-			panic(err)
-		}
-		downloadernat.DoNat(nodeConfig.P2P.NAT, cfg.Downloader)
 	}
 
 	nodeConfig.Http.Snap = cfg.Snapshot

@@ -12,11 +12,11 @@ import (
 	"github.com/tenderly/zkevm-erigon/rpc/rpccfg"
 
 	"github.com/c2h5oh/datasize"
+	"github.com/ledgerwatch/log/v3"
+	"github.com/spf13/pflag"
 	"github.com/tenderly/zkevm-erigon-lib/etl"
 	"github.com/tenderly/zkevm-erigon-lib/kv"
 	"github.com/tenderly/zkevm-erigon-lib/kv/kvcache"
-	"github.com/ledgerwatch/log/v3"
-	"github.com/spf13/pflag"
 	"github.com/urfave/cli/v2"
 
 	"github.com/tenderly/zkevm-erigon/cmd/rpcdaemon/cli/httpcfg"
@@ -270,13 +270,6 @@ func ApplyFlagsForEthConfig(ctx *cli.Context, cfg *ethconfig.Config) {
 	uploadRate := ctx.String(utils.TorrentUploadRateFlag.Name)
 
 	log.Info("[Downloader] Runnning with", "ipv6-enabled", !disableIPV6, "ipv4-enabled", !disableIPV4, "download.rate", downloadRate, "upload.rate", uploadRate)
-	if ctx.Bool(utils.DisableIPV6.Name) {
-		cfg.Downloader.ClientConfig.DisableIPv6 = true
-	}
-
-	if ctx.Bool(utils.DisableIPV4.Name) {
-		cfg.Downloader.ClientConfig.DisableIPv4 = true
-	}
 }
 
 func ApplyFlagsForEthConfigCobra(f *pflag.FlagSet, cfg *ethconfig.Config) {
