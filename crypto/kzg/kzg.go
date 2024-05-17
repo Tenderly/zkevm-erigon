@@ -47,7 +47,7 @@ func InitializeCrypytoCtx() {
 	initCryptoCtx.Do(func() {
 		// Initialize context to match the configurations that the
 		// specs are using.
-		ctx, err := gokzg4844.NewContext4096Insecure1337()
+		ctx, err := gokzg4844.NewContext4096Secure()
 		if err != nil {
 			panic(fmt.Sprintf("could not create context, err : %v", err))
 		}
