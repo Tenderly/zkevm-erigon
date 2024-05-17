@@ -78,7 +78,7 @@ require (
 	github.com/spf13/pflag v1.0.5
 	github.com/status-im/keycard-go v0.2.0
 	github.com/stretchr/testify v1.8.4
-	github.com/tenderly/zkevm-erigon-lib v0.0.0-20240517145818-479f38e6b72c
+	github.com/tenderly/zkevm-erigon-lib v0.0.0-20240517161432-827e15831f74
 	github.com/thomaso-mirodin/intmath v0.0.0-20160323211736-5dc6d854e46e
 	github.com/tidwall/btree v1.6.0
 	github.com/urfave/cli/v2 v2.25.7
